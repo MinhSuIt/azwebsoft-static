@@ -9,9 +9,8 @@ ask_form.addEventListener('submit', async function (e) {
         email: this.email.value,
         message: this.message.value
     };
-
     await fetch(
-        'https://script.google.com/macros/s/AKfycbzDUVPyx4ibLUCUeMElnel9Iu-0p0HnmA9qto7XelFeSws38PlIN0tMegrRRatkmTxK/exec', {
+        'https://script.google.com/macros/s/AKfycbwy85ZcpBMf8eu8m80Lwl9cjxdTU7zh01XRRvGRFkp-FjmPFQ4hdofwoKQPL49Uguz7/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
