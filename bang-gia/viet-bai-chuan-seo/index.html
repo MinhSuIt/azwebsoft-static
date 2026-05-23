@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+
+    <title>Web Agency – Just another WordPress site</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        .pricing-sub-menu {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            background: #fff;
+            padding: 0.75rem 1rem !important;
+            width: max-content;
+            color: black !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .pricing-sub-menu.active {
+            display: block;
+            opacity: 1;
+        }
+
+        nav[aria-label='Pagination Navigation'] {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .line-clamp-1 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+
+        .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .line-clamp-3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .order_right {
+            order: 3 !important;
+        }
+
+        @media only screen and (max-width: 689px) {
+            .custom-mobile {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tam_nhin {
+                order: 1 !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://drumie.com/assets/global.css" media="all">
+        <style>
+        img:is([sizes="auto" i],
+        [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    
+    <link rel="stylesheet" id="ugb-style-css-css" href="https://drumie.com/assets/frontend_blocks.css" media="all">
+
+    <link rel="stylesheet" href="https://drumie.com/assets/block/ugb-style-css-inline-css.css" media="all">
+
+    <link rel="stylesheet" href="https://drumie.com/assets/block/ugb-style-css-nodep-inline-css.css" media="all">
+    <link rel="stylesheet" href="https://drumie.com/assets/style.min.css" media="all">
+
+    <link rel="stylesheet" href="https://drumie.com/assets/block/global-styles-inline-css.css" media="all">
+    <link rel="stylesheet" id="wpa-css-css" href="https://drumie.com/assets/wpa.css" media="all">
+    <link rel="stylesheet" id="ct-main-styles-css" href="https://drumie.com/assets/main.min.css" media="all">
+    <link rel="stylesheet" id="ct-stackable-styles-css" href="https://drumie.com/assets/stackable.min.css" media="all">
+    <link rel="stylesheet" id="ct-wpforms-styles-css" href="https://drumie.com/assets/wpforms.min.css" media="all">
+    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css" href="https://drumie.com/assets/header-account.min.css"
+        media="all">
+    <script src="https://drumie.com/assets/jquery.min.js.download" id="jquery-core-js"></script>
+    <script src="https://drumie.com/assets/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://drumie.com/assets/block/stk-block-styles.css" media="all">
+
+    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+
+</head>
+
+
+<body
+    class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
+    data-link="type-2" data-prefix="single_page" data-header="type-1:sticky" data-footer="type-1">
+
+    <div data-rocket-location-hash="6ca16749434ffeb6798230cf77b3e4ff" class="ct-drawer-canvas" data-location="start">
+        <div data-rocket-location-hash="acd6a28fd2ca5c0a76550d90db42be32" id="offcanvas" class="ct-panel ct-header"
+            data-behaviour="modal" role="dialog" aria-label="Offcanvas modal" inert="">
+            <div data-rocket-location-hash="79dc0a17d75ed337f37e2b08b92b5134" class="ct-panel-actions">
+
+                <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+                    <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+                        <path
+                            d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div data-rocket-location-hash="0f43dfbd9ae87fd5d0585f1a8f8a8349" class="ct-panel-content"
+                data-device="desktop">
+                <div class="ct-panel-content-inner"></div>
+            </div>
+            <div data-rocket-location-hash="bece1ae6d45638fbcee2f115434c8182" class="ct-panel-content" data-device="mobile">
+    <div class="ct-panel-content-inner">
+        <div class="ct-header-text " data-id="text">
+            <div class="entry-content is-layout-flow">
+                
+                    Azwebsoft
+            </div>
+        </div>
+
+        <nav class="mobile-menu menu-container" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1"
+            data-submenu-dots="yes" aria-label="Main Menu">
+
+            <ul id="menu-main-menu-1" class="">
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                    <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                    <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                    <a href="https://drumie.com/tin-tuc" class="ct-menu-link">Tin tức</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                    <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                </li>
+                <hr />
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/thiet-ke-web" class="ct-menu-link">Bảng giá thiết kế web</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/dich-vu-seo" class="ct-menu-link">Bảng giá dịch vụ SEO</a>
+                </li>
+                <li
+                    class=" current-menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo" class="ct-menu-link">Bảng giá content
+                        writing</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="ct-header-cta" data-id="button">
+            <a href="tel:0915452237" class="ct-button" data-size="medium" aria-label="Tư vấn: 0915452237">
+                Tư vấn: 0915452237</a>
+        </div>
+
+        <div class="ct-header-socials " data-id="socials">
+
+
+            <div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="rounded:outline">
+
+
+
+                <a href="#" data-network="facebook" aria-label="Facebook">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="instagram" aria-label="Instagram">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <circle cx="10" cy="10" r="3.3"></circle>
+                            <path
+                                d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="youtube" aria-label="YouTube">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div data-rocket-location-hash="dabd21537b68211e9f9db0f1c516c864" id="main-container">
+        <header data-rocket-location-hash="ec79a8b50d7f14dc6444bd8a706b2130" id="header" class="ct-header"
+            data-id="type-1">
+            <div data-rocket-location-hash="252865cd7eec5ce9cb808c3bd99dc248" data-device="desktop">
+    <div class="ct-sticky-container" style="height: 120px;">
+        <div data-sticky="fixed:shrink">
+            <div data-row="middle" data-column-set="2">
+                <div class="ct-container">
+                    <div data-column="start" data-placements="1">
+                        <div data-items="primary" style="">
+                            <div class="site-branding" data-id="logo">
+                                <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                    itemprop="url">Azwebsoft</a>
+                            </div>
+
+
+                            <nav id="header-menu-1" class="header-menu-1 menu-container" data-id="menu"
+                                data-interaction="hover" data-menu="type-2:center" data-dropdown="type-1:simple"
+                                data-responsive="yes" aria-label="Main Menu">
+
+                                <ul id="menu-main-menu" class="menu">
+                                    <li id="menu-item-897"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                                        <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-900"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                                        <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                                    </li>
+                                    <li id="menu-item-898"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                                        <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                                    </li>
+                                    <li id="menu-item-563"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="https://drumie.com/tin-tuc" class="ct-menu-link">Tin tức</a>
+                                    </li>
+                                    <li style="position: relative;"
+                                        class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="" class="ct-menu-link">Bảng giá</a>
+                                        <ul class="pricing-sub-menu">
+                                            <li id="menu-item-pricing-web"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-web">
+                                                <a href="https://drumie.com/bang-gia/thiet-ke-web">Thiết kế website</a>
+                                            </li>
+                                            <li id="menu-item-pricing-seo"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-seo">
+                                                <a href="https://drumie.com/bang-gia/dich-vu-seo">Dịch vụ SEO</a>
+                                            </li>
+                                            <li id="menu-item-pricing-marketing"
+                                                class=" current-menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-marketing">
+                                                <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo">Content Writing</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-899"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                                        <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div data-column="end" data-placements="1">
+                        <div data-items="primary">
+                            <div class="ct-header-cta" data-id="button">
+                                <a href="tel:0915452237" class="ct-button" data-size="medium"
+                                    aria-label="Tư vấn: 0915452237">
+                                    Tư vấn: 0915452237</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div data-rocket-location-hash="e23057b5ce826268727143abf068948f" data-device="mobile">
+                <div class="ct-sticky-container">
+                    <div data-sticky="shrink">
+                        <div data-row="middle" data-column-set="2">
+                            <div class="ct-container">
+                                <div data-column="start" data-placements="1">
+                                    <div data-items="primary">
+                                        <div class="site-branding" data-id="logo">
+
+                                            <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                                itemprop="url">Azwebsoft</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-column="end" data-placements="1">
+                                    <div data-items="primary">
+                                        <button class="ct-header-trigger ct-toggle " data-toggle-panel="#offcanvas"
+                                            aria-controls="offcanvas" data-design="simple" data-label="right"
+                                            aria-label="Menu" data-id="trigger">
+
+                                            <span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg"
+                                                aria-hidden="true">Menu</span>
+
+                                            <svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14"
+                                                data-type="type-1" aria-hidden="true">
+                                                <rect y="0.00" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="6.15" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="12.3" width="18" height="1.7" rx="1"></rect>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+            <main data-rocket-location-hash="7928ff23d69461227c89e2a01f296853" id="main" class="site-main hfeed">
+        <div class="ct-container-full" data-content="normal">
+            <article id="post-771" class="post-771 page type-page status-publish hentry">
+                <div class="entry-content is-layout-constrained">
+
+                    <div class="wp-block-stackable-columns alignfull stk-block-columns stk-block stk-09bff33 stk-block-background stk--has-background-overlay"
+                        data-block-id="09bff33">
+                        <div class="stk-row stk-inner-blocks stk-block-content stk-content-align stk-09bff33-column">
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f23a9be"
+                                data-block-id="f23a9be">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-f23a9be-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                                <div class="wp-block-stackable-text stk-block-text stk-block stk-f02990e" data-block-id="f02990e">
+        <p class="stk-block-text__text has-text-color has-palette-color-4-color has-text-align-center">
+            KHÔNG PHÁT SINH THÊM CHI PHÍ</p>
+    </div>
+
+
+
+    <div class="wp-block-stackable-heading stk-block-heading stk-block stk-ac6d3b1" id="the-best-solutions-for-our-clients"
+        data-block-id="ac6d3b1">
+        <h2 class="stk-block-heading__text has-text-align-center">BẢNG GIÁ DỊCH VỤ CONTENT WRITING
+        </h2>
+    </div>
+
+
+
+    <div class="wp-block-stackable-text stk-block-text stk-block stk-59a025e" data-block-id="59a025e">
+        <p class="stk-block-text__text has-text-align-center">
+            Dưới đây là bảng giá dịch vụ content writing tại Azwebsoft, mời quý
+            khách tham
+            khảo.
+        </p>
+    </div>
+
+
+
+    <div class="wp-block-stackable-columns stk-block-columns stk-block stk-d0ea327" data-block-id="d0ea327"
+        style="margin-bottom: 4rem !important;">
+        <div class="stk-row stk-inner-blocks stk-block-content stk-content-align stk-d0ea327-column">
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-310076b stk-block-background"
+                    data-block-id="310076b">
+                    <div
+                        class="stk-column-wrapper stk-block-column__content stk-container stk-310076b-container stk--no-background stk--no-padding">
+                        <div class="has-text-align-center stk-block-content stk-inner-blocks">
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-4be31d8" id="basic-plan"
+                                data-block-id="4be31d8">
+                                <h6 class="stk-block-heading__text has-text-color has-palette-color-4-color">
+                                    STANDARD
+                                </h6>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-40c7c09" id="29"
+                                data-block-id="40c7c09">
+                                <h2 class="stk-block-heading__text">
+                                    5 triệu</h2>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                data-block-id="41287a5">
+                                <ul>
+                                                                            <li>Hỗ trợ nghiên cứu từ khóa SEO</li>
+                                                                            <li>Viết bài chuẩn SEO dựa trên từ khóa</li>
+                                                                            <li>SEO 80+/Tốt (Rank math SEO/Yoast SEO)</li>
+                                                                            <li>Hỗ trợ đăng bài viết Wordpress</li>
+                                                                    </ul>
+                            </div>
+                                                                                                <div style="margin-bottom:0 !important;"
+                                        class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                        data-block-id="41287a5">
+                                        <ul>
+                                                                                            <li>Số lượng: 30 Bài viết</li>
+                                                                                            <li>Thời gian: 1-2 tuần</li>
+                                                                                    </ul>
+                                    </div>
+                                                                                                                                                            <div class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-3-color stk-block stk-10a4318"
+                                        style="margin-bottom: 0px !important;" data-block-id="10a4318">
+                                        <ul>
+                                                                                            <li>Hỗ trợ tối ưu Technical SEO</li>
+                                                                                            <li>Hỗ trợ xây dựng 50 backlink cho website</li>
+                                                                                    </ul>
+                                    </div>
+                                                                                        <div class="wp-block-stackable-button-group stk-block-button-group stk-block stk-39030c4"
+                                data-block-id="39030c4">
+                                <div
+                                    class="stk-row stk-inner-blocks has-text-align-center-mobile stk-block-content stk-button-group">
+                                    <div class="wp-block-stackable-button stk-block-button stk-block stk-6bd78bc"
+                                        data-block-id="6bd78bc"><a class="stk-link stk-button stk--hover-effect-darken"
+                                            href="tel:0915452237">
+                                            <span class="stk-button__inner-text">
+                                                Liên hệ
+                                            </span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-310076b stk-block-background"
+                    data-block-id="310076b">
+                    <div
+                        class="stk-column-wrapper stk-block-column__content stk-container stk-310076b-container stk--no-background stk--no-padding">
+                        <div class="has-text-align-center stk-block-content stk-inner-blocks">
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-4be31d8" id="basic-plan"
+                                data-block-id="4be31d8">
+                                <h6 class="stk-block-heading__text has-text-color has-palette-color-4-color">
+                                    PROFESSIONAL
+                                </h6>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-40c7c09" id="29"
+                                data-block-id="40c7c09">
+                                <h2 class="stk-block-heading__text">
+                                    10 triệu</h2>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                data-block-id="41287a5">
+                                <ul>
+                                                                            <li>Hỗ trợ nghiên cứu từ khóa SEO</li>
+                                                                            <li>Viết bài chuẩn SEO dựa trên từ khóa</li>
+                                                                            <li>SEO 80+/Tốt (Rank math SEO/Yoast SEO)</li>
+                                                                            <li>Hỗ trợ đăng bài viết Wordpress</li>
+                                                                    </ul>
+                            </div>
+                                                                                                <div style="margin-bottom:0 !important;"
+                                        class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                        data-block-id="41287a5">
+                                        <ul>
+                                                                                            <li>Số lượng: 80 Bài viết</li>
+                                                                                            <li>Thời gian: 2-3 tuần</li>
+                                                                                            <li>Hỗ trợ tối ưu Technical SEO cơ bản</li>
+                                                                                    </ul>
+                                    </div>
+                                                                                                                                                            <div class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-3-color stk-block stk-10a4318"
+                                        style="margin-bottom: 0px !important;" data-block-id="10a4318">
+                                        <ul>
+                                                                                            <li>Hỗ trợ xây dựng 50 backlink cho website</li>
+                                                                                    </ul>
+                                    </div>
+                                                                                        <div class="wp-block-stackable-button-group stk-block-button-group stk-block stk-39030c4"
+                                data-block-id="39030c4">
+                                <div
+                                    class="stk-row stk-inner-blocks has-text-align-center-mobile stk-block-content stk-button-group">
+                                    <div class="wp-block-stackable-button stk-block-button stk-block stk-6bd78bc"
+                                        data-block-id="6bd78bc"><a class="stk-link stk-button stk--hover-effect-darken"
+                                            href="tel:0915452237">
+                                            <span class="stk-button__inner-text">
+                                                Liên hệ
+                                            </span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-310076b stk-block-background"
+                    data-block-id="310076b">
+                    <div
+                        class="stk-column-wrapper stk-block-column__content stk-container stk-310076b-container stk--no-background stk--no-padding">
+                        <div class="has-text-align-center stk-block-content stk-inner-blocks">
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-4be31d8" id="basic-plan"
+                                data-block-id="4be31d8">
+                                <h6 class="stk-block-heading__text has-text-color has-palette-color-4-color">
+                                    ENTERPRISE
+                                </h6>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-heading stk-block-heading stk-block stk-40c7c09" id="29"
+                                data-block-id="40c7c09">
+                                <h2 class="stk-block-heading__text">
+                                    Liên hệ</h2>
+                            </div>
+
+
+
+                            <div class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                data-block-id="41287a5">
+                                <ul>
+                                                                            <li>Hỗ trợ nghiên cứu từ khóa SEO</li>
+                                                                            <li>Viết bài chuẩn SEO dựa trên từ khóa</li>
+                                                                            <li>SEO 80+/Tốt (Rank math SEO/Yoast SEO)</li>
+                                                                            <li>Hỗ trợ đăng bài viết Wordpress</li>
+                                                                    </ul>
+                            </div>
+                                                                                                <div style="margin-bottom:0 !important;"
+                                        class="wp-block-stackable-icon-list stk-block-icon-list has-text-align-center has-text-color has-palette-color-4-color stk-block stk-41287a5"
+                                        data-block-id="41287a5">
+                                        <ul>
+                                                                                            <li>Số lượng: Theo yêu cầu</li>
+                                                                                            <li>Thời gian: Ước tính theo yêu cầu</li>
+                                                                                            <li>Hỗ trợ tối ưu Technical SEO chuẩn</li>
+                                                                                            <li>Hỗ trợ xây dựng 50 backlink cho website</li>
+                                                                                    </ul>
+                                    </div>
+                                                                                                                    <div class="wp-block-stackable-button-group stk-block-button-group stk-block stk-39030c4"
+                                data-block-id="39030c4">
+                                <div
+                                    class="stk-row stk-inner-blocks has-text-align-center-mobile stk-block-content stk-button-group">
+                                    <div class="wp-block-stackable-button stk-block-button stk-block stk-6bd78bc"
+                                        data-block-id="6bd78bc"><a class="stk-link stk-button stk--hover-effect-darken"
+                                            href="tel:0915452237">
+                                            <span class="stk-button__inner-text">
+                                                Liên hệ
+                                            </span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </div>
+    </main>
+
+
+
+        <footer data-rocket-location-hash="d38d20286372344a09d3e0d897293bbe" id="footer" class="ct-footer"
+            data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter">
+            <div data-rocket-location-hash="c84742f06f81ae4bd02dfacf04ac6326" data-row="middle">
+                <div class="ct-container" data-columns-divider="md">
+                    <div data-column="widget-area-1">
+                        <div class="ct-widget is-layout-flow widget_block" id="block-10">
+                            <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+                                <figure class="wp-block-image is-resized" style="margin-bottom: 14.5px;">
+                                    
+                                    <a href="https://drumie.com"><b>Azwebsoft</b></a>
+                                </figure>
+
+
+
+                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                            </div>
+                        </div>
+                        <div class="ct-widget is-layout-flow widget_block" id="block-11">
+                            <div class="ct-block-wrapper">
+                                <h3 class="wp-block-heading"
+                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
+                                <div class="ct-socials-block"
+                                    style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
+                                    <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
+
+
+
+                                        <a href="#" data-network="facebook"
+                                            aria-label="Facebook">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="twitter"
+                                            aria-label="X (Twitter)">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="instagram"
+                                            aria-label="Instagram">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <circle cx="10" cy="10" r="3.3"></circle>
+                                                    <path
+                                                        d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="youtube"
+                                            aria-label="YouTube">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-2">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-2">
+                            <h3 class="widget-title">Về chúng tôi</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Lịch sử phát triển</a></li>
+                                    <li><a href="#">Sứ mệnh – Tầm nhìn</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-3">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-3">
+                            <h3 class="widget-title">Chính sách</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Chính sách riêng tư</a></li>
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-4">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-4">
+                            <h3 class="widget-title">Liên hệ</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-rocket-location-hash="0adbe0e2f82f32229c3117fb330757fe" data-row="bottom">
+                <div class="ct-container">
+                    <div data-column="copyright">
+                        <div class="ct-footer-copyright" data-id="copyright">
+
+                            Copyright © 2026 - Powered by <a
+                                href="https://drumie.com">Azwebsoft</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script id="ct-scripts-js-extra">
+        var ct_localizations = {
+            "ajax_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-admin\/admin-ajax.php",
+            "public_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/",
+            "rest_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-json\/",
+            "search_url": "https:\/\/startersites.io\/blocksy\/web-agency\/search\/QUERY_STRING\/",
+            "show_more_text": "Show more",
+            "more_text": "More",
+            "search_live_results": "Search results",
+            "search_live_no_results": "No results",
+            "search_live_no_result": "No results",
+            "search_live_one_result": "You got %s result. Please press Tab to select it.",
+            "search_live_many_results": "You got %s results. Please press Tab to select one.",
+            "clipboard_copied": "Copied!",
+            "clipboard_failed": "Failed to Copy",
+            "expand_submenu": "Expand dropdown menu",
+            "collapse_submenu": "Collapse dropdown menu",
+            "dynamic_js_chunks": [{
+                "id": "blocksy_account",
+                "selector": ".ct-account-item[href*=\"account-modal\"], .must-log-in a",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/account.js?ver=2.1.20",
+                "deps": [],
+                "global_data": [],
+                "trigger": "click",
+                "deps_data": []
+            }, {
+                "id": "blocksy_sticky_header",
+                "selector": "header [data-sticky]",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.1.20"
+            }],
+            "dynamic_styles": {
+                "lazy_load": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.1.20",
+                "search_lazy": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.1.20",
+                "back_to_top": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.1.20"
+            },
+            "dynamic_styles_selectors": [{
+                "selector": ".ct-header-cart, #woo-cart-panel",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".flexy",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.1.20"
+            }, {
+                "selector": "#account-modal",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".ct-header-account",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.1.20"
+            }]
+        };
+    </script>
+    <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
+    <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
+
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script>
+        const pricing = document.querySelector('.pricing');
+        const pricingLink = pricing.querySelector('.ct-menu-link');
+        const pricingMenu = document.querySelector('.pricing-sub-menu');
+
+        pricingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            pricingMenu.classList.toggle('active');
+        });
+    </script>
+    </body>
+
+</html>

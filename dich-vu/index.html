@@ -1,0 +1,3256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+
+    <title>Web Agency – Just another WordPress site</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        .pricing-sub-menu {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            background: #fff;
+            padding: 0.75rem 1rem !important;
+            width: max-content;
+            color: black !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .pricing-sub-menu.active {
+            display: block;
+            opacity: 1;
+        }
+
+        nav[aria-label='Pagination Navigation'] {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .line-clamp-1 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+
+        .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .line-clamp-3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .order_right {
+            order: 3 !important;
+        }
+
+        @media only screen and (max-width: 689px) {
+            .custom-mobile {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tam_nhin {
+                order: 1 !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://drumie.com/assets/global.css" media="all">
+        <style>
+        img:is([sizes="auto" i],
+        [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+
+    
+    <link rel="stylesheet" id="ugb-style-css-css" href="https://drumie.com/assets/frontend_blocks.css" media="all">
+    <link rel="stylesheet" href="https://drumie.com/assets/block/ugb-style-css-inline-css.css" media="all">
+    <style id="ugb-style-css-inline-css">
+        :root {
+            --stk-block-width-default-detected: 1290px;
+        }
+
+        #start-resizable-editor-section {
+            display: none
+        }
+
+        @media only screen and (min-width:1000px) {
+            :where(.has-text-align-left) .stk-block-divider {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            :where(.has-text-align-right) .stk-block-divider {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            :where(.has-text-align-center) .stk-block-divider {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-center {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-right {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-left {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            .stk-block-feature>*>.stk-row {
+                flex-wrap: var(--stk-feature-flex-wrap, nowrap)
+            }
+
+            .stk-row {
+                flex-wrap: nowrap
+            }
+
+            .stk--hide-desktop,
+            .stk--hide-desktop.stk-block {
+                display: none !important
+            }
+        }
+
+        @media only screen and (min-width:690px) {
+            :where(body:not(.wp-admin) .stk-block-column:first-child:nth-last-child(2)) {
+                flex: 1 1 calc(50% - var(--stk-column-gap, 0px)*1/2) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(2):last-child) {
+                flex: 1 1 calc(50% - var(--stk-column-gap, 0px)*1/2) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:first-child:nth-last-child(3)) {
+                flex: 1 1 calc(33.33333% - var(--stk-column-gap, 0px)*2/3) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(2):nth-last-child(2)) {
+                flex: 1 1 calc(33.33333% - var(--stk-column-gap, 0px)*2/3) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(3):last-child) {
+                flex: 1 1 calc(33.33333% - var(--stk-column-gap, 0px)*2/3) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:first-child:nth-last-child(4)) {
+                flex: 1 1 calc(25% - var(--stk-column-gap, 0px)*3/4) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(2):nth-last-child(3)) {
+                flex: 1 1 calc(25% - var(--stk-column-gap, 0px)*3/4) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(3):nth-last-child(2)) {
+                flex: 1 1 calc(25% - var(--stk-column-gap, 0px)*3/4) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(4):last-child) {
+                flex: 1 1 calc(25% - var(--stk-column-gap, 0px)*3/4) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:first-child:nth-last-child(5)) {
+                flex: 1 1 calc(20% - var(--stk-column-gap, 0px)*4/5) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(2):nth-last-child(4)) {
+                flex: 1 1 calc(20% - var(--stk-column-gap, 0px)*4/5) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(3):nth-last-child(3)) {
+                flex: 1 1 calc(20% - var(--stk-column-gap, 0px)*4/5) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(4):nth-last-child(2)) {
+                flex: 1 1 calc(20% - var(--stk-column-gap, 0px)*4/5) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(5):last-child) {
+                flex: 1 1 calc(20% - var(--stk-column-gap, 0px)*4/5) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:first-child:nth-last-child(6)) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(2):nth-last-child(5)) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(3):nth-last-child(4)) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(4):nth-last-child(3)) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(5):nth-last-child(2)) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            :where(body:not(.wp-admin) .stk-block-column:nth-child(6):last-child) {
+                flex: 1 1 calc(16.66667% - var(--stk-column-gap, 0px)*5/6) !important
+            }
+
+            .stk-block-tabs>.stk-inner-blocks.stk-block-tabs--vertical {
+                grid-template-columns: auto 1fr auto
+            }
+
+            .stk-block-tabs>.stk-inner-blocks.stk-block-tabs--vertical>.stk-block-tab-labels:first-child {
+                grid-column: 1/2
+            }
+
+            .stk-block-tabs>.stk-inner-blocks.stk-block-tabs--vertical>.stk-block-tab-content:last-child {
+                grid-column: 2/4
+            }
+
+            .stk-block-tabs>.stk-inner-blocks.stk-block-tabs--vertical>.stk-block-tab-content:first-child {
+                grid-column: 1/3
+            }
+
+            .stk-block-tabs>.stk-inner-blocks.stk-block-tabs--vertical>.stk-block-tab-labels:last-child {
+                grid-column: 3/4
+            }
+
+            .stk-block .stk-block.aligncenter,
+            .stk-block-carousel:is(.aligncenter, .alignwide, .alignfull)>:where(.stk-block-carousel__content-wrapper)>.stk-content-align:not(.alignwide):not(.alignfull),
+            .stk-block:is(.aligncenter, .alignwide, .alignfull)>.stk-content-align:not(.alignwide):not(.alignfull) {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: var(--stk-block-default-width, var(--stk-block-width-default-detected, 900px));
+                width: 100%
+            }
+
+            .stk-block .stk-block.alignwide,
+            .stk-block-carousel:is(.aligncenter, .alignwide, .alignfull)>:where(.stk-block-carousel__content-wrapper)>.stk-content-align.alignwide,
+            .stk-block:is(.aligncenter, .alignwide, .alignfull)>.stk-content-align.alignwide {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: var(--stk-block-wide-width, var(--stk-block-width-wide-detected, 80vw));
+                width: 100%
+            }
+
+            .stk-row.stk-columns-2>.stk-column {
+                flex: 1 1 50%;
+                max-width: 50%
+            }
+
+            .stk-row.stk-columns-3>.stk-column {
+                flex: 1 1 33.3333333333%;
+                max-width: 33.3333333333%
+            }
+
+            .stk-row.stk-columns-4>.stk-column {
+                flex: 1 1 25%;
+                max-width: 25%
+            }
+
+            .stk-row.stk-columns-5>.stk-column {
+                flex: 1 1 20%;
+                max-width: 20%
+            }
+
+            .stk-row.stk-columns-6>.stk-column {
+                flex: 1 1 16.6666666667%;
+                max-width: 16.6666666667%
+            }
+
+            .stk-row.stk-columns-7>.stk-column {
+                flex: 1 1 14.2857142857%;
+                max-width: 14.2857142857%
+            }
+
+            .stk-row.stk-columns-8>.stk-column {
+                flex: 1 1 12.5%;
+                max-width: 12.5%
+            }
+
+            .stk-row.stk-columns-9>.stk-column {
+                flex: 1 1 11.1111111111%;
+                max-width: 11.1111111111%
+            }
+
+            .stk-row.stk-columns-10>.stk-column {
+                flex: 1 1 10%;
+                max-width: 10%
+            }
+        }
+
+        @media only screen and (min-width:690px) and (max-width:999px) {
+            .stk-button-group:is(.stk--collapse-on-tablet)>.block-editor-inner-blocks>.block-editor-block-list__layout>[data-block] {
+                margin-inline-end: var(--stk-alignment-margin-right);
+                margin-inline-start: var(--stk-alignment-margin-left)
+            }
+
+            :where(.has-text-align-left-tablet) .stk-block-divider {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            :where(.has-text-align-right-tablet) .stk-block-divider {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            :where(.has-text-align-center-tablet) .stk-block-divider {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk--hide-tablet,
+            .stk--hide-tablet.stk-block {
+                display: none !important
+            }
+
+            .stk-button-group:is(.stk--collapse-on-tablet) .stk-block:is(.stk-block-button, .stk-block-icon-button) {
+                margin-inline-end: var(--stk-alignment-margin-right);
+                margin-inline-start: var(--stk-alignment-margin-left)
+            }
+        }
+
+        @media only screen and (max-width:999px) {
+            .stk-block-button {
+                min-width: -moz-fit-content;
+                min-width: fit-content
+            }
+
+            .stk-block.stk-block-divider.has-text-align-center-tablet {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-right-tablet {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-left-tablet {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            .has-text-align-center-tablet {
+                --stk-alignment-padding-left: 0;
+                --stk-alignment-justify-content: center;
+                --stk-alignment-text-align: center;
+                --stk-alignment-margin-left: auto;
+                --stk-alignment-margin-right: auto;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-left-tablet {
+                --stk-alignment-justify-content: flex-start;
+                --stk-alignment-text-align: start;
+                --stk-alignment-margin-left: 0;
+                --stk-alignment-margin-right: auto;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-right-tablet {
+                --stk-alignment-justify-content: flex-end;
+                --stk-alignment-text-align: end;
+                --stk-alignment-margin-left: auto;
+                --stk-alignment-margin-right: 0;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-justify-tablet {
+                --stk-alignment-text-align: justify
+            }
+
+            .has-text-align-space-between-tablet {
+                --stk-alignment-justify-content: space-between
+            }
+
+            .has-text-align-space-around-tablet {
+                --stk-alignment-justify-content: space-around
+            }
+
+            .has-text-align-space-evenly-tablet {
+                --stk-alignment-justify-content: space-evenly
+            }
+
+            .stk-block-timeline.stk-block-timeline__ios-polyfill {
+                --fixed-bg: linear-gradient(to bottom, var(--line-accent-bg-color, #000) 0, var(--line-accent-bg-color-2, #000) var(--line-accent-bg-location, 50%))
+            }
+        }
+
+        @media only screen and (max-width:689px) {
+
+            .stk-button-group:is(.stk--collapse-on-mobile)>.block-editor-inner-blocks>.block-editor-block-list__layout>[data-block],
+            .stk-button-group:is(.stk--collapse-on-tablet)>.block-editor-inner-blocks>.block-editor-block-list__layout>[data-block] {
+                margin-inline-end: var(--stk-alignment-margin-right);
+                margin-inline-start: var(--stk-alignment-margin-left)
+            }
+
+            .entry-content .stk-block.stk-has-top-separator {
+                padding-top: 23vw
+            }
+
+            .entry-content .stk-block.stk-has-bottom-separator {
+                padding-bottom: 23vw
+            }
+
+            .entry-content .stk-block .stk-separator__wrapper {
+                height: 23vw
+            }
+
+            .stk-block-carousel.stk--hide-mobile-arrows>.stk-block-carousel__content-wrapper>*>.stk-block-carousel__buttons,
+            .stk-block-carousel.stk--hide-mobile-dots>.stk-block-carousel__content-wrapper>.stk-block-carousel__dots {
+                display: none
+            }
+
+            :where(.has-text-align-left-mobile) .stk-block-divider {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            :where(.has-text-align-right-mobile) .stk-block-divider {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            :where(.has-text-align-center-mobile) .stk-block-divider {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-center-mobile {
+                --stk-dots-margin-right: auto;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-right-mobile {
+                --stk-dots-margin-right: 0;
+                --stk-dots-margin-left: auto
+            }
+
+            .stk-block.stk-block-divider.has-text-align-left-mobile {
+                --stk-dots-margin-left: 0;
+                --stk-dots-margin-right: auto
+            }
+
+            .stk-block.stk-block-feature:is(.is-style-default, .is-style-horizontal)>.stk-container>.stk-inner-blocks.stk-block-content {
+                flex-direction: column-reverse
+            }
+
+            .stk-block-posts {
+                --stk-columns: 1
+            }
+
+            .stk-block-tab-labels:not(.stk-block-tab-labels--wrap-mobile) {
+                overflow-x: auto !important;
+                width: 100%
+            }
+
+            .stk-block-tab-labels:not(.stk-block-tab-labels--wrap-mobile)::-webkit-scrollbar {
+                height: 0 !important
+            }
+
+            .stk-block-tab-labels:not(.stk-block-tab-labels--wrap-mobile) .stk-block-tab-labels__wrapper {
+                flex-wrap: nowrap;
+                min-width: -webkit-fill-available;
+                min-width: fill-available;
+                width: max-content
+            }
+
+            .stk-block-tabs>.stk-inner-blocks {
+                grid-template-columns: 1fr
+            }
+
+            .stk-block-tabs>.stk-inner-blocks>.stk-block-tab-labels:last-child {
+                grid-row: 1/2
+            }
+
+            :root {
+                --stk-block-margin-bottom: 16px;
+                --stk-column-margin: 8px;
+                --stk-container-padding: 24px;
+                --stk-container-padding-large: 32px 24px;
+                --stk-container-padding-small: 8px 24px;
+                --stk-block-background-padding: 16px
+            }
+
+            .stk-block .stk-block:is(.aligncenter, .alignwide),
+            .stk-block:is(.aligncenter, .alignwide, .alignfull)>.stk-content-align.alignwide,
+            .stk-block:is(.aligncenter, .alignwide, .alignfull)>.stk-content-align:not(.alignwide):not(.alignfull) {
+                width: 100%
+            }
+
+            .stk-column {
+                flex: 1 1 100%;
+                max-width: 100%
+            }
+
+            .stk--hide-mobile,
+            .stk--hide-mobile.stk-block {
+                display: none !important
+            }
+
+            .stk-button-group:is(.stk--collapse-on-mobile) .stk-block:is(.stk-block-button, .stk-block-icon-button),
+            .stk-button-group:is(.stk--collapse-on-tablet) .stk-block:is(.stk-block-button, .stk-block-icon-button) {
+                margin-inline-end: var(--stk-alignment-margin-right);
+                margin-inline-start: var(--stk-alignment-margin-left)
+            }
+
+            .has-text-align-center-mobile {
+                --stk-alignment-padding-left: 0;
+                --stk-alignment-justify-content: center;
+                --stk-alignment-text-align: center;
+                --stk-alignment-margin-left: auto;
+                --stk-alignment-margin-right: auto;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-left-mobile {
+                --stk-alignment-justify-content: flex-start;
+                --stk-alignment-text-align: start;
+                --stk-alignment-margin-left: 0;
+                --stk-alignment-margin-right: auto;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-right-mobile {
+                --stk-alignment-justify-content: flex-end;
+                --stk-alignment-text-align: end;
+                --stk-alignment-margin-left: auto;
+                --stk-alignment-margin-right: 0;
+                text-align: var(--stk-alignment-text-align, start)
+            }
+
+            .has-text-align-justify-mobile {
+                --stk-alignment-text-align: justify
+            }
+
+            .has-text-align-space-between-mobile {
+                --stk-alignment-justify-content: space-between
+            }
+
+            .has-text-align-space-around-mobile {
+                --stk-alignment-justify-content: space-around
+            }
+
+            .has-text-align-space-evenly-mobile {
+                --stk-alignment-justify-content: space-evenly
+            }
+
+            .stk-block.stk-block-timeline {
+                --content-line: 0 !important;
+                padding-top: 0
+            }
+
+            .stk-block-timeline>.stk-inner-blocks {
+                align-items: flex-start;
+                grid-template-columns: var(--line-dot-size, 16px) 1fr;
+                grid-template-rows: auto 1fr;
+                padding-left: 16px
+            }
+
+            .stk-block-timeline>.stk-inner-blocks:after {
+                inset-inline-start: calc(var(--line-dot-size, 16px)/2 - var(--line-bg-width, 3px)/2 + 16px)
+            }
+
+            .stk-block-timeline .stk-block-timeline__middle {
+                inset-block-start: 8px;
+                inset-inline-start: 16px;
+                position: absolute
+            }
+
+            .stk-block-timeline .stk-block-timeline__content {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                text-align: start
+            }
+
+            .stk-block-timeline .stk-block-timeline__date {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                text-align: start
+            }
+
+            .stk-block-timeline>.stk-inner-blocks:after {
+                bottom: calc(100% - var(--line-dot-size, 16px)/2 - .5em);
+                top: calc(var(--line-dot-size, 16px)/2 + .5em)
+            }
+
+            .stk-block-timeline+.stk-block-timeline>.stk-inner-blocks:after {
+                top: -16px
+            }
+        }
+
+        #end-resizable-editor-section {
+            display: none
+        }
+    </style>
+    <style id="ugb-style-css-nodep-inline-css">
+        /* Global Color Schemes (background-scheme-default-3) */
+        .stk--background-scheme--scheme-default-3 {
+            --stk-block-background-color: #0f0e17;
+            --stk-heading-color: #fffffe;
+            --stk-text-color: #fffffe;
+            --stk-link-color: #f00069;
+            --stk-accent-color: #f00069;
+            --stk-subtitle-color: #f00069;
+            --stk-button-background-color: #f00069;
+            --stk-button-text-color: #fffffe;
+            --stk-button-outline-color: #fffffe;
+        }
+
+        /* Global Color Schemes (container-scheme-default-3) */
+        .stk--container-scheme--scheme-default-3 {
+            --stk-container-background-color: #0f0e17;
+            --stk-heading-color: #fffffe;
+            --stk-text-color: #fffffe;
+            --stk-link-color: #f00069;
+            --stk-accent-color: #f00069;
+            --stk-subtitle-color: #f00069;
+            --stk-button-background-color: #f00069;
+            --stk-button-text-color: #fffffe;
+            --stk-button-outline-color: #fffffe;
+        }
+
+        /* Global Preset Controls */
+        :root {
+            --stk--preset--font-size--small: var(--wp--preset--font-size--small);
+            --stk--preset--font-size--medium: var(--wp--preset--font-size--medium);
+            --stk--preset--font-size--large: var(--wp--preset--font-size--large);
+            --stk--preset--font-size--x-large: var(--wp--preset--font-size--x-large);
+            --stk--preset--font-size--xx-large: var(--wp--preset--font-size--xx-large);
+            --stk--preset--spacing--20: var(--wp--preset--spacing--20);
+            --stk--preset--spacing--30: var(--wp--preset--spacing--30);
+            --stk--preset--spacing--40: var(--wp--preset--spacing--40);
+            --stk--preset--spacing--50: var(--wp--preset--spacing--50);
+            --stk--preset--spacing--60: var(--wp--preset--spacing--60);
+            --stk--preset--spacing--70: var(--wp--preset--spacing--70);
+            --stk--preset--spacing--80: var(--wp--preset--spacing--80);
+        }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" href="https://drumie.com/assets/style.min.css" media="all">
+    <style id="global-styles-inline-css">
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--palette-color-1: var(--theme-palette-color-1, #ffd800);
+            --wp--preset--color--palette-color-2: var(--theme-palette-color-2, #ffc900);
+            --wp--preset--color--palette-color-3: var(--theme-palette-color-3, #5a5a5a);
+            --wp--preset--color--palette-color-4: var(--theme-palette-color-4, #000000);
+            --wp--preset--color--palette-color-5: var(--theme-palette-color-5, #edeff2);
+            --wp--preset--color--palette-color-6: var(--theme-palette-color-6, #f9fafb);
+            --wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FDFDFD);
+            --wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            --wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            --wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+            --wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            --wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            --wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            --wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+            --wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+            --wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+            --wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+            --wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+            --wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            --wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+            --wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            --wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            --wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+            --wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+            --wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+            --wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);
+            --wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+            --wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);
+            --wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+            --wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+            --wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+            --wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+            --wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            --wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+            --wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+            --wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+            --wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+            --wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            --wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+            --wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            --wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            --wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+            --wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+            --wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+            --wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+            --wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            --wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+            --wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            --wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);
+            --wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);
+            --wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :root {
+            --wp--style--global--content-size: var(--theme-block-max-width);
+            --wp--style--global--wide-size: var(--theme-block-wide-max-width);
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: var(--theme-content-spacing);
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-color {
+            color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-color {
+            color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-color {
+            color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-color {
+            color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-color {
+            color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-color {
+            color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-color {
+            color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-color {
+            color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-background-color {
+            background-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-background-color {
+            background-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-background-color {
+            background-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-background-color {
+            background-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-background-color {
+            background-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-background-color {
+            background-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-background-color {
+            background-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-background-color {
+            background-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-border-color {
+            border-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-border-color {
+            border-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-border-color {
+            border-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-border-color {
+            border-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-border-color {
+            border-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-border-color {
+            border-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-border-color {
+            border-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-border-color {
+            border-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-juicy-peach-gradient-background {
+            background: var(--wp--preset--gradient--juicy-peach) !important;
+        }
+
+        .has-young-passion-gradient-background {
+            background: var(--wp--preset--gradient--young-passion) !important;
+        }
+
+        .has-true-sunset-gradient-background {
+            background: var(--wp--preset--gradient--true-sunset) !important;
+        }
+
+        .has-morpheus-den-gradient-background {
+            background: var(--wp--preset--gradient--morpheus-den) !important;
+        }
+
+        .has-plum-plate-gradient-background {
+            background: var(--wp--preset--gradient--plum-plate) !important;
+        }
+
+        .has-aqua-splash-gradient-background {
+            background: var(--wp--preset--gradient--aqua-splash) !important;
+        }
+
+        .has-love-kiss-gradient-background {
+            background: var(--wp--preset--gradient--love-kiss) !important;
+        }
+
+        .has-new-retrowave-gradient-background {
+            background: var(--wp--preset--gradient--new-retrowave) !important;
+        }
+
+        .has-plum-bath-gradient-background {
+            background: var(--wp--preset--gradient--plum-bath) !important;
+        }
+
+        .has-high-flight-gradient-background {
+            background: var(--wp--preset--gradient--high-flight) !important;
+        }
+
+        .has-teen-party-gradient-background {
+            background: var(--wp--preset--gradient--teen-party) !important;
+        }
+
+        .has-fabled-sunset-gradient-background {
+            background: var(--wp--preset--gradient--fabled-sunset) !important;
+        }
+
+        .has-arielle-smile-gradient-background {
+            background: var(--wp--preset--gradient--arielle-smile) !important;
+        }
+
+        .has-itmeo-branding-gradient-background {
+            background: var(--wp--preset--gradient--itmeo-branding) !important;
+        }
+
+        .has-deep-blue-gradient-background {
+            background: var(--wp--preset--gradient--deep-blue) !important;
+        }
+
+        .has-strong-bliss-gradient-background {
+            background: var(--wp--preset--gradient--strong-bliss) !important;
+        }
+
+        .has-sweet-period-gradient-background {
+            background: var(--wp--preset--gradient--sweet-period) !important;
+        }
+
+        .has-purple-division-gradient-background {
+            background: var(--wp--preset--gradient--purple-division) !important;
+        }
+
+        .has-cold-evening-gradient-background {
+            background: var(--wp--preset--gradient--cold-evening) !important;
+        }
+
+        .has-mountain-rock-gradient-background {
+            background: var(--wp--preset--gradient--mountain-rock) !important;
+        }
+
+        .has-desert-hump-gradient-background {
+            background: var(--wp--preset--gradient--desert-hump) !important;
+        }
+
+        .has-ethernal-constance-gradient-background {
+            background: var(--wp--preset--gradient--ethernal-constance) !important;
+        }
+
+        .has-happy-memories-gradient-background {
+            background: var(--wp--preset--gradient--happy-memories) !important;
+        }
+
+        .has-grown-early-gradient-background {
+            background: var(--wp--preset--gradient--grown-early) !important;
+        }
+
+        .has-morning-salad-gradient-background {
+            background: var(--wp--preset--gradient--morning-salad) !important;
+        }
+
+        .has-night-call-gradient-background {
+            background: var(--wp--preset--gradient--night-call) !important;
+        }
+
+        .has-mind-crawl-gradient-background {
+            background: var(--wp--preset--gradient--mind-crawl) !important;
+        }
+
+        .has-angel-care-gradient-background {
+            background: var(--wp--preset--gradient--angel-care) !important;
+        }
+
+        .has-juicy-cake-gradient-background {
+            background: var(--wp--preset--gradient--juicy-cake) !important;
+        }
+
+        .has-rich-metal-gradient-background {
+            background: var(--wp--preset--gradient--rich-metal) !important;
+        }
+
+        .has-mole-hall-gradient-background {
+            background: var(--wp--preset--gradient--mole-hall) !important;
+        }
+
+        .has-cloudy-knoxville-gradient-background {
+            background: var(--wp--preset--gradient--cloudy-knoxville) !important;
+        }
+
+        .has-soft-grass-gradient-background {
+            background: var(--wp--preset--gradient--soft-grass) !important;
+        }
+
+        .has-saint-petersburg-gradient-background {
+            background: var(--wp--preset--gradient--saint-petersburg) !important;
+        }
+
+        .has-everlasting-sky-gradient-background {
+            background: var(--wp--preset--gradient--everlasting-sky) !important;
+        }
+
+        .has-kind-steel-gradient-background {
+            background: var(--wp--preset--gradient--kind-steel) !important;
+        }
+
+        .has-over-sun-gradient-background {
+            background: var(--wp--preset--gradient--over-sun) !important;
+        }
+
+        .has-premium-white-gradient-background {
+            background: var(--wp--preset--gradient--premium-white) !important;
+        }
+
+        .has-clean-mirror-gradient-background {
+            background: var(--wp--preset--gradient--clean-mirror) !important;
+        }
+
+        .has-wild-apple-gradient-background {
+            background: var(--wp--preset--gradient--wild-apple) !important;
+        }
+
+        .has-snow-again-gradient-background {
+            background: var(--wp--preset--gradient--snow-again) !important;
+        }
+
+        .has-confident-cloud-gradient-background {
+            background: var(--wp--preset--gradient--confident-cloud) !important;
+        }
+
+        .has-glass-water-gradient-background {
+            background: var(--wp--preset--gradient--glass-water) !important;
+        }
+
+        .has-perfect-white-gradient-background {
+            background: var(--wp--preset--gradient--perfect-white) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .has-xx-large-font-size {
+            font-size: var(--wp--preset--font-size--xx-large) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.645), 1.5em);
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" id="wpa-css-css" href="https://drumie.com/assets/wpa.css" media="all">
+    <link rel="stylesheet" id="wpforms-classic-base-css" href="https://drumie.com/assets/wpforms-base.min.css" media="all">
+    <link rel="stylesheet" id="ct-main-styles-css" href="https://drumie.com/assets/main.min.css" media="all">
+    <link rel="stylesheet" id="ct-stackable-styles-css" href="https://drumie.com/assets/stackable.min.css" media="all">
+    <link rel="stylesheet" id="ct-wpforms-styles-css" href="https://drumie.com/assets/wpforms.min.css" media="all">
+    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css" href="https://drumie.com/assets/header-account.min.css"
+        media="all">
+    <script src="https://drumie.com/assets/jquery.min.js.download" id="jquery-core-js"></script>
+    <script src="https://drumie.com/assets/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <style class="stk-block-styles">
+        .stk-f5554c3 {
+            background-color: #3c2204 !important;
+            background-image: url(https://startersites.io/blocksy/web-agency/wp-content/uploads/2021/07/hero-image-services@2x.jpg) !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            border-radius: 25px !important;
+            overflow: hidden !important;
+            padding-top: 180px !important;
+            padding-right: 80px !important;
+            padding-bottom: 150px !important;
+            padding-left: 80px !important;
+            margin-bottom: 0px !important
+        }
+
+        .stk-f5554c3:before {
+            background-color: #3c2204 !important;
+            opacity: 0.3 !important
+        }
+
+        .stk-3f739b8-container,
+        .stk-07d2bd2-container,
+        .stk-b3ddcb3-container,
+        .stk-425a78d-container,
+        .stk-e512f8a-container,
+        .stk-40b0790-container,
+        .stk-5c02eb1-container,
+        .stk-8601903-container,
+        .stk-69ab753-container,
+        .stk-8ed0dfb-container,
+        .stk-8338e59-container,
+        .stk-d35cca7-container,
+        .stk-037a2db-container,
+        .stk-8ecf38f-container,
+        .stk-eccd9c2-container {
+            margin-top: 0px !important;
+            margin-right: 0px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important
+        }
+
+        .stk-ba93f5b {
+            max-width: 45% !important;
+            margin-bottom: 0px !important
+        }
+
+        .stk-ba93f5b .stk-block-heading__text {
+            font-size: 60px !important;
+            color: var(--theme-palette-color-8, #ffffff) !important;
+            line-height: 1.1em !important
+        }
+
+        .stk-351fd8a,
+        .stk-c40b6c0,
+        .stk-eb974fe,
+        .stk-8dc1580 {
+            height: 130px !important
+        }
+
+        .stk-1dbdcfb {
+            background-color: transparent !important;
+            background-image: url(https://startersites.io/blocksy/web-agency/wp-content/uploads/2021/07/decorative-shape.svg) !important;
+            background-position: top right !important;
+            background-repeat: no-repeat !important;
+            background-size: 850px !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+            margin-bottom: 0px !important;
+            overflow: visible !important
+        }
+
+        .stk-1dbdcfb:before,
+        .stk-6b11c0a:before {
+            background-color: transparent !important;
+            opacity: 0.5 !important
+        }
+
+        :is(.stk-1dbdcfb, .stk-6b11c0a) .stk-container {
+            overflow: visible !important
+        }
+
+        .stk-806714a,
+        .stk-77d462d,
+        .stk-6ed771f,
+        .stk-3918d91,
+        .stk-48a1803,
+        .stk-1f7db38,
+        .stk-0db3662,
+        .stk-9d65ee2 {
+            margin-bottom: 16px !important
+        }
+
+        :is(.stk-806714a, .stk-77d462d, .stk-1f7db38, .stk-0db3662) .stk-block-text__text {
+            color: var(--theme-palette-color-4, #000000) !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important
+        }
+
+        .stk-715b347,
+        .stk-cab0231,
+        .stk-b4095a9,
+        .stk-d5ac8bb,
+        .stk-02d9144 {
+            margin-bottom: 8px !important
+        }
+
+        .stk-b3f9270,
+        .stk-020ab9e {
+            max-width: 700px !important;
+            margin-right: auto !important;
+            margin-bottom: 60px !important;
+            margin-left: auto !important
+        }
+
+        .stk-7cf7fcd,
+        .stk-e5e2167,
+        .stk-772a6ea,
+        .stk-11c19af,
+        .stk-b91e237 {
+            margin-bottom: 35px !important
+        }
+
+        .stk-7cf7fcd-column,
+        .stk-8f5871a-column,
+        .stk-e5e2167-column,
+        .stk-4ab6660-column {
+            --stk-column-gap: 35px !important;
+            row-gap: 35px !important
+        }
+
+        .stk-9b4620a-container,
+        .stk-838df3e-container,
+        .stk-fb77c92-container,
+        .stk-8d743ee-container {
+            margin-top: 0px !important;
+            margin-right: 0px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important;
+            padding-top: 10% !important;
+            padding-right: 10% !important;
+            padding-bottom: 10% !important;
+            padding-left: 10% !important
+        }
+
+        .stk-9b4620a,
+        .stk-838df3e,
+        .stk-fb77c92,
+        .stk-8d743ee {
+            background-color: var(--theme-palette-color-8, #ffffff) !important;
+            border-radius: 25px !important;
+            overflow: hidden !important;
+            box-shadow: 0px 20px 80px 0px rgba(193, 199, 212, 0.25) !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important
+        }
+
+        .stk-9b4620a:before,
+        .stk-838df3e:before,
+        .stk-fb77c92:before,
+        .stk-8d743ee:before,
+        .stk-0122ac5:before {
+            background-color: var(--theme-palette-color-8, #ffffff) !important
+        }
+
+        .stk-7e9764f,
+        .stk-6b83e20,
+        .stk-e90380e,
+        .stk-3776ec1,
+        .stk-15dcdba,
+        .stk-587b688 {
+            margin-bottom: 60px !important
+        }
+
+        :is(.stk-7e9764f, .stk-6b83e20, .stk-e90380e, .stk-3776ec1) .stk-img-wrapper {
+            width: 80px !important
+        }
+
+        .stk-ee03856,
+        .stk-635c200,
+        .stk-d0fed60,
+        .stk-12d2732 {
+            margin-bottom: 20px !important
+        }
+
+        .stk-2ef8d74 .stk--block-align-2ef8d74,
+        .stk-74915f7 .stk--block-align-74915f7,
+        .stk-4ab6660 .stk--block-align-4ab6660 {
+            align-items: center !important
+        }
+
+        .stk-2ef8d74,
+        .stk-74915f7,
+        .stk-e71ac8f,
+        .stk-3d35793,
+        .stk-7cc9797,
+        .stk-2f6070d,
+        .stk-a10bf44,
+        .stk-f178a71,
+        .stk-9094f2d {
+            margin-bottom: 0px !important
+        }
+
+        .stk-2ef8d74-column,
+        .stk-74915f7-column {
+            --stk-column-gap: 70px !important;
+            row-gap: 50px !important
+        }
+
+        :is(.stk-cab0231, .stk-b4095a9, .stk-02d9144) .stk-block-heading__text {
+            line-height: 1.5em !important;
+            font-weight: 800 !important
+        }
+
+        .stk-af79606-container,
+        .stk-fe71635-container,
+        .stk-09adf67-container,
+        .stk-b53d5a7-container,
+        .stk-f2dc5a7-container {
+            margin-top: 0px !important;
+            margin-right: 0px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important
+        }
+
+        :is(.stk-b3ae8ed, .stk-e459034, .stk-338b475) .stk-block-count-up__text {
+            font-size: 40px !important;
+            color: var(--theme-palette-color-2, #ffc900) !important;
+            line-height: 1em !important;
+            font-weight: 800 !important
+        }
+
+        .stk-c726d76,
+        .stk-3da243d {
+            border-style: solid !important;
+            border-color: #dfdad1 !important;
+            border-top-width: 0px !important;
+            border-right-width: 0px !important;
+            border-bottom-width: 1px !important;
+            border-left-width: 0px !important;
+            padding-bottom: 35px !important;
+            margin-bottom: 35px !important
+        }
+
+        :is(.stk-5fea759, .stk-0d74e44) .stk--svg-wrapper .stk--inner-svg svg:last-child {
+            height: 12px !important;
+            width: 12px !important
+        }
+
+        :is(.stk-5fea759, .stk-0d74e44) .stk--svg-wrapper .stk--inner-svg svg:last-child,
+        :is(.stk-5fea759, .stk-0d74e44) .stk--svg-wrapper .stk--inner-svg svg:last-child :is(g, path, rect, polygon, ellipse) {
+            fill: var(--theme-palette-color-4, #000000) !important
+        }
+
+        .stk-10bf6a5-container,
+        .stk-ed20f4a-container {
+            margin-top: 0px !important;
+            margin-right: 0px !important;
+            margin-bottom: 0px !important;
+            margin-left: 0px !important;
+            padding-top: 35px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important
+        }
+
+        .stk-6b11c0a {
+            background-color: transparent !important;
+            background-image: url(https://startersites.io/blocksy/web-agency/wp-content/uploads/2021/07/decorative-shape-2.svg) !important;
+            background-position: top left !important;
+            background-repeat: no-repeat !important;
+            background-size: 850px !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+            margin-bottom: 0px !important;
+            overflow: visible !important
+        }
+
+        .stk-e71ac8f-column {
+            --stk-column-gap: 35px !important
+        }
+
+        .stk-8601903,
+        .stk-69ab753,
+        .stk-8ed0dfb {
+            background-color: var(--theme-palette-color-8, #1f1f1f) !important;
+            border-radius: 25px !important;
+            overflow: hidden !important;
+            box-shadow: 0px 20px 80px 0px rgba(193, 199, 212, 0.25) !important;
+            padding-top: 60px !important;
+            padding-right: 35px !important;
+            padding-bottom: 60px !important;
+            padding-left: 35px !important
+        }
+
+        .stk-8601903:before,
+        .stk-69ab753:before,
+        .stk-8ed0dfb:before {
+            background-color: var(--theme-palette-color-8, #1f1f1f) !important
+        }
+
+        .stk-d777d05,
+        .stk-37087d0,
+        .stk-08dd68b {
+            margin-bottom: 10px !important
+        }
+
+        :is(.stk-d777d05, .stk-37087d0, .stk-08dd68b) .stk-block-heading__text {
+            font-size: 22px !important;
+            color: var(--theme-palette-color-4, #ffffff) !important
+        }
+
+        .stk-88e13b5,
+        .stk-0622080,
+        .stk-6fb4825 {
+            margin-bottom: 30px !important
+        }
+
+        :is(.stk-88e13b5, .stk-0622080, .stk-6fb4825) .stk-block-heading__text {
+            font-size: 70px !important;
+            line-height: 1.5em !important
+        }
+
+        :is(.stk-81f4214, .stk-12f3650, .stk-1578fb3) ul li,
+        :is(.stk-81f4214, .stk-12f3650, .stk-1578fb3) ol li {
+            color: var(--theme-palette-color-4, #ffffff) !important;
+            font-weight: 500 !important
+        }
+
+        .stk-81f4214,
+        .stk-12f3650 {
+            margin-bottom: 16px !important;
+            column-gap: 0px !important
+        }
+
+        :is(.stk-81f4214, .stk-772a6ea, .stk-12f3650, .stk-11c19af, .stk-1578fb3) li {
+            padding-inline-start: 10px !important;
+            margin-bottom: 16px !important
+        }
+
+        :is(.stk-81f4214, .stk-12f3650, .stk-1578fb3) ul li {
+            list-style-image: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaGVjayIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNoZWNrIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImZpbGw6ICNmZmQ4MDAgIWltcG9ydGFudDsgY29sb3I6ICNmZmQ4MDAgIWltcG9ydGFudDt0cmFuc2Zvcm06IHJvdGF0ZShkZWcpICFpbXBvcnRhbnQ7Ij48cGF0aCBmaWxsPSIjZmZkODAwIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6IiBzdHJva2U9IiNmZmQ4MDAiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyMTYsIDApOyBzdHJva2U6IHJnYigyNTUsIDIxNiwgMCk7Ii8+PC9zdmc+') !important
+        }
+
+        :is(.stk-81f4214, .stk-12f3650, .stk-1578fb3) li::marker {
+            color: var(--theme-palette-color-1, #ffd800) !important;
+            font-size: 2em !important
+        }
+
+        :is(.stk-772a6ea, .stk-11c19af) ul li,
+        :is(.stk-772a6ea, .stk-11c19af) ol li {
+            color: var(--theme-palette-color-3, #898989) !important;
+            font-weight: 500 !important
+        }
+
+        :is(.stk-772a6ea, .stk-11c19af) ul li {
+            list-style-image: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJ0aW1lcyIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXRpbWVzIGZhLXctMTEiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzUyIDUxMiIgc3R5bGU9ImZpbGw6ICM4OTg5ODkgIWltcG9ydGFudDsgY29sb3I6ICM4OTg5ODkgIWltcG9ydGFudDt0cmFuc2Zvcm06IHJvdGF0ZShkZWcpICFpbXBvcnRhbnQ7Ij48cGF0aCBmaWxsPSIjODk4OTg5IiBkPSJNMjQyLjcyIDI1NmwxMDAuMDctMTAwLjA3YzEyLjI4LTEyLjI4IDEyLjI4LTMyLjE5IDAtNDQuNDhsLTIyLjI0LTIyLjI0Yy0xMi4yOC0xMi4yOC0zMi4xOS0xMi4yOC00NC40OCAwTDE3NiAxODkuMjggNzUuOTMgODkuMjFjLTEyLjI4LTEyLjI4LTMyLjE5LTEyLjI4LTQ0LjQ4IDBMOS4yMSAxMTEuNDVjLTEyLjI4IDEyLjI4LTEyLjI4IDMyLjE5IDAgNDQuNDhMMTA5LjI4IDI1NiA5LjIxIDM1Ni4wN2MtMTIuMjggMTIuMjgtMTIuMjggMzIuMTkgMCA0NC40OGwyMi4yNCAyMi4yNGMxMi4yOCAxMi4yOCAzMi4yIDEyLjI4IDQ0LjQ4IDBMMTc2IDMyMi43MmwxMDAuMDcgMTAwLjA3YzEyLjI4IDEyLjI4IDMyLjIgMTIuMjggNDQuNDggMGwyMi4yNC0yMi4yNGMxMi4yOC0xMi4yOCAxMi4yOC0zMi4xOSAwLTQ0LjQ4TDI0Mi43MiAyNTZ6IiBzdHJva2U9IiM4OTg5ODkiIHN0eWxlPSJmaWxsOiByZ2IoMTM3LCAxMzcsIDEzNyk7IHN0cm9rZTogcmdiKDEzNywgMTM3LCAxMzcpOyIvPjwvc3ZnPg==') !important
+        }
+
+        :is(.stk-772a6ea, .stk-11c19af) li::marker {
+            color: var(--theme-palette-color-3, #898989) !important;
+            font-size: 2em !important
+        }
+
+        :is(.stk-ce9a523, .stk-3dacc17, .stk-bdfe13a) .stk-button {
+            padding-top: 14px !important;
+            padding-right: 40px !important;
+            padding-bottom: 14px !important;
+            padding-left: 40px !important;
+            background: var(--theme-palette-color-1, #e65616) !important;
+            border-radius: 15px !important
+        }
+
+        :is(.stk-ce9a523, .stk-3dacc17, .stk-bdfe13a) .stk-button__inner-text {
+            font-size: 15px !important;
+            font-weight: bold !important;
+            text-transform: uppercase !important
+        }
+
+        .stk-1578fb3 {
+            margin-bottom: 35px !important;
+            column-gap: 0px !important
+        }
+
+        .stk-c11f087,
+        .stk-baee3d4 {
+            height: 100px !important
+        }
+
+        :is(.stk-a10bf44, .stk-9094f2d) hr.stk-block-divider__hr {
+            background: var(--theme-palette-color-5, #edeff2) !important;
+            width: 100% !important
+        }
+
+        .stk-4ab6660 {
+            margin-top: 50px !important;
+            margin-bottom: 50px !important
+        }
+
+        .stk-9d65ee2 .stk-block-count-up__text {
+            font-size: 40px !important;
+            color: var(--theme-palette-color-1, #ffd800) !important;
+            line-height: 1em !important;
+            font-weight: 800 !important
+        }
+
+        .stk-f178a71 .stk-block-text__text {
+            color: var(--theme-palette-color-4, #000000) !important;
+            font-weight: 600 !important
+        }
+
+        .stk-0122ac5 {
+            background-color: var(--theme-palette-color-8, #ffffff) !important;
+            background-position: center left !important;
+            background-repeat: no-repeat !important;
+            background-size: 700px !important;
+            border-radius: 25px !important;
+            overflow: hidden !important;
+            box-shadow: 0px 20px 80px 0px rgba(193, 199, 212, 0.25) !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+            margin-bottom: 0px !important
+        }
+
+        .stk-deb048a-container {
+            margin-top: 0px !important;
+            margin-right: auto !important;
+            margin-bottom: 0px !important;
+            margin-left: auto !important;
+            max-width: 60% !important
+        }
+
+        .stk-deb048a {
+            padding-top: 10% !important;
+            padding-right: 5% !important;
+            padding-bottom: 10% !important;
+            padding-left: 5% !important
+        }
+
+        .stk-b91e237 .stk-block-text__text {
+            font-size: 20px !important
+        }
+
+        .stk-d06d64e {
+            height: 90px !important
+        }
+
+        @media screen and (min-width:690px) and (max-width:999px) {
+
+            .stk-8601903,
+            .stk-69ab753 {
+                flex: 0 1 calc(33% - var(--stk-column-gap, 0px) * 2 / 3) !important
+            }
+
+            .stk-8ed0dfb {
+                flex: 0 1 calc(34% - var(--stk-column-gap, 0px) * 2 / 3) !important
+            }
+        }
+
+        @media screen and (max-width:999px) {
+            .stk-ba93f5b {
+                max-width: 100% !important
+            }
+
+            .stk-ba93f5b .stk-block-heading__text {
+                font-size: 40px !important
+            }
+
+            .stk-351fd8a,
+            .stk-c40b6c0,
+            .stk-eb974fe,
+            .stk-8dc1580 {
+                height: 70px !important
+            }
+
+            .stk-1dbdcfb,
+            .stk-6b11c0a {
+                background-size: 600px !important
+            }
+
+            :is(.stk-715b347, .stk-cab0231, .stk-b4095a9, .stk-d5ac8bb, .stk-02d9144) .stk-block-heading__text,
+            .stk-9d65ee2 .stk-block-count-up__text {
+                font-size: 30px !important
+            }
+
+            .stk-7e9764f,
+            .stk-6b83e20,
+            .stk-e90380e,
+            .stk-3776ec1 {
+                margin-bottom: 40px !important
+            }
+
+            :is(.stk-7e9764f, .stk-6b83e20, .stk-e90380e, .stk-3776ec1) .stk-img-wrapper {
+                width: 65px !important
+            }
+
+            .stk-425a78d-container {
+                padding-left: 0px !important
+            }
+
+            :is(.stk-6ed771f, .stk-3918d91, .stk-48a1803) .stk-block-heading__text {
+                font-size: 16px !important
+            }
+
+            :is(.stk-b3ae8ed, .stk-e459034, .stk-338b475) .stk-block-count-up__text {
+                font-size: 25px !important
+            }
+
+            .stk-74915f7 .stk--block-align-74915f7 {
+                align-items: flex-start !important
+            }
+
+            .stk-e512f8a-container {
+                padding-right: 0px !important
+            }
+
+            .stk-e71ac8f-column {
+                row-gap: 35px !important
+            }
+
+            :is(.stk-d777d05, .stk-37087d0, .stk-08dd68b) .stk-block-heading__text {
+                font-size: 22px !important
+            }
+
+            :is(.stk-88e13b5, .stk-0622080, .stk-6fb4825) .stk-block-heading__text {
+                font-size: 50px !important
+            }
+
+            :is(.stk-ce9a523, .stk-3dacc17, .stk-bdfe13a) .stk-button__inner-text {
+                font-size: 15px !important
+            }
+
+            .stk-c11f087,
+            .stk-baee3d4 {
+                height: 50px !important
+            }
+
+            .stk-0122ac5 {
+                background-position: top center !important;
+                background-size: 400px !important
+            }
+
+            .stk-deb048a-container {
+                max-width: 80% !important
+            }
+
+            .stk-b91e237 .stk-block-text__text {
+                font-size: 20px !important
+            }
+        }
+
+        @media screen and (max-width:689px) {
+            .stk-f5554c3 {
+                padding-top: 100px !important;
+                padding-right: 25px !important;
+                padding-bottom: 60px !important;
+                padding-left: 25px !important
+            }
+
+            .stk-ba93f5b .stk-block-heading__text {
+                font-size: 30px !important
+            }
+
+            .stk-1dbdcfb,
+            .stk-6b11c0a {
+                background-size: 400px !important
+            }
+
+            :is(.stk-715b347, .stk-cab0231, .stk-b4095a9, .stk-d5ac8bb, .stk-02d9144) .stk-block-heading__text {
+                font-size: 25px !important
+            }
+
+            .stk-b3f9270,
+            .stk-020ab9e {
+                margin-bottom: 24px !important
+            }
+
+            .stk-425a78d-container,
+            .stk-e512f8a-container {
+                padding-left: 0px !important
+            }
+
+            .stk-15dcdba,
+            .stk-d777d05,
+            .stk-37087d0,
+            .stk-08dd68b {
+                margin-bottom: 35px !important
+            }
+
+            .stk-88e13b5,
+            .stk-0622080,
+            .stk-6fb4825 {
+                margin-bottom: 40px !important
+            }
+
+            .stk-deb048a {
+                padding-top: 10% !important;
+                padding-right: 10% !important;
+                padding-bottom: 10% !important;
+                padding-left: 10% !important
+            }
+
+            .stk-deb048a-container {
+                max-width: 100% !important
+            }
+
+            .stk-d06d64e {
+                height: 70px !important
+            }
+        }
+    </style>
+    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+
+</head>
+
+
+<body
+    class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
+    data-link="type-2" data-prefix="single_page" data-header="type-1:sticky" data-footer="type-1">
+
+    <div data-rocket-location-hash="6ca16749434ffeb6798230cf77b3e4ff" class="ct-drawer-canvas" data-location="start">
+        <div data-rocket-location-hash="acd6a28fd2ca5c0a76550d90db42be32" id="offcanvas" class="ct-panel ct-header"
+            data-behaviour="modal" role="dialog" aria-label="Offcanvas modal" inert="">
+            <div data-rocket-location-hash="79dc0a17d75ed337f37e2b08b92b5134" class="ct-panel-actions">
+
+                <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+                    <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+                        <path
+                            d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div data-rocket-location-hash="0f43dfbd9ae87fd5d0585f1a8f8a8349" class="ct-panel-content"
+                data-device="desktop">
+                <div class="ct-panel-content-inner"></div>
+            </div>
+            <div data-rocket-location-hash="bece1ae6d45638fbcee2f115434c8182" class="ct-panel-content" data-device="mobile">
+    <div class="ct-panel-content-inner">
+        <div class="ct-header-text " data-id="text">
+            <div class="entry-content is-layout-flow">
+                
+                    Azwebsoft
+            </div>
+        </div>
+
+        <nav class="mobile-menu menu-container" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1"
+            data-submenu-dots="yes" aria-label="Main Menu">
+
+            <ul id="menu-main-menu-1" class="">
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                    <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                </li>
+                <li
+                    class=" current-menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                    <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                    <a href="https://drumie.com/tin-tuc" class="ct-menu-link">Tin tức</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                    <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                </li>
+                <hr />
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/thiet-ke-web" class="ct-menu-link">Bảng giá thiết kế web</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/dich-vu-seo" class="ct-menu-link">Bảng giá dịch vụ SEO</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo" class="ct-menu-link">Bảng giá content
+                        writing</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="ct-header-cta" data-id="button">
+            <a href="tel:0915452237" class="ct-button" data-size="medium" aria-label="Tư vấn: 0915452237">
+                Tư vấn: 0915452237</a>
+        </div>
+
+        <div class="ct-header-socials " data-id="socials">
+
+
+            <div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="rounded:outline">
+
+
+
+                <a href="#" data-network="facebook" aria-label="Facebook">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="instagram" aria-label="Instagram">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <circle cx="10" cy="10" r="3.3"></circle>
+                            <path
+                                d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="youtube" aria-label="YouTube">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div data-rocket-location-hash="dabd21537b68211e9f9db0f1c516c864" id="main-container">
+        <header data-rocket-location-hash="ec79a8b50d7f14dc6444bd8a706b2130" id="header" class="ct-header"
+            data-id="type-1">
+            <div data-rocket-location-hash="252865cd7eec5ce9cb808c3bd99dc248" data-device="desktop">
+    <div class="ct-sticky-container" style="height: 120px;">
+        <div data-sticky="fixed:shrink">
+            <div data-row="middle" data-column-set="2">
+                <div class="ct-container">
+                    <div data-column="start" data-placements="1">
+                        <div data-items="primary" style="">
+                            <div class="site-branding" data-id="logo">
+                                <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                    itemprop="url">Azwebsoft</a>
+                            </div>
+
+
+                            <nav id="header-menu-1" class="header-menu-1 menu-container" data-id="menu"
+                                data-interaction="hover" data-menu="type-2:center" data-dropdown="type-1:simple"
+                                data-responsive="yes" aria-label="Main Menu">
+
+                                <ul id="menu-main-menu" class="menu">
+                                    <li id="menu-item-897"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                                        <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-900"
+                                        class=" current-menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                                        <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                                    </li>
+                                    <li id="menu-item-898"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                                        <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                                    </li>
+                                    <li id="menu-item-563"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="https://drumie.com/tin-tuc" class="ct-menu-link">Tin tức</a>
+                                    </li>
+                                    <li style="position: relative;"
+                                        class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="" class="ct-menu-link">Bảng giá</a>
+                                        <ul class="pricing-sub-menu">
+                                            <li id="menu-item-pricing-web"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-web">
+                                                <a href="https://drumie.com/bang-gia/thiet-ke-web">Thiết kế website</a>
+                                            </li>
+                                            <li id="menu-item-pricing-seo"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-seo">
+                                                <a href="https://drumie.com/bang-gia/dich-vu-seo">Dịch vụ SEO</a>
+                                            </li>
+                                            <li id="menu-item-pricing-marketing"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-marketing">
+                                                <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo">Content Writing</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-899"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                                        <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div data-column="end" data-placements="1">
+                        <div data-items="primary">
+                            <div class="ct-header-cta" data-id="button">
+                                <a href="tel:0915452237" class="ct-button" data-size="medium"
+                                    aria-label="Tư vấn: 0915452237">
+                                    Tư vấn: 0915452237</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div data-rocket-location-hash="e23057b5ce826268727143abf068948f" data-device="mobile">
+                <div class="ct-sticky-container">
+                    <div data-sticky="shrink">
+                        <div data-row="middle" data-column-set="2">
+                            <div class="ct-container">
+                                <div data-column="start" data-placements="1">
+                                    <div data-items="primary">
+                                        <div class="site-branding" data-id="logo">
+
+                                            <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                                itemprop="url">Azwebsoft</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-column="end" data-placements="1">
+                                    <div data-items="primary">
+                                        <button class="ct-header-trigger ct-toggle " data-toggle-panel="#offcanvas"
+                                            aria-controls="offcanvas" data-design="simple" data-label="right"
+                                            aria-label="Menu" data-id="trigger">
+
+                                            <span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg"
+                                                aria-hidden="true">Menu</span>
+
+                                            <svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14"
+                                                data-type="type-1" aria-hidden="true">
+                                                <rect y="0.00" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="6.15" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="12.3" width="18" height="1.7" rx="1"></rect>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+            <main data-rocket-location-hash="7928ff23d69461227c89e2a01f296853" id="main" class="site-main hfeed">
+
+        <div class="ct-container-full" data-content="normal">
+
+
+
+            <article id="post-692" class="post-692 page type-page status-publish hentry">
+
+                <div class="entry-content is-layout-constrained">
+                    <div class="wp-block-stackable-columns alignfull stk-block-columns stk-block stk-1dbdcfb stk-block-background stk--has-background-overlay"
+                        data-block-id="1dbdcfb">
+                        <div class="stk-row stk-inner-blocks stk-block-content stk-content-align stk-1dbdcfb-column">
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-07d2bd2"
+                                data-block-id="07d2bd2">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-07d2bd2-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks stk-07d2bd2-inner-blocks">
+                                        <div class="wp-block-stackable-text stk-block-text stk-block stk-806714a"
+                                            data-block-id="806714a">
+                                            <p
+                                                class="stk-block-text__text has-text-color has-palette-color-4-color has-text-align-center">
+                                                DỊCH VỤ
+                                            </p>
+                                        </div>
+
+
+
+                                        <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-715b347"
+                                            id="we-create-best-digital-products" data-block-id="715b347">
+                                            <h2 class="stk-block-heading__text has-text-align-center">Giải pháp toàn diện về
+                                                thiết kế website & SEO</h2>
+                                        </div>
+
+
+
+                                        <div class="wp-block-stackable-text stk-block-text stk-block stk-b3f9270"
+                                            data-block-id="b3f9270">
+                                            <p class="stk-block-text__text has-text-align-center">
+                                                Chúng tôi cung cấp giải pháp toàn diện từ thiết kế website, content writing
+                                                tới dịch vụ SEO tổng thể giúp tối ưu chi phí, bứt phá doanh thu mạnh mẽ cho
+                                                doanh nghiệp.
+                                            </p>
+                                        </div>
+
+                                        <div class="wp-block-stackable-columns stk-block-columns stk-block stk-2ef8d74"
+                                            data-block-id="2ef8d74">
+                                            <div
+                                                class="stk-row stk-inner-blocks stk--block-align-2ef8d74 stk-block-content stk-content-align stk-2ef8d74-column">
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-b3ddcb3"
+                                                    data-block-id="b3ddcb3">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-b3ddcb3-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-b3ddcb3-inner-blocks">
+                                                            <figure class="wp-block-image size-large"><img loading="lazy"
+                                                                    decoding="async" width="650" height="501"
+                                                                    src="https://drumie.com/assets/block/thiet-ke-web.png" alt=""
+                                                                    class="wp-image-225" srcset=""
+                                                                    sizes="auto, (max-width: 650px) 100vw, 650px"></figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-425a78d"
+                                                    data-block-id="425a78d">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-425a78d-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-425a78d-inner-blocks">
+                                                            <div style="border-radius: 50%;margin:0 !important;width:2.5rem;height:2.5rem;position: relative;border: 1px solid yellow;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-77d462d"
+                                                                data-block-id="77d462d">
+                                                                <p style="color:grey !important;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);"
+                                                                    class="stk-block-text__text has-text-color has-palette-color-4-color">
+                                                                    01
+                                                                </p>
+                                                            </div>
+                                                            <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-cab0231"
+                                                                id="turn-ideas-into-reality" data-block-id="cab0231">
+                                                                <h2 class="stk-block-heading__text">Thiết kế website chuẩn
+                                                                    SEO
+                                                                </h2>
+                                                            </div>
+                                                            <div style="margin: 0 !important;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
+                                                                data-block-id="15dcdba">
+                                                                <p class="stk-block-text__text">
+                                                                    Tại Azwebsoft, chúng tôi sở hữu hơn 10
+                                                                    năm kinh nghiệm trong việc xây dựng chiến lược và triển
+                                                                    khai website từ ngắn hạn đến dài hạn, phù hợp với mọi mô
+                                                                    hình kinh doanh và nhu cầu trên thị trường hiện nay.
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Thiết kế website doanh nghiệp, Landing Page và website
+                                                                    bán hàng chuyên nghiệp
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Triển khai đa dạng lĩnh vực, phù hợp nhiều ngành nghề
+                                                                    khác nhau
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Kinh nghiệm thực chiến với hơn 20+ ngành nghề trên thị
+                                                                    trường
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Tư vấn giải pháp tối ưu theo nhu cầu và ngân sách thực
+                                                                    tế
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    Azwebsoft không chỉ chú trọng yếu tố thẩm
+                                                                    mỹ mà còn tập trung tối ưu hiệu quả vận hành, trải
+                                                                    nghiệm người dùng và khả năng phát triển thương hiệu bền
+                                                                    vững trên môi trường số.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-baee3d4"
+                                            data-block-id="baee3d4"></div>
+
+                                        <div class="wp-block-stackable-columns stk-block-columns stk-block stk-2ef8d74"
+                                            data-block-id="2ef8d74">
+                                            <div
+                                                class="stk-row stk-inner-blocks stk--block-align-2ef8d74 stk-block-content stk-content-align stk-2ef8d74-column">
+                                                <div
+                                                    class="order_right tam_nhin wp-block-stackable-column stk-block-column stk-column stk-block stk-b3ddcb3"
+                                                    data-block-id="b3ddcb3">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-b3ddcb3-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-b3ddcb3-inner-blocks">
+                                                            <figure class="wp-block-image size-large"><img loading="lazy"
+                                                                    decoding="async" width="650" height="501"
+                                                                    src="https://drumie.com/assets/block/dich-vu-seo.png" alt=""
+                                                                    class="wp-image-225" srcset=""
+                                                                    sizes="auto, (max-width: 650px) 100vw, 650px"></figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-425a78d"
+                                                    data-block-id="425a78d">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-425a78d-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-425a78d-inner-blocks">
+                                                            <div style="border-radius: 50%;margin:0 !important;width:2.5rem;height:2.5rem;position: relative;border: 1px solid yellow;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-77d462d"
+                                                                data-block-id="77d462d">
+                                                                <p style="color:grey !important;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);"
+                                                                    class="stk-block-text__text has-text-color has-palette-color-4-color">
+                                                                    02
+                                                                </p>
+                                                            </div>
+
+
+
+                                                            <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-cab0231"
+                                                                id="turn-ideas-into-reality" data-block-id="cab0231">
+                                                                <h2 class="stk-block-heading__text">
+                                                                    Dịch vụ SEO tổng quát
+                                                                </h2>
+                                                            </div>
+
+
+
+                                                            <div style="margin: 0 !important;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
+                                                                data-block-id="15dcdba">
+                                                                <p class="stk-block-text__text">
+                                                                    Với kinh nghiệm triển khai SEO cho nhiều lĩnh vực khác
+                                                                    nhau, Azwebsoft cung cấp dịch vụ SEO tổng
+                                                                    thể giúp doanh
+                                                                    nghiệp nâng cao thứ hạng từ khóa, tăng lượng truy cập tự
+                                                                    nhiên và phát triển thương hiệu bền vững trên Google.
+                                                                    Chúng tôi xây dựng chiến lược SEO bài bản, phù hợp với
+                                                                    từng ngành nghề và mục tiêu kinh doanh cụ thể.
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Nghiên cứu từ khóa và phân tích thị trường chuyên sâu
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Tối ưu Onpage, Technical SEO và cấu trúc website chuẩn
+                                                                    Google
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Xây dựng nội dung chất lượng hỗ trợ tăng trưởng
+                                                                    traffic tự nhiên
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Triển khai SEO tổng thể theo lộ trình rõ ràng, bền
+                                                                    vững
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Theo dõi, báo cáo và tối ưu hiệu quả định kỳ
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    Azwebsoft không chỉ tập trung vào việc
+                                                                    đưa từ khóa lên top mà còn hướng đến mục tiêu tăng tỷ lệ
+                                                                    chuyển đổi, thu hút khách hàng tiềm năng và giúp doanh
+                                                                    nghiệp phát triển ổn định trên môi trường trực tuyến.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-baee3d4"
+                                            data-block-id="baee3d4"></div>
+
+                                        <div class="wp-block-stackable-columns stk-block-columns stk-block stk-2ef8d74"
+                                            data-block-id="2ef8d74">
+                                            <div
+                                                class="stk-row stk-inner-blocks stk--block-align-2ef8d74 stk-block-content stk-content-align stk-2ef8d74-column">
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-b3ddcb3"
+                                                    data-block-id="b3ddcb3">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-b3ddcb3-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-b3ddcb3-inner-blocks">
+                                                            <figure class="wp-block-image size-large"><img loading="lazy"
+                                                                    decoding="async" width="650" height="501"
+                                                                    src="https://drumie.com/assets/block/content-writing.png"
+                                                                    alt="" class="wp-image-225" srcset=""
+                                                                    sizes="auto, (max-width: 650px) 100vw, 650px"></figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-425a78d"
+                                                    data-block-id="425a78d">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-425a78d-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-425a78d-inner-blocks">
+                                                            <div style="border-radius: 50%;margin:0 !important;width:2.5rem;height:2.5rem;position: relative;border: 1px solid yellow;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-77d462d"
+                                                                data-block-id="77d462d">
+                                                                <p style="color:grey !important;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);"
+                                                                    class="stk-block-text__text has-text-color has-palette-color-4-color">
+                                                                    03
+                                                                </p>
+                                                            </div>
+
+
+
+                                                            <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-cab0231"
+                                                                id="turn-ideas-into-reality" data-block-id="cab0231">
+                                                                <h2 class="stk-block-heading__text">
+                                                                    Content writing
+                                                                </h2>
+                                                            </div>
+
+                                                            <div style="margin: 0 !important;"
+                                                                class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
+                                                                data-block-id="15dcdba">
+                                                                <p class="stk-block-text__text">
+                                                                    Với kinh nghiệm xây dựng nội dung cho nhiều lĩnh vực
+                                                                    khác nhau, Azwebsoft cung cấp dịch vụ
+                                                                    Content Writing chuyên nghiệp giúp doanh nghiệp truyền
+                                                                    tải thông điệp hiệu quả, nâng cao uy tín thương hiệu và
+                                                                    thu hút khách hàng tiềm năng. Chúng tôi tập trung phát
+                                                                    triển nội dung chất lượng, chuẩn SEO và phù hợp với từng
+                                                                    mục tiêu marketing cụ thể.
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Viết bài chuẩn SEO tăng khả năng hiển thị trên Google
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Xây dựng nội dung website, blog và landing page chuyên
+                                                                    nghiệp
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Sáng tạo nội dung phù hợp theo từng ngành nghề và đối
+                                                                    tượng khách hàng
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    ✓ Tối ưu nội dung hỗ trợ tăng traffic và tỷ lệ chuyển
+                                                                    đổi
+                                                                </p>
+                                                                <p class="stk-block-text__text">
+                                                                    Azwebsoft không chỉ tạo ra những bài viết
+                                                                    hấp dẫn mà còn chú trọng giá trị thực tiễn, giúp doanh
+                                                                    nghiệp xây dựng hình ảnh chuyên nghiệp, kết nối hiệu quả
+                                                                    với khách hàng và phát triển thương hiệu bền vững trên
+                                                                    môi trường số.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-c40b6c0"
+                        data-block-id="c40b6c0"></div>
+
+                    <div class="wp-block-stackable-divider stk-block-divider stk-block stk-a10bf44"
+                        data-block-id="a10bf44">
+                        <hr class="stk-block-divider__hr">
+                    </div>
+
+
+
+                    <div class="wp-block-stackable-columns stk-block-columns stk-block stk-4ab6660"
+                        data-block-id="4ab6660">
+
+                        <div class="wp-block-stackable-heading stk-block-heading stk-block stk-d5ac8bb"
+                            id="what-our-clients-say" data-block-id="d5ac8bb">
+                            <h2 class="stk-block-heading__text has-text-align-center">
+                                CÔNG NGHỆ HIỆN ĐẠI
+                            </h2>
+                        </div>
+
+
+
+                        <div class="wp-block-stackable-text stk-block-text stk-block stk-020ab9e"
+                            data-block-id="020ab9e">
+                            <p class="stk-block-text__text has-text-align-center">
+                                Ứng dụng công nghệ hiện đại trong thiết kế website, ứng dụng cho doanh nghiệp.
+                            </p>
+                        </div>
+                        <div
+                            class="stk-row stk-inner-blocks has-text-align-center has-text-align-center-mobile stk--block-align-4ab6660 stk-block-content stk-content-align stk-4ab6660-column custom-mobile">
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-8ecf38f"
+                                data-block-id="8ecf38f">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-8ecf38f-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/wordpress-icon-alt.svg" alt=""
+                                                class="wp-image-181">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-d35cca7"
+                                data-block-id="d35cca7">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-d35cca7-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/nextjs-icon.svg" alt=""
+                                                class="wp-image-179">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-037a2db"
+                                data-block-id="037a2db">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-037a2db-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/laravel.svg" alt="" class="wp-image-180">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-eccd9c2"
+                                data-block-id="eccd9c2">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-eccd9c2-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/nodejs-icon.svg" alt=""
+                                                class="wp-image-182">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-eccd9c2"
+                                data-block-id="eccd9c2">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-eccd9c2-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/dotnet.svg" alt=""
+                                                class="wp-image-182">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-eccd9c2"
+                                data-block-id="eccd9c2">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-eccd9c2-container stk--no-background stk--no-padding">
+                                    <div class="stk-block-content stk-inner-blocks">
+                                        <figure class="wp-block-image size-full"><img decoding="async"
+                                                src="https://drumie.com/assets/block/spring-icon.svg" alt=""
+                                                class="wp-image-182">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="wp-block-stackable-divider stk-block-divider stk-block stk-9094f2d"
+                        data-block-id="9094f2d">
+                        <hr class="stk-block-divider__hr">
+                    </div>
+
+
+
+                    <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-baee3d4"
+                        data-block-id="baee3d4"></div>
+
+
+                    <div style="max-width: 75%;"
+                        class="wp-block-stackable-columns stk-block-columns stk-block stk-74915f7"
+                        data-block-id="74915f7">
+                        <div
+                            class="stk-row stk-inner-blocks stk--block-align-74915f7 stk-block-content stk-content-align stk-74915f7-column">
+                            <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-e512f8a"
+                                data-block-id="e512f8a">
+                                <div
+                                    class="stk-column-wrapper stk-block-column__content stk-container stk-e512f8a-container stk--no-background stk--no-padding">
+                                    <div
+                                        class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-e512f8a-inner-blocks">
+                                        <div class="wp-block-stackable-text stk-block-text stk-block stk-1f7db38"
+                                            data-block-id="1f7db38">
+                                            <p style="text-align:center;"
+                                                class="stk-block-text__text has-text-color has-palette-color-4-color">Faq
+                                            </p>
+                                        </div>
+
+
+
+                                        <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-b4095a9"
+                                            id="frequently-asked-questions" data-block-id="b4095a9">
+                                            <h2 style="text-align:center;" class="stk-block-heading__text">Câu hỏi thường
+                                                gặp</h2>
+                                        </div>
+                                                                                                                            <details style="border:none !important;margin-bottom:0 !important;"
+                                                class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain"
+                                                data-block-id="3da243d" data-height="59.796875">
+                                                <summary
+                                                    class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
+                                                    data-block-id="f2dc5a7">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
+                                                            <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa"
+                                                                data-block-id="628b9fa">
+                                                                <div class="stk-row stk-inner-blocks stk-block-content">
+                                                                    <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
+                                                                        id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
+                                                                        data-block-id="c0f694a">
+                                                                        <h6 style="text-align:justify;"
+                                                                            class="stk-block-heading__text stk-block-heading--use-theme-margins">
+                                                                            Tôi đã có website nhưng chưa có khách hàng thì nên làm gì?
+                                                                        </h6>
+                                                                    </div>
+
+
+
+                                                                    <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
+                                                                        data-block-id="0d74e44"><span
+                                                                            class="stk--svg-wrapper">
+                                                                            <div class="stk--inner-svg"><svg
+                                                                                    style="height:0;width:0">
+                                                                                    <defs>
+                                                                                        <lineargradient
+                                                                                            id="linear-gradient-0d74e44"
+                                                                                            x1="0" x2="100%"
+                                                                                            y1="0" y2="0">
+                                                                                            <stop offset="0%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-1)">
+                                                                                            </stop>
+                                                                                            <stop offset="100%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-2)">
+                                                                                            </stop>
+                                                                                        </lineargradient>
+                                                                                    </defs>
+                                                                                </svg><svg data-prefix="fas"
+                                                                                    data-icon="chevron-down"
+                                                                                    class="svg-inline--fa fa-chevron-down fa-w-14"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 448 512"
+                                                                                    aria-hidden="true" width="32"
+                                                                                    height="32">
+                                                                                    <path fill="currentColor"
+                                                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                                                    </path>
+                                                                                </svg></div>
+                                                                        </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
+                                                    data-block-id="ed20f4a">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
+                                                            <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
+                                                                data-block-id="545fe33">
+                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                    Có website nhưng chưa có khách hàng là vấn đề nhiều doanh nghiệp thường gặp khi mới bắt đầu. Để website mang lại hiệu quả, bạn cần tối ưu SEO, cải thiện tốc độ tải trang và xây dựng nội dung chất lượng đúng nhu cầu khách hàng. Khi được đầu tư đúng chiến lược, website sẽ dần tăng thứ hạng, thu hút khách hàng và tạo doanh thu bền vững.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                                                                    <details style="border:none !important;margin-bottom:0 !important;"
+                                                class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain"
+                                                data-block-id="3da243d" data-height="59.796875">
+                                                <summary
+                                                    class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
+                                                    data-block-id="f2dc5a7">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
+                                                            <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa"
+                                                                data-block-id="628b9fa">
+                                                                <div class="stk-row stk-inner-blocks stk-block-content">
+                                                                    <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
+                                                                        id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
+                                                                        data-block-id="c0f694a">
+                                                                        <h6 style="text-align:justify;"
+                                                                            class="stk-block-heading__text stk-block-heading--use-theme-margins">
+                                                                            Dịch vụ mà Azwebsoft có gì nổi bật so với các dịch vụ trên thị trường?
+                                                                        </h6>
+                                                                    </div>
+
+
+
+                                                                    <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
+                                                                        data-block-id="0d74e44"><span
+                                                                            class="stk--svg-wrapper">
+                                                                            <div class="stk--inner-svg"><svg
+                                                                                    style="height:0;width:0">
+                                                                                    <defs>
+                                                                                        <lineargradient
+                                                                                            id="linear-gradient-0d74e44"
+                                                                                            x1="0" x2="100%"
+                                                                                            y1="0" y2="0">
+                                                                                            <stop offset="0%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-1)">
+                                                                                            </stop>
+                                                                                            <stop offset="100%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-2)">
+                                                                                            </stop>
+                                                                                        </lineargradient>
+                                                                                    </defs>
+                                                                                </svg><svg data-prefix="fas"
+                                                                                    data-icon="chevron-down"
+                                                                                    class="svg-inline--fa fa-chevron-down fa-w-14"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 448 512"
+                                                                                    aria-hidden="true" width="32"
+                                                                                    height="32">
+                                                                                    <path fill="currentColor"
+                                                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                                                    </path>
+                                                                                </svg></div>
+                                                                        </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
+                                                    data-block-id="ed20f4a">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
+                                                            <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
+                                                                data-block-id="545fe33">
+                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                    Azwebsoft không chỉ tập trung vào việc thiết kế một website đẹp mà còn chú trọng tối ưu toàn diện về tốc độ, chuẩn SEO, bảo mật và trải nghiệm người dùng. Chúng tôi luôn tư vấn giải pháp phù hợp theo từng lĩnh vực kinh doanh, giúp doanh nghiệp dễ dàng vận hành và phát triển hiệu quả trên môi trường số. Với đội ngũ giàu kinh nghiệm, quy trình làm việc minh bạch và chính sách hỗ trợ lâu dài, Azwebsoft cam kết đồng hành cùng khách hàng từ khi triển khai đến quá trình vận hành và phát triển website bền vững.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                                                                    <details style="border:none !important;margin-bottom:0 !important;"
+                                                class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain"
+                                                data-block-id="3da243d" data-height="59.796875">
+                                                <summary
+                                                    class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
+                                                    data-block-id="f2dc5a7">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
+                                                            <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa"
+                                                                data-block-id="628b9fa">
+                                                                <div class="stk-row stk-inner-blocks stk-block-content">
+                                                                    <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
+                                                                        id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
+                                                                        data-block-id="c0f694a">
+                                                                        <h6 style="text-align:justify;"
+                                                                            class="stk-block-heading__text stk-block-heading--use-theme-margins">
+                                                                            Azwebsoft có hỗ trợ giá cho doanh nghiệp nhỏ, mới thành lập hay không?
+                                                                        </h6>
+                                                                    </div>
+
+
+
+                                                                    <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
+                                                                        data-block-id="0d74e44"><span
+                                                                            class="stk--svg-wrapper">
+                                                                            <div class="stk--inner-svg"><svg
+                                                                                    style="height:0;width:0">
+                                                                                    <defs>
+                                                                                        <lineargradient
+                                                                                            id="linear-gradient-0d74e44"
+                                                                                            x1="0" x2="100%"
+                                                                                            y1="0" y2="0">
+                                                                                            <stop offset="0%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-1)">
+                                                                                            </stop>
+                                                                                            <stop offset="100%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-2)">
+                                                                                            </stop>
+                                                                                        </lineargradient>
+                                                                                    </defs>
+                                                                                </svg><svg data-prefix="fas"
+                                                                                    data-icon="chevron-down"
+                                                                                    class="svg-inline--fa fa-chevron-down fa-w-14"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 448 512"
+                                                                                    aria-hidden="true" width="32"
+                                                                                    height="32">
+                                                                                    <path fill="currentColor"
+                                                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                                                    </path>
+                                                                                </svg></div>
+                                                                        </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
+                                                    data-block-id="ed20f4a">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
+                                                            <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
+                                                                data-block-id="545fe33">
+                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                    Azwebsoft luôn có những giải pháp và mức chi phí linh hoạt dành cho doanh nghiệp nhỏ, startup và cá nhân mới bắt đầu kinh doanh. Chúng tôi tư vấn gói website phù hợp với ngân sách nhưng vẫn đảm bảo đầy đủ các tiêu chí về giao diện chuyên nghiệp, chuẩn SEO, tốc độ và khả năng phát triển lâu dài. Ngoài ra, Azwebsoft cũng hỗ trợ định hướng vận hành và marketing online cơ bản để giúp doanh nghiệp tối ưu chi phí trong giai đoạn khởi đầu, hãy liên hệ trực tiếp nếu bạn gặp khó khăn về chi phí.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                                                                    <details style="border:none !important;margin-bottom:0 !important;"
+                                                class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain"
+                                                data-block-id="3da243d" data-height="59.796875">
+                                                <summary
+                                                    class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
+                                                    data-block-id="f2dc5a7">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
+                                                            <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa"
+                                                                data-block-id="628b9fa">
+                                                                <div class="stk-row stk-inner-blocks stk-block-content">
+                                                                    <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
+                                                                        id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
+                                                                        data-block-id="c0f694a">
+                                                                        <h6 style="text-align:justify;"
+                                                                            class="stk-block-heading__text stk-block-heading--use-theme-margins">
+                                                                            Chính sách hỗ trợ khách hàng sau khi bàn giao như nào?
+                                                                        </h6>
+                                                                    </div>
+
+
+
+                                                                    <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
+                                                                        data-block-id="0d74e44"><span
+                                                                            class="stk--svg-wrapper">
+                                                                            <div class="stk--inner-svg"><svg
+                                                                                    style="height:0;width:0">
+                                                                                    <defs>
+                                                                                        <lineargradient
+                                                                                            id="linear-gradient-0d74e44"
+                                                                                            x1="0" x2="100%"
+                                                                                            y1="0" y2="0">
+                                                                                            <stop offset="0%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-1)">
+                                                                                            </stop>
+                                                                                            <stop offset="100%"
+                                                                                                style="stop-opacity:1;stop-color:var(--linear-gradient-0-d-74-e-44-color-2)">
+                                                                                            </stop>
+                                                                                        </lineargradient>
+                                                                                    </defs>
+                                                                                </svg><svg data-prefix="fas"
+                                                                                    data-icon="chevron-down"
+                                                                                    class="svg-inline--fa fa-chevron-down fa-w-14"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    viewBox="0 0 448 512"
+                                                                                    aria-hidden="true" width="32"
+                                                                                    height="32">
+                                                                                    <path fill="currentColor"
+                                                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                                                    </path>
+                                                                                </svg></div>
+                                                                        </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
+                                                    data-block-id="ed20f4a">
+                                                    <div
+                                                        class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
+                                                        <div
+                                                            class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
+                                                            <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
+                                                                data-block-id="545fe33">
+                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                    Sau khi bàn giao website, Azwebsoft vẫn tiếp tục đồng hành và hỗ trợ khách hàng trong quá trình vận hành hệ thống. Chúng tôi hỗ trợ hướng dẫn quản trị website, cập nhật nội dung cơ bản, xử lý lỗi kỹ thuật và tư vấn tối ưu hiệu quả hoạt động khi cần thiết. Ngoài ra, khách hàng còn được hỗ trợ bảo trì, sao lưu dữ liệu và tư vấn nâng cấp tính năng nhằm đảm bảo website hoạt động ổn định, an toàn và phát triển lâu dài.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
+        </div>
+    </main>
+
+
+
+        <footer data-rocket-location-hash="d38d20286372344a09d3e0d897293bbe" id="footer" class="ct-footer"
+            data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter">
+            <div data-rocket-location-hash="c84742f06f81ae4bd02dfacf04ac6326" data-row="middle">
+                <div class="ct-container" data-columns-divider="md">
+                    <div data-column="widget-area-1">
+                        <div class="ct-widget is-layout-flow widget_block" id="block-10">
+                            <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+                                <figure class="wp-block-image is-resized" style="margin-bottom: 14.5px;">
+                                    
+                                    <a href="https://drumie.com"><b>Azwebsoft</b></a>
+                                </figure>
+
+
+
+                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                            </div>
+                        </div>
+                        <div class="ct-widget is-layout-flow widget_block" id="block-11">
+                            <div class="ct-block-wrapper">
+                                <h3 class="wp-block-heading"
+                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
+                                <div class="ct-socials-block"
+                                    style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
+                                    <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
+
+
+
+                                        <a href="#" data-network="facebook"
+                                            aria-label="Facebook">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="twitter"
+                                            aria-label="X (Twitter)">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="instagram"
+                                            aria-label="Instagram">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <circle cx="10" cy="10" r="3.3"></circle>
+                                                    <path
+                                                        d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="youtube"
+                                            aria-label="YouTube">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-2">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-2">
+                            <h3 class="widget-title">Về chúng tôi</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Lịch sử phát triển</a></li>
+                                    <li><a href="#">Sứ mệnh – Tầm nhìn</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-3">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-3">
+                            <h3 class="widget-title">Chính sách</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Chính sách riêng tư</a></li>
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-4">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-4">
+                            <h3 class="widget-title">Liên hệ</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-rocket-location-hash="0adbe0e2f82f32229c3117fb330757fe" data-row="bottom">
+                <div class="ct-container">
+                    <div data-column="copyright">
+                        <div class="ct-footer-copyright" data-id="copyright">
+
+                            Copyright © 2026 - Powered by <a
+                                href="https://drumie.com">Azwebsoft</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script id="ct-scripts-js-extra">
+        var ct_localizations = {
+            "ajax_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-admin\/admin-ajax.php",
+            "public_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/",
+            "rest_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-json\/",
+            "search_url": "https:\/\/startersites.io\/blocksy\/web-agency\/search\/QUERY_STRING\/",
+            "show_more_text": "Show more",
+            "more_text": "More",
+            "search_live_results": "Search results",
+            "search_live_no_results": "No results",
+            "search_live_no_result": "No results",
+            "search_live_one_result": "You got %s result. Please press Tab to select it.",
+            "search_live_many_results": "You got %s results. Please press Tab to select one.",
+            "clipboard_copied": "Copied!",
+            "clipboard_failed": "Failed to Copy",
+            "expand_submenu": "Expand dropdown menu",
+            "collapse_submenu": "Collapse dropdown menu",
+            "dynamic_js_chunks": [{
+                "id": "blocksy_account",
+                "selector": ".ct-account-item[href*=\"account-modal\"], .must-log-in a",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/account.js?ver=2.1.20",
+                "deps": [],
+                "global_data": [],
+                "trigger": "click",
+                "deps_data": []
+            }, {
+                "id": "blocksy_sticky_header",
+                "selector": "header [data-sticky]",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.1.20"
+            }],
+            "dynamic_styles": {
+                "lazy_load": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.1.20",
+                "search_lazy": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.1.20",
+                "back_to_top": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.1.20"
+            },
+            "dynamic_styles_selectors": [{
+                "selector": ".ct-header-cart, #woo-cart-panel",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".flexy",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.1.20"
+            }, {
+                "selector": "#account-modal",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".ct-header-account",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.1.20"
+            }]
+        };
+    </script>
+    <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
+    <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
+
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script>
+        const pricing = document.querySelector('.pricing');
+        const pricingLink = pricing.querySelector('.ct-menu-link');
+        const pricingMenu = document.querySelector('.pricing-sub-menu');
+
+        pricingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            pricingMenu.classList.toggle('active');
+        });
+    </script>
+    </body>
+
+</html>
