@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Không tìm thấy trang</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color:white;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      padding:40px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1{
+      font-size:120px;
+      font-weight:900;
+      color:#38bdf8;
+      text-shadow: 0 0 20px rgba(56,189,248,0.5);
+    }
+
+    h2{
+      font-size:32px;
+      margin-top:-10px;
+      margin-bottom:15px;
+    }
+
+    p{
+      color:#cbd5e1;
+      margin-bottom:30px;
+      font-size:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#7dd3fc;
+      box-shadow:0 10px 25px rgba(56,189,248,0.4);
+    }
+
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      background:rgba(255,255,255,0.05);
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .circle:nth-child(1){
+      width:250px;
+      height:250px;
+      top:-80px;
+      left:-80px;
+    }
+
+    .circle:nth-child(2){
+      width:180px;
+      height:180px;
+      bottom:-50px;
+      right:-50px;
+      animation-delay:2s;
+    }
+
+    .circle:nth-child(3){
+      width:120px;
+      height:120px;
+      top:20%;
+      right:15%;
+      animation-delay:4s;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-20px);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:600px){
+      h1{
+        font-size:80px;
+      }
+
+      h2{
+        font-size:24px;
+      }
+
+      p{
+        font-size:16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <div class="container">
+    <h1>404</h1>
+    <h2>Oops! Không tìm thấy trang</h2>
+    <p>Trang bạn đang tìm kiếm có thể đã bị xóa hoặc không tồn tại.</p>
+
+    <a href="/" class="btn">Quay về trang chủ</a>
+  </div>
+
+</body>
+</html>
