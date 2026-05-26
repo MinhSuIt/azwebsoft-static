@@ -2,314 +2,386 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
     <loc>https://drumie.com</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/dich-vu</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/ve-chung-toi</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/lien-he</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/tin-tuc/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/blog/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/gioi-thieu-ve-laravel-11</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:55:38+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/react-vs-vue-nen-chon-framework-nao</loc>
-    <lastmod>2026-05-23T08:36:47+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/tim-hieu-ve-docker-cho-lap-trinh-vien</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/bao-mat-web-ung-dung-voi-laravel</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/typescript-tai-sao-nen-su-dung</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-toi-uu-toc-do-website</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/xay-dung-restful-api-voi-nodejs</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/kham-pha-ve-dep-sapa</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/du-lich-da-nang-3-ngay-2-dem</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/top-5-bai-bien-dep-nhat-mien-trung</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/du-lich-bui-ha-noi-ha-giang</loc>
-    <lastmod>2026-05-21T10:27:56+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-nau-pho-bo-chuan-vi-ha-noi</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cong-thuc-lam-banh-mi-viet-nam</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/top-10-mon-an-duong-pho-sai-gon</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-lam-cac-mon-chay-don-gian</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/ky-thuat-chay-bo-dung-cach</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/bai-tap-gym-cho-nguoi-moi-bat-dau</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/bong-da-viet-nam-hanh-trinh-vuon-tam-chau-luc</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-26T12:19:53+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/yoga-cho-dan-van-phong</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:10+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/lo-trinh-hoc-lap-trinh-web-tu-con-so-0</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cac-ky-nang-mem-can-thiet-cho-sinh-vien</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/hoc-python-qua-du-an-thuc-te</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/du-hoc-my-kinh-nghiem-va-loi-khuyen</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/review-phim-bom-tan-moi-nhat</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/top-game-mobile-hot-nhat-thang</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-to-chuc-sinh-nhat-bat-ngo</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/loi-ich-cua-viec-uong-du-nuoc-moi-ngay</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/thuc-don-an-lanh-manh-cho-nguoi-ban-ron</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-ngu-ngon-va-sau-giac</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/phong-tranh-cac-benh-thuong-gap-mua-he</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/xhu-huong-thoi-trang-mua-he-2025</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-phoi-do-cong-so-thanh-lich</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/mix-do-voi-ao-trang-co-ban</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/khoi-nghiep-voi-von-it-loi-khuyen-tu-chuyen-gia</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/chien-luoc-marketing-online-hieu-qua</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/xu-huong-thuong-mai-dien-tu-2025</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/kham-pha-vu-tru-qua-kinh-vien-vong-james-webb</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/ai-va-tuong-lai-cua-con-nguoi</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/bien-doi-khi-hau-thuc-trang-va-giai-phap</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/nhung-quy-dinh-moi-ve-thue-thu-nhap-ca-nhan</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/quyen-loi-cua-nguoi-lao-dong-trong-hop-dong</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/kinh-nghiem-mua-xe-may-cu</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/so-sanh-xe-dien-va-xe-xang-nen-chon-loai-nao</loc>
-    <lastmod>2026-05-21T10:27:57+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-bai-tri-nha-nho-trong-rong-hon</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/kinh-nghiem-mua-nha-lan-dau</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/quy-trinh-cham-soc-da-co-ban-moi-ngay</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-trang-diem-tu-nhien-moi-ngay</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/meo-vat-trong-nha-bep</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/cach-lam-sach-do-dung-trong-nha</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/top-5-cuon-sach-hay-nen-doc-trong-doi</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/nhac-trinh-nhung-ca-khuc-vuot-thoi-gian</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
-            </url>
-    <url>
-    <loc>https://drumie.com/bai-hoc-tu-nhung-that-bai-trong-cuoc-song</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
     <loc>https://drumie.com/lam-the-nao-de-can-bang-cong-viec-va-cuoc-song</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <lastmod>2026-05-25T13:39:11+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/loi-khuyen-cho-nguoi-tre-tuoi-20</loc>
-    <lastmod>2026-05-21T10:27:58+00:00</lastmod>
+    <loc>https://drumie.com/meo-toi-uu-seo-web-hieu-qua-nhat-2026</loc>
+    <lastmod>2026-05-25T15:51:16+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/cong-nghe/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/cong-nghe/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/du-lich/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/du-lich/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/am-thuc/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/am-thuc/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/the-thao/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/the-thao/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/giao-duc/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/giao-duc/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/giai-tri/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/giai-tri/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/phim-anh/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/suc-khoe/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/suc-khoe/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/thoi-trang/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/thoi-trang/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/kinh-doanh/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/lam-dep/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/khoa-hoc/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/kinh-doanh/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/phap-luat/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/khoa-hoc/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/xe-co/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/phap-luat/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/nha-cua/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/xe-co/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/lam-dep/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/nha-cua/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/meo-vat/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/meo-vat/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/sach/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/sach/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/phim-anh/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/am-nhac/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/am-nhac/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
     <url>
-    <loc>https://drumie.com/danh-muc/tam-su/page/1</loc>
-    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <loc>https://drumie.com/danh-muc/tam-su/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/php/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/laravel/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/javascript/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/css/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/python/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/reactjs/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/vuejs/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/nodejs/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/typescript/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/docker/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/api/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/bao-mat/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/toi-uu/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/huong-dan/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/tin-tuc/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/kien-thuc/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/siuuuu/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/hay-qua/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
+            </url>
+    <url>
+    <loc>https://drumie.com/the/nani/trang/1</loc>
+    <lastmod>2026-05-25T00:00:00+00:00</lastmod>
             </url>
 </urlset>

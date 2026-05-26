@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi_VN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-
-    <title>Web Agency – Just another WordPress site</title>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>TypeScript: Tại sao nên sử dụng?</title>
+    <meta name="description" content="Lợi ích của TypeScript trong phát triển web.">
     <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="article">
     
+    <meta property="og:title" content="TypeScript: Tại sao nên sử dụng?">
+    <meta property="og:description" content="Lợi ích của TypeScript trong phát triển web.">
+    <meta property="og:url" content="https://drumie.com/typescript-tai-sao-nen-su-dung">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="article:published_time" content="2026-01-06T10:59:44+00:00">
+        <meta property="article:modified_time" content="2026-05-25T13:39:10+00:00">
+        <meta property="og:updated_time" content="2026-05-25T13:39:10+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TypeScript: Tại sao nên sử dụng?">
+    <meta name="twitter:description" content="Lợi ích của TypeScript trong phát triển web.">
+    <meta name="twitter:url" content="https://drumie.com/typescript-tai-sao-nen-su-dung">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/typescript-tai-sao-nen-su-dung">
     <style>
         .pricing-sub-menu {
             display: none;
@@ -59,6 +83,104 @@
 
         .order_right {
             order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
         }
 
         @media only screen and (max-width: 689px) {
@@ -839,97 +961,6 @@
             margin: 0 !important;
         }
 
-        .toc {
-            background: #f8f9fa;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 24px 0;
-            font-family: Arial, sans-serif;
-
-            ul {
-                list-style: none;
-                margin: 0;
-                padding-left: 0;
-
-                li {
-                    position: relative;
-                    margin: 6px 0;
-
-                    a {
-                        display: block;
-                        color: #334155;
-                        text-decoration: none;
-                        line-height: 1.6;
-                        padding: 6px 10px;
-                        border-radius: 8px;
-                        transition: all 0.2s ease;
-
-                        &:hover {
-                            background: #e2e8f0;
-                            color: #0f172a;
-                        }
-                    }
-
-                    /* H2 */
-                    >a {
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-
-                    /* Nested levels */
-                    ul {
-                        margin-top: 6px;
-                        padding-left: 18px;
-                        border-left: 2px solid #dbe4ee;
-
-                        li {
-                            >a {
-                                font-size: 15px;
-                                font-weight: 500;
-                                color: #475569;
-                            }
-
-                            ul {
-                                padding-left: 16px;
-                                border-left: 1px dashed #cbd5e1;
-
-                                li {
-                                    >a {
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        color: #64748b;
-                                    }
-
-                                    ul {
-                                        padding-left: 14px;
-
-                                        li {
-                                            >a {
-                                                font-size: 13px;
-                                                color: #94a3b8;
-                                            }
-
-                                            ul {
-                                                padding-left: 12px;
-
-                                                li {
-                                                    >a {
-                                                        font-size: 12px;
-                                                        color: #a1a1aa;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         summary {
             list-style: none;
 
@@ -942,11 +973,16 @@
                 content: "";
             }
         }
+
+        .tags {
+            padding: 2rem 0;
+            display: flex;
+            gap: 0.25rem;
+        }
     </style>
     <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
 
 </head>
-
 
 <body
     class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
@@ -996,7 +1032,7 @@
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                    <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
@@ -1114,7 +1150,7 @@
                                     </li>
                                     <li id="menu-item-563"
                                         class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                                        <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                                     </li>
                                     <li style="position: relative;"
                                         class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
@@ -1204,19 +1240,23 @@
 
             <div class="entry-header ct-container-narrow">
 
-                <nav class="ct-breadcrumbs" data-source="default"><span class="first-item">
+                <nav class="ct-breadcrumbs" data-source="default">
+                    <span class="first-item">
                         <a href="https://drumie.com"><span>Trang chủ</span></a>
                         <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
                             aria-hidden="true" focusable="false">
                             <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
                         </svg>
-                    </span><span class="item-0">
-                        <a href="https://drumie.com/tin-tuc/page/1">Tin tức</span></a>
-                    <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
-                        aria-hidden="true" focusable="false">
-                        <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
-                    </svg>
-                    </span><span class="last-item" aria-current="page">
+                    </span>
+                                            <span class="item-0">
+                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1">Công nghệ
+                            </a>
+                        </span>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                                        </span><span class="last-item" aria-current="page">
                         <span>
                             TypeScript: Tại sao nên sử dụng?
                         </span>
@@ -1232,77 +1272,259 @@
                             rel="author"><span>Admin</span></a>
                     </li>
                     <li class="meta-date"><time class="ct-meta-element-date"
-                            datetime="2021-07-05T15:41:41+00:00">21-05-2026</time></li>
-                    <li class="meta-categories" data-type="simple">
-                                                    <a href="https://drumie.com/danh-muc/cong-nghe/page/1" rel="tag" class="ct-term-3">
-                                Công nghệ
-                            </a>
-                                            </li>
-                </ul>
+                            datetime="2021-07-05T15:41:41+00:00">25/05/2026</time>
+                    </li>
+                                            <li class="meta-categories" data-type="simple">
+                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1" rel="tag"
+                                    class="ct-term-3">
+                                    Công nghệ
+                                </a>
+                                                    </li>
+                                    </ul>
             </div>
         </div>
 
-        <div class="ct-container-narrow" data-content="narrow" data-vertical-spacing="bottom">
+        <div class="ct-container-narrow" data-content="narrow">
             <article id="post-441"
                 class="post-441 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
                 <div style="text-align:justify;" class="entry-content is-layout-constrained">
                     
                     
-<details
-    style="border:none !important;margin-bottom:0 !important;"
-    class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain toc"
-    data-block-id="3da243d"
-    data-height="59.796875">
-
-    <summary
-        class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
-        data-block-id="f2dc5a7">
-
-        <div class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
-            <div class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
-
-                <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa">
-                    <div class="stk-row stk-inner-blocks stk-block-content">
-
-                        <div
-                            class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a">
-                            <p
-                                style="margin:0 !important;cursor: pointer;"
-                                class="stk-block-heading__text stk-block-heading--use-theme-margins">
-                                <b>Mục lục</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<details class="toc">
+    <summary class="toc-title">
+        <strong>Mục lục</strong>
     </summary>
 
-    <div
-        class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
-        data-block-id="ed20f4a">
-
-        <div class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
-            <div class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
-
-                <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33">
-                    <div class="stk-block-text__text toc-content">
+    <div class="toc-content">
+        
+    </div>
+</details><div class='content'>TypeScript mang lại nhiều lợi ích cho dự án JavaScript lớn. Khám phá lý do tại sao bạn nên chuyển sang TypeScript.</div>
+                </div>
+                                    <nav class="tags" data-source="default">
+                        <p>Thẻ:</p>
+                                                    <span class="item-0">
+                                <a href="https://drumie.com/the/javascript/trang/1">
+                                    JavaScript
+                                </a>
+                            </span>
+                                                            -
+                                                                                <span class="item-0">
+                                <a href="https://drumie.com/the/typescript/trang/1">
+                                    TypeScript
+                                </a>
+                            </span>
+                                                            -
+                                                                                <span class="item-0">
+                                <a href="https://drumie.com/the/kien-thuc/trang/1">
+                                    Kiến thức
+                                </a>
+                            </span>
+                                                                        </nav>
+                            </article>
+        </div>
+                    <div class="ct-container">
+                <div class="wp-block-stackable-heading stk-block-heading stk-block stk-02dc96b" id="latest-from-blog"
+                    data-block-id="02dc96b">
+                    <h2 style="padding:2rem 0" class="stk-block-heading__text has-text-align-center">BÀI VIẾT LIÊN QUAN
+                    </h2>
+                </div>
+                <div class="ct-posts-shortcode" data-prefix="blog">
+                    <div class="entries" data-archive="default" data-layout="grid" data-cards="boxed"
+                        data-hover="zoom-in">
                         
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/so-sanh-xe-dien-va-xe-xang-nen-chon-loai-nao" aria-label="So sánh xe điện và xe xăng: Nên chọn loại nào?"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/xe-co/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Xe cộ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/so-sanh-xe-dien-va-xe-xang-nen-chon-loai-nao"
+                                    rel="bookmark" alt="So sánh xe điện và xe xăng: Nên chọn loại nào?">
+                                    So sánh xe điện và xe xăng: Nên chọn loại nào?
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Xe điện vs xe xăng.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/ai-va-tuong-lai-cua-con-nguoi" aria-label="AI và tương lai của con người"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/khoa-hoc/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Khoa học
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/ai-va-tuong-lai-cua-con-nguoi"
+                                    rel="bookmark" alt="AI và tương lai của con người">
+                                    AI và tương lai của con người
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>AI thay đổi cuộc sống.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/xu-huong-thuong-mai-dien-tu-2025" aria-label="Xu hướng thương mại điện tử 2025"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/kinh-doanh/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh doanh
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/xu-huong-thuong-mai-dien-tu-2025"
+                                    rel="bookmark" alt="Xu hướng thương mại điện tử 2025">
+                                    Xu hướng thương mại điện tử 2025
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Xu hướng TMĐT 2025.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/xay-dung-restful-api-voi-nodejs" aria-label="Xây dựng RESTful API với NodeJS"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/xay-dung-restful-api-voi-nodejs"
+                                    rel="bookmark" alt="Xây dựng RESTful API với NodeJS">
+                                    Xây dựng RESTful API với NodeJS
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Tạo RESTful API với NodeJS.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/cach-toi-uu-toc-do-website" aria-label="Cách tối ưu tốc độ website"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/cach-toi-uu-toc-do-website"
+                                    rel="bookmark" alt="Cách tối ưu tốc độ website">
+                                    Cách tối ưu tốc độ website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Mẹo tối ưu tốc độ website hiệu quả.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/typescript-tai-sao-nen-su-dung" aria-label="TypeScript: Tại sao nên sử dụng?"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/typescript-tai-sao-nen-su-dung"
+                                    rel="bookmark" alt="TypeScript: Tại sao nên sử dụng?">
+                                    TypeScript: Tại sao nên sử dụng?
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Lợi ích của TypeScript trong phát triển web.</p>
+                            </div>
+                        </article>
+                                                
                     </div>
                 </div>
-
+                <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-81fea2c"
+                    data-block-id="81fea2c"></div>
             </div>
-        </div>
-    </div>
-
-</details>
-<div class='content'>TypeScript mang lại nhiều lợi ích cho dự án JavaScript lớn. Khám phá lý do tại sao bạn nên chuyển sang TypeScript.</div>
-                </div>
-            </article>
-        </div>
-
-        
+                
     </main>
 
 
@@ -1321,21 +1543,16 @@
 
 
 
-                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
                             </div>
                         </div>
                         <div class="ct-widget is-layout-flow widget_block" id="block-11">
                             <div class="ct-block-wrapper">
-                                <h3 class="wp-block-heading"
-                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
                                 <div class="ct-socials-block"
                                     style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
                                     <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
-
-
-
-                                        <a href="#" data-network="facebook"
-                                            aria-label="Facebook">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1345,8 +1562,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="twitter"
-                                            aria-label="X (Twitter)">
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1356,8 +1572,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="instagram"
-                                            aria-label="Instagram">
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1368,8 +1583,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="youtube"
-                                            aria-label="YouTube">
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1414,8 +1628,10 @@
                             <h3 class="widget-title">Liên hệ</h3>
                             <div class="textwidget">
                                 <ul>
-                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
-                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1432,6 +1648,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
         </footer>
     </div>
 
@@ -1489,7 +1706,8 @@
     <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
     <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
 
-    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
     <script>
         const pricing = document.querySelector('.pricing');
         const pricingLink = pricing.querySelector('.ct-menu-link');

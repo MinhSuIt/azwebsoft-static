@@ -779,7 +779,8 @@ label:last-child,
 }
 
 a {
-    color: var(--theme-link-initial-color);
+    /* color: var(--theme-link-initial-color); */
+    color: black;
     -webkit-text-decoration: var(--has-link-decoration, var(--theme-text-decoration, none));
     text-decoration: var(--has-link-decoration, var(--theme-text-decoration, none))
 }

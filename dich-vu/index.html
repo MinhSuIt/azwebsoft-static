@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi_VN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-
-    <title>Web Agency – Just another WordPress site</title>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Dịch vụ - Azwebsoft</title>
+    <meta name="description" content="Dịch vụ - Azwebsoft">
     <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website">
     
+    <meta property="og:title" content="Dịch vụ - Azwebsoft">
+    <meta property="og:description" content="Dịch vụ - Azwebsoft">
+    <meta property="og:url" content="https://drumie.com/dich-vu">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="og:updated_time" content="2026-05-26T15:03:55+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dịch vụ - Azwebsoft">
+    <meta name="twitter:description" content="Dịch vụ - Azwebsoft">
+    <meta name="twitter:url" content="https://drumie.com/dich-vu">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/dich-vu">
     <style>
         .pricing-sub-menu {
             display: none;
@@ -59,6 +81,104 @@
 
         .order_right {
             order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
         }
 
         @media only screen and (max-width: 689px) {
@@ -2033,10 +2153,9 @@
             }
         }
     </style>
-    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+    
 
 </head>
-
 
 <body
     class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
@@ -2086,7 +2205,7 @@
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                    <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
@@ -2204,7 +2323,7 @@
                                     </li>
                                     <li id="menu-item-563"
                                         class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                                        <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                                     </li>
                                     <li style="position: relative;"
                                         class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
@@ -2316,15 +2435,15 @@
 
                                         <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-715b347"
                                             id="we-create-best-digital-products" data-block-id="715b347">
-                                            <h2 class="stk-block-heading__text has-text-align-center">Giải pháp toàn diện về
-                                                thiết kế website & SEO</h2>
+                                            <h1 class="stk-block-heading__text has-text-align-center">Giải pháp toàn diện về
+                                                thiết kế website & SEO</h1>
                                         </div>
 
 
 
                                         <div class="wp-block-stackable-text stk-block-text stk-block stk-b3f9270"
                                             data-block-id="b3f9270">
-                                            <p class="stk-block-text__text has-text-align-center">
+                                            <p class="text_justify stk-block-text__text has-text-align-center">
                                                 Chúng tôi cung cấp giải pháp toàn diện từ thiết kế website, content writing
                                                 tới dịch vụ SEO tổng thể giúp tối ưu chi phí, bứt phá doanh thu mạnh mẽ cho
                                                 doanh nghiệp.
@@ -2375,7 +2494,7 @@
                                                             <div style="margin: 0 !important;"
                                                                 class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
                                                                 data-block-id="15dcdba">
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Tại Azwebsoft, chúng tôi sở hữu hơn 10
                                                                     năm kinh nghiệm trong việc xây dựng chiến lược và triển
                                                                     khai website từ ngắn hạn đến dài hạn, phù hợp với mọi mô
@@ -2397,7 +2516,7 @@
                                                                     ✓ Tư vấn giải pháp tối ưu theo nhu cầu và ngân sách thực
                                                                     tế
                                                                 </p>
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Azwebsoft không chỉ chú trọng yếu tố thẩm
                                                                     mỹ mà còn tập trung tối ưu hiệu quả vận hành, trải
                                                                     nghiệm người dùng và khả năng phát triển thương hiệu bền
@@ -2464,7 +2583,7 @@
                                                             <div style="margin: 0 !important;"
                                                                 class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
                                                                 data-block-id="15dcdba">
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Với kinh nghiệm triển khai SEO cho nhiều lĩnh vực khác
                                                                     nhau, Azwebsoft cung cấp dịch vụ SEO tổng
                                                                     thể giúp doanh
@@ -2491,7 +2610,7 @@
                                                                 <p class="stk-block-text__text">
                                                                     ✓ Theo dõi, báo cáo và tối ưu hiệu quả định kỳ
                                                                 </p>
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Azwebsoft không chỉ tập trung vào việc
                                                                     đưa từ khóa lên top mà còn hướng đến mục tiêu tăng tỷ lệ
                                                                     chuyển đổi, thu hút khách hàng tiềm năng và giúp doanh
@@ -2555,7 +2674,7 @@
                                                             <div style="margin: 0 !important;"
                                                                 class="wp-block-stackable-text stk-block-text stk-block stk-15dcdba"
                                                                 data-block-id="15dcdba">
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Với kinh nghiệm xây dựng nội dung cho nhiều lĩnh vực
                                                                     khác nhau, Azwebsoft cung cấp dịch vụ
                                                                     Content Writing chuyên nghiệp giúp doanh nghiệp truyền
@@ -2579,7 +2698,7 @@
                                                                     ✓ Tối ưu nội dung hỗ trợ tăng traffic và tỷ lệ chuyển
                                                                     đổi
                                                                 </p>
-                                                                <p class="stk-block-text__text">
+                                                                <p class="text_justify stk-block-text__text">
                                                                     Azwebsoft không chỉ tạo ra những bài viết
                                                                     hấp dẫn mà còn chú trọng giá trị thực tiễn, giúp doanh
                                                                     nghiệp xây dựng hình ảnh chuyên nghiệp, kết nối hiệu quả
@@ -2759,10 +2878,10 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h6 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Tôi đã có website nhưng chưa có khách hàng thì nên làm gì?
-                                                                        </h6>
+                                                                        </h3>
                                                                     </div>
 
 
@@ -2834,10 +2953,10 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h6 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Dịch vụ mà Azwebsoft có gì nổi bật so với các dịch vụ trên thị trường?
-                                                                        </h6>
+                                                                        </h3>
                                                                     </div>
 
 
@@ -2909,10 +3028,10 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h6 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Azwebsoft có hỗ trợ giá cho doanh nghiệp nhỏ, mới thành lập hay không?
-                                                                        </h6>
+                                                                        </h3>
                                                                     </div>
 
 
@@ -2984,10 +3103,10 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h6 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Chính sách hỗ trợ khách hàng sau khi bàn giao như nào?
-                                                                        </h6>
+                                                                        </h3>
                                                                     </div>
 
 
@@ -3073,21 +3192,16 @@
 
 
 
-                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
                             </div>
                         </div>
                         <div class="ct-widget is-layout-flow widget_block" id="block-11">
                             <div class="ct-block-wrapper">
-                                <h3 class="wp-block-heading"
-                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
                                 <div class="ct-socials-block"
                                     style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
                                     <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
-
-
-
-                                        <a href="#" data-network="facebook"
-                                            aria-label="Facebook">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3097,8 +3211,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="twitter"
-                                            aria-label="X (Twitter)">
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3108,8 +3221,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="instagram"
-                                            aria-label="Instagram">
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3120,8 +3232,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="youtube"
-                                            aria-label="YouTube">
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3166,8 +3277,10 @@
                             <h3 class="widget-title">Liên hệ</h3>
                             <div class="textwidget">
                                 <ul>
-                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
-                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -3184,6 +3297,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
         </footer>
     </div>
 
@@ -3241,7 +3355,8 @@
     <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
     <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
 
-    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
     <script>
         const pricing = document.querySelector('.pricing');
         const pricingLink = pricing.querySelector('.ct-menu-link');

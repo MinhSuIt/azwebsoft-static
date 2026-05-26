@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi_VN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-
-    <title>Web Agency – Just another WordPress site</title>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Giới thiệu về Laravel 11</title>
+    <meta name="description" content="Tổng quan về Laravel 11 và các tính năng mới.">
     <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="article">
     
+    <meta property="og:title" content="Giới thiệu về Laravel 11">
+    <meta property="og:description" content="Tổng quan về Laravel 11 và các tính năng mới.">
+    <meta property="og:url" content="https://drumie.com/gioi-thieu-ve-laravel-11">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="article:published_time" content="2026-05-04T00:00:00+00:00">
+        <meta property="article:modified_time" content="2026-05-25T13:55:38+00:00">
+        <meta property="og:updated_time" content="2026-05-25T13:55:38+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Giới thiệu về Laravel 11">
+    <meta name="twitter:description" content="Tổng quan về Laravel 11 và các tính năng mới.">
+    <meta name="twitter:url" content="https://drumie.com/gioi-thieu-ve-laravel-11">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/gioi-thieu-ve-laravel-11">
     <style>
         .pricing-sub-menu {
             display: none;
@@ -59,6 +83,104 @@
 
         .order_right {
             order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
         }
 
         @media only screen and (max-width: 689px) {
@@ -839,97 +961,6 @@
             margin: 0 !important;
         }
 
-        .toc {
-            background: #f8f9fa;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 24px 0;
-            font-family: Arial, sans-serif;
-
-            ul {
-                list-style: none;
-                margin: 0;
-                padding-left: 0;
-
-                li {
-                    position: relative;
-                    margin: 6px 0;
-
-                    a {
-                        display: block;
-                        color: #334155;
-                        text-decoration: none;
-                        line-height: 1.6;
-                        padding: 6px 10px;
-                        border-radius: 8px;
-                        transition: all 0.2s ease;
-
-                        &:hover {
-                            background: #e2e8f0;
-                            color: #0f172a;
-                        }
-                    }
-
-                    /* H2 */
-                    >a {
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-
-                    /* Nested levels */
-                    ul {
-                        margin-top: 6px;
-                        padding-left: 18px;
-                        border-left: 2px solid #dbe4ee;
-
-                        li {
-                            >a {
-                                font-size: 15px;
-                                font-weight: 500;
-                                color: #475569;
-                            }
-
-                            ul {
-                                padding-left: 16px;
-                                border-left: 1px dashed #cbd5e1;
-
-                                li {
-                                    >a {
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        color: #64748b;
-                                    }
-
-                                    ul {
-                                        padding-left: 14px;
-
-                                        li {
-                                            >a {
-                                                font-size: 13px;
-                                                color: #94a3b8;
-                                            }
-
-                                            ul {
-                                                padding-left: 12px;
-
-                                                li {
-                                                    >a {
-                                                        font-size: 12px;
-                                                        color: #a1a1aa;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         summary {
             list-style: none;
 
@@ -942,11 +973,16 @@
                 content: "";
             }
         }
+
+        .tags {
+            padding: 2rem 0;
+            display: flex;
+            gap: 0.25rem;
+        }
     </style>
     <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
 
 </head>
-
 
 <body
     class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
@@ -996,7 +1032,7 @@
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                    <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
@@ -1114,7 +1150,7 @@
                                     </li>
                                     <li id="menu-item-563"
                                         class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                                        <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                                     </li>
                                     <li style="position: relative;"
                                         class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
@@ -1204,19 +1240,23 @@
 
             <div class="entry-header ct-container-narrow">
 
-                <nav class="ct-breadcrumbs" data-source="default"><span class="first-item">
+                <nav class="ct-breadcrumbs" data-source="default">
+                    <span class="first-item">
                         <a href="https://drumie.com"><span>Trang chủ</span></a>
                         <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
                             aria-hidden="true" focusable="false">
                             <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
                         </svg>
-                    </span><span class="item-0">
-                        <a href="https://drumie.com/tin-tuc/page/1">Tin tức</span></a>
-                    <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
-                        aria-hidden="true" focusable="false">
-                        <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
-                    </svg>
-                    </span><span class="last-item" aria-current="page">
+                    </span>
+                                            <span class="item-0">
+                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1">Công nghệ
+                            </a>
+                        </span>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                                        </span><span class="last-item" aria-current="page">
                         <span>
                             Giới thiệu về Laravel 11
                         </span>
@@ -1232,77 +1272,411 @@
                             rel="author"><span>Admin</span></a>
                     </li>
                     <li class="meta-date"><time class="ct-meta-element-date"
-                            datetime="2021-07-05T15:41:41+00:00">21-05-2026</time></li>
-                    <li class="meta-categories" data-type="simple">
-                                                    <a href="https://drumie.com/danh-muc/cong-nghe/page/1" rel="tag" class="ct-term-3">
-                                Công nghệ
-                            </a>
-                                            </li>
-                </ul>
+                            datetime="2021-07-05T15:41:41+00:00">25/05/2026</time>
+                    </li>
+                                            <li class="meta-categories" data-type="simple">
+                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1" rel="tag"
+                                    class="ct-term-3">
+                                    Công nghệ
+                                </a>
+                                                    </li>
+                                    </ul>
             </div>
         </div>
 
-        <div class="ct-container-narrow" data-content="narrow" data-vertical-spacing="bottom">
+        <div class="ct-container-narrow" data-content="narrow">
             <article id="post-441"
                 class="post-441 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
                 <div style="text-align:justify;" class="entry-content is-layout-constrained">
                     
                     
-<details
-    style="border:none !important;margin-bottom:0 !important;"
-    class="wp-block-stackable-accordion stk-block-accordion stk-inner-blocks stk-block-content stk--single-open stk-block stk-3da243d is-style-plain toc"
-    data-block-id="3da243d"
-    data-height="59.796875">
-
-    <summary
-        class="wp-block-stackable-column stk-block-column stk-column stk-block stk-f2dc5a7 stk--container-small stk-block-accordion__heading"
-        data-block-id="f2dc5a7">
-
-        <div class="stk-column-wrapper stk-block-column__content stk-container stk-f2dc5a7-container stk--no-background stk--no-padding">
-            <div class="stk-block-content stk-inner-blocks stk-f2dc5a7-inner-blocks">
-
-                <div class="wp-block-stackable-icon-label stk-block-icon-label stk-block stk-628b9fa">
-                    <div class="stk-row stk-inner-blocks stk-block-content">
-
-                        <div
-                            class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a">
-                            <p
-                                style="margin:0 !important;cursor: pointer;"
-                                class="stk-block-heading__text stk-block-heading--use-theme-margins">
-                                <b>Mục lục</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<details class="toc">
+    <summary class="toc-title">
+        <strong>Mục lục</strong>
     </summary>
 
-    <div
-        class="wp-block-stackable-column stk-block-column stk-column stk-block stk-ed20f4a stk-block-accordion__content"
-        data-block-id="ed20f4a">
+    <div class="toc-content">
+            <ol>
+      <li class="first">
+        <a href="#tong-quan-ve-laravel-11">Tổng quan về Laravel 11</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#su-ra-doi-va-dinh-vi-cua-laravel-11">Sự ra đời và định vị của Laravel 11</a>
+          </li>
+          <li>
+            <a href="#cac-muc-tieu-cot-loi-cua-phien-ban-moi">Các mục tiêu cốt lõi của phiên bản mới</a>
+          </li>
+          <li>
+            <a href="#cau-truc-thu-muc-toi-gian-hoa">Cấu trúc thư mục tối giản hóa</a>
+          </li>
+          <li class="last">
+            <a href="#trai-nghiem-lap-trinh-vien-duoc-cai-thien">Trải nghiệm lập trình viên được cải thiện</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#so-sanh-laravel-voi-cac-framework-khac">So sánh Laravel với các framework khác</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#laravel-va-nestjs">Laravel và NestJS</a>
+          </li>
+          <li>
+            <a href="#laravel-va-net-asp-net-core">Laravel và .NET (ASP.NET Core)</a>
+          </li>
+          <li>
+            <a href="#laravel-va-spring-boot">Laravel và Spring Boot</a>
+          </li>
+          <li class="last">
+            <a href="#bang-so-sanh-tom-tat-cac-framework">Bảng so sánh tóm tắt các framework</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#diem-moi-noi-bat-trong-laravel-11">Điểm mới nổi bật trong Laravel 11</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#bo-khung-ung-dung-toi-gian">Bộ khung ứng dụng tối giản</a>
+          </li>
+          <li>
+            <a href="#cai-tien-tinh-nang-bao-mat">Cải tiến tính năng bảo mật</a>
+          </li>
+          <li>
+            <a href="#tang-toc-do-phat-trien-voi-artisan">Tăng tốc độ phát triển với Artisan</a>
+          </li>
+          <li class="last">
+            <a href="#tich-hop-he-sinh-thai-laravel-manh-me">Tích hợp hệ sinh thái Laravel mạnh mẽ</a>
+          </li>
+        </ol>
+      </li>
+      <li class="last">
+        <a href="#ket-luan-ve-laravel-11">Kết luận về Laravel 11</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#ly-do-nen-lua-chon-laravel-11">Lý do nên lựa chọn Laravel 11</a>
+          </li>
+          <li class="last">
+            <a href="#tuong-lai-cua-framework-trong-moi-truong-canh-tranh">Tương lai của framework trong môi trường cạnh tranh</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
 
-        <div class="stk-column-wrapper stk-block-column__content stk-container stk-ed20f4a-container stk--no-background stk--no-padding">
-            <div class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
+    </div>
+</details><div class='content'><h2 id="tong-quan-ve-laravel-11">Tổng quan về Laravel 11</h2>
 
-                <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33">
-                    <div class="stk-block-text__text toc-content">
+<h3 id="su-ra-doi-va-dinh-vi-cua-laravel-11">Sự ra đời và định vị của Laravel 11</h3>
+<p>Laravel 11 đánh dấu một bước tiến quan trọng trong lộ trình phát triển của framework PHP phổ biến nhất thế giới. Phiên bản này tập trung mạnh mẽ vào sự tối giản và hiệu suất vận hành. Cộng đồng lập trình viên đón nhận Laravel 11 như một tiêu chuẩn mới cho các ứng dụng web hiện đại.</p>
+<p>Sự thay đổi cốt lõi nằm ở việc tinh gọn cấu trúc thư mục giúp người dùng dễ dàng làm quen hơn. Thay vì sự cồng kềnh của các phiên bản cũ, Laravel 11 hướng tới sự tinh tế trong mã nguồn. Đây là lựa chọn lý tưởng cho các dự án từ quy mô nhỏ đến các hệ thống doanh nghiệp lớn.</p>
+<p>Sứ mệnh của Laravel 11 vẫn giữ nguyên triết lý cung cấp trải nghiệm lập trình hạnh phúc cho mọi nhà phát triển. Những công cụ tích hợp sẵn giúp giảm thiểu tối đa thời gian cấu hình và triển khai. Sự hỗ trợ từ cộng đồng toàn cầu cũng đảm bảo tính bền vững lâu dài cho các dự án.</p>
+
+<h3 id="cac-muc-tieu-cot-loi-cua-phien-ban-moi">Các mục tiêu cốt lõi của phiên bản mới</h3>
+<p>Mục tiêu hàng đầu của Laravel 11 là tối ưu hóa tốc độ tải ứng dụng ngay từ khi khởi tạo. Nhóm phát triển đã loại bỏ nhiều file cấu hình không cần thiết giúp giảm độ phức tạp cho người mới bắt đầu. Việc quản lý các dịch vụ giờ đây trở nên trực quan và mạnh mẽ hơn rất nhiều.</p>
+<p>Khả năng bảo mật cũng được nâng cao đáng kể thông qua việc cập nhật các thư viện lõi. Laravel 11 ưu tiên các giải pháp xác thực hiện đại và an toàn hơn cho dữ liệu người dùng. Mọi tính năng đều được kiểm tra kỹ lưỡng trước khi đưa vào bản phát hành chính thức.</p>
+<p>Khả năng mở rộng là một yếu tố then chốt khác mà Laravel 11 hướng tới trong thiết kế hệ thống. Framework cho phép tích hợp linh hoạt với các công cụ bên thứ ba thông qua bộ driver phong phú. Người dùng hoàn toàn có thể xây dựng các microservices phức tạp trên nền tảng này.</p>
+
+<h3 id="cau-truc-thu-muc-toi-gian-hoa">Cấu trúc thư mục tối giản hóa</h3>
+<p>Một trong những thay đổi đáng chú ý nhất là cấu trúc thư mục được tinh giản triệt để. Các thư mục không cần thiết đã được lược bỏ để tập trung vào luồng xử lý chính. Điều này giúp các nhà phát triển tập trung vào viết mã nguồn thay vì quản lý tệp tin.</p>
+<p>Tất cả các tệp tin cấu hình giờ đây có thể được quản lý tập trung thông qua các file môi trường. Cách tiếp cận này giúp ứng dụng trở nên gọn nhẹ và dễ dàng kiểm soát hơn trong quá trình triển khai. Bạn sẽ không còn thấy sự rối rắm khi mới bắt đầu tìm hiểu về dự án.</p>
+<p>Sự thay đổi này cũng giúp việc nâng cấp các phiên bản trong tương lai trở nên đơn giản hơn. Laravel 11 đã thiết lập một nền tảng ổn định cho các bản cập nhật dài hạn sau này. Đây thực sự là một cuộc cách mạng về trải nghiệm người dùng trong hệ sinh thái Laravel.</p>
+
+<h3 id="trai-nghiem-lap-trinh-vien-duoc-cai-thien">Trải nghiệm lập trình viên được cải thiện</h3>
+<p>Laravel 11 tiếp tục cải thiện các công cụ dòng lệnh để hỗ trợ tối đa cho việc phát triển. Các câu lệnh Artisan giờ đây thông minh hơn và cung cấp phản hồi chi tiết hơn cho người dùng. Việc debug trở nên dễ dàng nhờ sự tích hợp sâu với các công cụ kiểm thử hiện đại.</p>
+<p>Tài liệu hướng dẫn cũng được cập nhật đồng bộ để tương thích với cấu trúc mới. Mỗi tính năng mới đều đi kèm với các ví dụ thực tế giúp người dùng áp dụng nhanh chóng. Sự chú trọng vào trải nghiệm lập trình là kim chỉ nam giúp Laravel giữ vững vị thế số 1.</p>
+<p>Cộng đồng Laravel vẫn luôn là hậu phương vững chắc với vô số các gói mở rộng chất lượng. Các nhà phát triển có thể chia sẻ và sử dụng lại mã nguồn để tăng tốc độ phát triển dự án. Môi trường phát triển chuyên nghiệp này là lý do khiến Laravel 11 trở thành lựa chọn hàng đầu.</p>
+
+<h2 id="so-sanh-laravel-voi-cac-framework-khac">So sánh Laravel với các framework khác</h2>
+
+<h3 id="laravel-va-nestjs">Laravel và NestJS</h3>
+<p>Laravel là framework PHP hàng đầu trong khi NestJS đại diện cho đỉnh cao của hệ sinh thái Node.js. Laravel mang lại tốc độ phát triển cực nhanh nhờ các công cụ tích hợp sẵn tận răng. Ngược lại, NestJS cung cấp khả năng xử lý bất đồng bộ mạnh mẽ nhờ kiến trúc dựa trên TypeScript.</p>
+<p>Nếu bạn làm việc với Laravel, bạn sẽ yêu thích cú pháp biểu cảm và sự chặt chẽ của ngôn ngữ PHP. NestJS lại phù hợp cho các dự án yêu cầu hiệu suất cao với lưu lượng truy cập lớn và đồng thời. Cả hai đều hỗ trợ tốt kiến trúc MVC nhưng cách tiếp cận tư duy lập trình lại hoàn toàn khác biệt.</p>
+<p>Laravel vượt trội về khả năng xây dựng các trang web truyền thống với hệ thống Blade template mạnh mẽ. NestJS lại tỏa sáng trong các kiến trúc Microservices và ứng dụng thời gian thực nhờ Socket.io. Lựa chọn giữa hai tùy thuộc hoàn toàn vào ngôn ngữ chủ đạo của đội ngũ kỹ thuật.</p>
+<p>Cuối cùng, hệ sinh thái của Laravel mang tính chất tập trung cao độ và thống nhất. NestJS lại mang phong cách mở và linh hoạt hơn với khả năng tùy biến sâu rộng trong hệ sinh thái NPM. Cả hai đều là những công cụ mạnh mẽ xứng đáng được cân nhắc cho các dự án quy mô lớn.</p>
+
+<h3 id="laravel-va-net-asp-net-core">Laravel và .NET (ASP.NET Core)</h3>
+<p>ASP.NET Core là một thế lực lớn từ Microsoft với sức mạnh từ nền tảng ngôn ngữ C#. Laravel đem lại sự linh hoạt và khả năng triển khai nhanh trên mọi hạ tầng web tiêu chuẩn. .NET thường yêu cầu cấu hình hạ tầng khắt khe hơn nhưng mang lại độ ổn định cực cao.</p>
+<p>Hiệu suất thực thi của .NET thường nhỉnh hơn trong các tác vụ xử lý tính toán chuyên sâu. Laravel tập trung vào trải nghiệm phát triển và tốc độ đưa sản phẩm ra thị trường nhanh nhất có thể. Sự khác biệt về hệ sinh thái giúp mỗi framework chiếm lĩnh những phân khúc thị trường riêng biệt.</p>
+<p>Laravel 11 cung cấp môi trường làm việc rất trực quan và dễ tiếp cận cho người mới bắt đầu. .NET đòi hỏi một lộ trình học tập dài hơi hơn để nắm vững các kiến trúc phức tạp của hệ thống. Tuy nhiên, khả năng bảo trì của .NET là cực kỳ tốt trong các dự án doanh nghiệp hàng chục năm.</p>
+<p>Việc lựa chọn phụ thuộc vào nhu cầu về mặt quản lý tài nguyên và trình độ ngôn ngữ. Laravel phù hợp cho các startup cần sự nhanh chóng và hiệu quả về chi phí nhân sự. .NET là lựa chọn an toàn cho các tập đoàn lớn cần sự đồng bộ về hạ tầng công nghệ.</p>
+
+<h3 id="laravel-va-spring-boot">Laravel và Spring Boot</h3>
+<p>Spring Boot là framework Java khổng lồ với khả năng tùy biến gần như không giới hạn. Laravel mang lại sự đơn giản và thanh lịch trong cách viết mã giúp tăng năng suất làm việc. Java thường bị coi là cồng kềnh nhưng Spring Boot đã giải quyết tốt vấn đề cấu hình.</p>
+<p>Laravel giúp việc thao tác với cơ sở dữ liệu qua Eloquent ORM trở nên vô cùng dễ dàng. Spring Boot với Hibernate cung cấp một cơ chế mapping mạnh mẽ nhưng cần nhiều cấu hình phức tạp. Sự chênh lệch về độ phức tạp khi khởi tạo dự án là rất rõ rệt giữa hai framework.</p>
+<p>Trong các môi trường doanh nghiệp Java, Spring Boot là tiêu chuẩn không thể thay thế. Laravel lại thống trị thị trường các ứng dụng web tầm trung và các nền tảng thương mại điện tử linh hoạt. Cả hai đều có cộng đồng hỗ trợ khổng lồ với hàng triệu thư viện có sẵn trên toàn thế giới.</p>
+<p>Nếu dự án của bạn đòi hỏi sự chặt chẽ về mặt kiểu dữ liệu và kiến trúc đa tầng, Spring Boot là ứng viên sáng giá. Nếu bạn ưu tiên sự linh hoạt, dễ nâng cấp và tốc độ phát triển nhanh, Laravel 11 là sự lựa chọn số một. Hãy cân nhắc kỹ về hạ tầng máy chủ và kỹ năng của đội ngũ lập trình.</p>
+
+<h3 id="bang-so-sanh-tom-tat-cac-framework">Bảng so sánh tóm tắt các framework</h3>
+<ul>
+    <li>Laravel: Phù hợp cho tốc độ phát triển nhanh, hệ sinh thái PHP phong phú.</li>
+    <li>NestJS: Lựa chọn tối ưu cho hệ thống Microservices dựa trên TypeScript và Node.js.</li>
+    <li>.NET: Giải pháp mạnh mẽ cho doanh nghiệp cần hiệu suất và sự ổn định lâu dài.</li>
+    <li>Spring Boot: Framework Java toàn diện, xử lý nghiệp vụ phức tạp với tính bảo mật cao.</li>
+</ul>
+
+<h2 id="diem-moi-noi-bat-trong-laravel-11">Điểm mới nổi bật trong Laravel 11</h2>
+
+<h3 id="bo-khung-ung-dung-toi-gian">Bộ khung ứng dụng tối giản</h3>
+<p>Laravel 11 giới thiệu cấu trúc mới với ít tệp tin hơn đáng kể so với các phiên bản tiền nhiệm. Việc loại bỏ các tệp tin cấu hình không dùng đến giúp dự án trở nên gọn gàng. Người lập trình có thể dễ dàng quản lý mọi cài đặt ngay trong tệp .env.</p>
+<p>Sự tinh gọn này không làm mất đi tính mạnh mẽ đặc trưng của framework Laravel. Mọi chức năng cốt lõi như routing, middleware và controller vẫn được duy trì ổn định. Điều này tạo điều kiện cho các nhà phát triển tập trung tối ưu hóa logic kinh doanh.</p>
+<p>Cấu trúc thư mục mới cũng giúp việc tích hợp các thư viện bên thứ ba trở nên đơn giản hơn. Bạn không cần phải tìm kiếm giữa hàng chục tệp tin cấu hình chỉ để đổi một thiết lập nhỏ. Sự thay đổi này nhận được sự hưởng ứng tích cực từ cộng đồng lập trình viên trên toàn thế giới.</p>
+<p>Tổng thể, việc giảm bớt cấu trúc file là bước đi chiến lược cho tương lai. Nó giúp người mới tiếp cận Laravel không bị choáng ngợp bởi sự đồ sộ của framework. Đây là chìa khóa để giữ chân các lập trình viên trẻ trong hệ sinh thái này.</p>
+
+<h3 id="cai-tien-tinh-nang-bao-mat">Cải tiến tính năng bảo mật</h3>
+<p>Bảo mật luôn là ưu tiên hàng đầu trong các phiên bản cập nhật của Laravel. Phiên bản 11 giới thiệu cơ chế bảo mật nâng cao cho quá trình xử lý dữ liệu đầu vào. Các lỗ hổng phổ biến như SQL Injection hay XSS được chặn đứng từ gốc.</p>
+<p>Việc cập nhật các thư viện phụ thuộc được thực hiện thường xuyên để đảm bảo an toàn tuyệt đối. Laravel 11 mang đến sự an tâm cho các doanh nghiệp khi triển khai các hệ thống thanh toán. Mọi yêu cầu bảo mật đều được đáp ứng theo tiêu chuẩn công nghiệp mới nhất.</p>
+<p>Cơ chế xác thực người dùng được làm mới giúp quản lý phiên đăng nhập chặt chẽ hơn. Bạn có thể dễ dàng cấu hình các chính sách bảo mật riêng cho từng module trong ứng dụng. Sự kiểm soát tinh tế này giúp giảm thiểu rủi ro bị tấn công từ bên ngoài.</p>
+<p>Bên cạnh đó, các công cụ kiểm thử bảo mật tự động cũng được tích hợp sâu hơn. Nhà phát triển có thể chạy các bài test để kiểm tra lỗ hổng trước khi đưa ứng dụng lên production. Laravel 11 thực sự là một pháo đài vững chắc cho mọi dữ liệu web.</p>
+
+<h3 id="tang-toc-do-phat-trien-voi-artisan">Tăng tốc độ phát triển với Artisan</h3>
+<p>Công cụ dòng lệnh Artisan đã nhận được nhiều nâng cấp đáng giá trong bản cập nhật lần này. Các câu lệnh mới giúp tạo ra các thành phần ứng dụng nhanh chóng chỉ với một cú gõ phím. Sự tiện lợi này tiết kiệm hàng giờ đồng hồ làm việc cho đội ngũ phát triển.</p>
+<p>Artisan không chỉ là công cụ tạo file mà còn là trung tâm quản lý mọi tác vụ hệ thống. Việc xử lý cơ sở dữ liệu, chạy queue, hay gửi mail đều có thể thực hiện thông qua dòng lệnh. Sự phản hồi nhanh chóng và rõ ràng giúp người dùng kiểm soát ứng dụng tốt hơn.</p>
+<p>Khả năng tùy biến câu lệnh cho các nhu cầu đặc thù cũng được mở rộng. Các nhà phát triển có thể tạo ra các công cụ riêng phù hợp với quy trình làm việc của dự án. Điều này giúp tối ưu hóa công việc vận hành và bảo trì hệ thống hiệu quả.</p>
+<p>Sự cải tiến này biến Artisan thành một người bạn đồng hành không thể thiếu. Bạn sẽ cảm nhận được sự khác biệt rõ rệt khi làm việc với các hệ thống Laravel 11 chuyên nghiệp. Hiệu suất công việc từ đó được nâng lên một tầm cao mới hoàn toàn khác biệt.</p>
+
+<h3 id="tich-hop-he-sinh-thai-laravel-manh-me">Tích hợp hệ sinh thái Laravel mạnh mẽ</h3>
+<p>Laravel 11 kết hợp hoàn hảo với hệ sinh thái phong phú bao gồm Forge, Vapor và Octane. Bạn có thể triển khai ứng dụng trên đám mây chỉ với vài thao tác cấu hình đơn giản. Sự hỗ trợ từ các công cụ này giúp giảm áp lực cho bộ phận kỹ thuật.</p>
+<p>Khả năng mở rộng của ứng dụng lên hàng triệu người dùng trở nên khả thi hơn nhờ Laravel Octane. Việc tận dụng sức mạnh của server đa nhân giúp ứng dụng xử lý tác vụ cực kỳ mượt mà. Không có giới hạn nào cho việc phát triển các ứng dụng quy mô lớn.</p>
+<p>Hệ thống Queue và Event được tinh chỉnh để hoạt động ổn định dưới tải trọng cao. Dù dự án của bạn nhỏ hay lớn, Laravel 11 đều có công cụ tương ứng để quản lý. Sự đồng bộ này tạo ra một trải nghiệm phát triển chuyên nghiệp và liền mạch nhất.</p>
+<p>Việc gắn kết các công cụ này lại với nhau giúp Laravel trở thành một nền tảng toàn diện. Bạn không cần phải tìm kiếm giải pháp ngoài hệ sinh thái cho hầu hết các vấn đề. Laravel 11 thực sự đã nâng tầm trải nghiệm cho cộng đồng người dùng toàn cầu.</p>
+
+<h2 id="ket-luan-ve-laravel-11">Kết luận về Laravel 11</h2>
+
+<h3 id="ly-do-nen-lua-chon-laravel-11">Lý do nên lựa chọn Laravel 11</h3>
+<p>Laravel 11 là minh chứng rõ ràng cho sức mạnh của sự đổi mới trong lĩnh vực lập trình. Bằng cách tinh giản cấu trúc, framework mang lại hiệu suất vượt trội và trải nghiệm người dùng tuyệt vời. Đây là thời điểm vàng để các lập trình viên bắt đầu hành trình với phiên bản này.</p>
+<p>Sự ổn định và tính an toàn cao khiến Laravel 11 trở thành tiêu chuẩn cho nhiều doanh nghiệp. Việc cập nhật lên phiên bản này mang lại lợi ích lâu dài cho việc bảo trì ứng dụng. Không có lý do gì để bạn bỏ qua những cải tiến mạnh mẽ này trong năm nay.</p>
+<p>Cộng đồng lớn mạnh cũng là lý do giúp bạn dễ dàng tìm kiếm sự trợ giúp. Mọi khó khăn trong quá trình phát triển đều được giải quyết nhanh chóng bởi các chuyên gia. Bạn hoàn toàn có thể tự tin xây dựng những ý tưởng táo bạo nhất trên nền tảng này.</p>
+<p>Hãy cùng cộng đồng trải nghiệm sự thông minh và tinh tế mà Laravel 11 mang lại ngay hôm nay. Chắc chắn rằng bạn sẽ cảm thấy sự khác biệt trong năng suất công việc hàng ngày. Laravel 11 không chỉ là một framework, đó là công cụ để thay đổi tư duy lập trình.</p>
+
+<h3 id="tuong-lai-cua-framework-trong-moi-truong-canh-tranh">Tương lai của framework trong môi trường cạnh tranh</h3>
+<p>Trong bối cảnh công nghệ thay đổi từng ngày, Laravel vẫn luôn giữ vững vị thế dẫn đầu. Sự linh hoạt và khả năng bắt kịp xu hướng giúp framework này luôn phù hợp với mọi thời đại. Tương lai của Laravel 11 là sự kết hợp giữa hiệu năng và sự đơn giản hóa.</p>
+<p>Các xu hướng mới như AI và Serverless đang được tích hợp dần vào hệ sinh thái. Laravel 11 sẽ tiếp tục hỗ trợ các công nghệ tiên tiến nhất để đáp ứng nhu cầu thị trường. Các nhà phát triển có thể yên tâm đầu tư vào lộ trình học tập với Laravel.</p>
+<p>Sự cạnh tranh từ các framework khác chỉ là động lực giúp Laravel cải tiến mạnh mẽ hơn. Mỗi phiên bản mới ra đời đều mang đến những giá trị thực tế cho cộng đồng. Chúng ta hoàn toàn có thể tin tưởng vào sự bền vững và thành công của hệ sinh thái này.</p>
+<p>Lựa chọn Laravel 11 là lựa chọn cho một sự phát triển chuyên nghiệp và lâu dài. Hãy sẵn sàng để đón nhận những thay đổi tích cực và thành công cùng với dự án của bạn. Laravel 11 chính là nền tảng giúp bạn vươn xa hơn trong sự nghiệp lập trình của mình.</p></div>
+                </div>
+                                    <nav class="tags" data-source="default">
+                        <p>Thẻ:</p>
+                                                    <span class="item-0">
+                                <a href="https://drumie.com/the/php/trang/1">
+                                    PHP
+                                </a>
+                            </span>
+                                                            -
+                                                                                <span class="item-0">
+                                <a href="https://drumie.com/the/laravel/trang/1">
+                                    Laravel
+                                </a>
+                            </span>
+                                                            -
+                                                                                <span class="item-0">
+                                <a href="https://drumie.com/the/kien-thuc/trang/1">
+                                    Kiến thức
+                                </a>
+                            </span>
+                                                                        </nav>
+                            </article>
+        </div>
+                    <div class="ct-container">
+                <div class="wp-block-stackable-heading stk-block-heading stk-block stk-02dc96b" id="latest-from-blog"
+                    data-block-id="02dc96b">
+                    <h2 style="padding:2rem 0" class="stk-block-heading__text has-text-align-center">BÀI VIẾT LIÊN QUAN
+                    </h2>
+                </div>
+                <div class="ct-posts-shortcode" data-prefix="blog">
+                    <div class="entries" data-archive="default" data-layout="grid" data-cards="boxed"
+                        data-hover="zoom-in">
                         
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/so-sanh-xe-dien-va-xe-xang-nen-chon-loai-nao" aria-label="So sánh xe điện và xe xăng: Nên chọn loại nào?"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/xe-co/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Xe cộ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/so-sanh-xe-dien-va-xe-xang-nen-chon-loai-nao"
+                                    rel="bookmark" alt="So sánh xe điện và xe xăng: Nên chọn loại nào?">
+                                    So sánh xe điện và xe xăng: Nên chọn loại nào?
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Xe điện vs xe xăng.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/ai-va-tuong-lai-cua-con-nguoi" aria-label="AI và tương lai của con người"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/khoa-hoc/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Khoa học
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/ai-va-tuong-lai-cua-con-nguoi"
+                                    rel="bookmark" alt="AI và tương lai của con người">
+                                    AI và tương lai của con người
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>AI thay đổi cuộc sống.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/xu-huong-thuong-mai-dien-tu-2025" aria-label="Xu hướng thương mại điện tử 2025"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                                                            <a href="https://drumie.com/danh-muc/kinh-doanh/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh doanh
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/xu-huong-thuong-mai-dien-tu-2025"
+                                    rel="bookmark" alt="Xu hướng thương mại điện tử 2025">
+                                    Xu hướng thương mại điện tử 2025
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Xu hướng TMĐT 2025.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/xay-dung-restful-api-voi-nodejs" aria-label="Xây dựng RESTful API với NodeJS"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/xay-dung-restful-api-voi-nodejs"
+                                    rel="bookmark" alt="Xây dựng RESTful API với NodeJS">
+                                    Xây dựng RESTful API với NodeJS
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Tạo RESTful API với NodeJS.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/cach-toi-uu-toc-do-website" aria-label="Cách tối ưu tốc độ website"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/cach-toi-uu-toc-do-website"
+                                    rel="bookmark" alt="Cách tối ưu tốc độ website">
+                                    Cách tối ưu tốc độ website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Mẹo tối ưu tốc độ website hiệu quả.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/typescript-tai-sao-nen-su-dung" aria-label="TypeScript: Tại sao nên sử dụng?"><img
+                                    width="768" height="576"
+                                    src="/storage/.thumbnails/"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/cong-nghe/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Công nghệ
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/typescript-tai-sao-nen-su-dung"
+                                    rel="bookmark" alt="TypeScript: Tại sao nên sử dụng?">
+                                    TypeScript: Tại sao nên sử dụng?
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Lợi ích của TypeScript trong phát triển web.</p>
+                            </div>
+                        </article>
+                                                
                     </div>
                 </div>
-
+                <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-81fea2c"
+                    data-block-id="81fea2c"></div>
             </div>
-        </div>
-    </div>
-
-</details>
-<div class='content'>Laravel 11 là phiên bản mới nhất với nhiều cải tiến vượt trội về hiệu năng và trải nghiệm developer. Bài viết này sẽ giới thiệu chi tiết các tính năng nổi bật.</div>
-                </div>
-            </article>
-        </div>
-
-        
+                
     </main>
 
 
@@ -1321,21 +1695,16 @@
 
 
 
-                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
                             </div>
                         </div>
                         <div class="ct-widget is-layout-flow widget_block" id="block-11">
                             <div class="ct-block-wrapper">
-                                <h3 class="wp-block-heading"
-                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
                                 <div class="ct-socials-block"
                                     style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
                                     <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
-
-
-
-                                        <a href="#" data-network="facebook"
-                                            aria-label="Facebook">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1345,8 +1714,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="twitter"
-                                            aria-label="X (Twitter)">
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1356,8 +1724,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="instagram"
-                                            aria-label="Instagram">
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1368,8 +1735,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="youtube"
-                                            aria-label="YouTube">
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -1414,8 +1780,10 @@
                             <h3 class="widget-title">Liên hệ</h3>
                             <div class="textwidget">
                                 <ul>
-                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
-                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1432,6 +1800,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
         </footer>
     </div>
 
@@ -1489,7 +1858,8 @@
     <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
     <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
 
-    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
     <script>
         const pricing = document.querySelector('.pricing');
         const pricingLink = pricing.querySelector('.ct-menu-link');

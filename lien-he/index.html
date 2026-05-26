@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi_VN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-
-    <title>Web Agency – Just another WordPress site</title>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Liên hệ - Azwebsoft</title>
+    <meta name="description" content="Liên hệ - Azwebsoft">
     <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website">
     
+    <meta property="og:title" content="Liên hệ - Azwebsoft">
+    <meta property="og:description" content="Liên hệ - Azwebsoft">
+    <meta property="og:url" content="https://drumie.com/lien-he">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="og:updated_time" content="2026-05-26T15:03:55+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Liên hệ - Azwebsoft">
+    <meta name="twitter:description" content="Liên hệ - Azwebsoft">
+    <meta name="twitter:url" content="https://drumie.com/lien-he">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/lien-he">
     <style>
         .pricing-sub-menu {
             display: none;
@@ -59,6 +81,104 @@
 
         .order_right {
             order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
         }
 
         @media only screen and (max-width: 689px) {
@@ -1805,10 +1925,9 @@
             }
         }
     </style>
-    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+    
 
 </head>
-
 
 <body
     class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
@@ -1858,7 +1977,7 @@
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                    <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                 </li>
                 <li
                     class=" current-menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
@@ -1976,7 +2095,7 @@
                                     </li>
                                     <li id="menu-item-563"
                                         class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                                        <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                                     </li>
                                     <li style="position: relative;"
                                         class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
@@ -2069,9 +2188,9 @@
 
                     <div id="hoi-dap" class="wp-block-stackable-text stk-block-text stk-block stk-77d462d"
                         data-block-id="77d462d">
-                        <p class="stk-block-text__text has-text-color has-palette-color-4-color has-text-align-center">
-                            Hỏi đáp
-                        </p>
+                        <h1 style="padding: 1rem; font-size: 1.25rem;" class="stk-block-text__text has-text-color has-palette-color-4-color has-text-align-center">
+                            Hỏi đáp cùng Azwebsoft
+                        </h1>
                     </div>
 
 
@@ -2120,7 +2239,7 @@
                                             id="wpforms-298">
                                             <form id="ask_form" class="wpforms-validate wpforms-form" method="post"
                                                 enctype="multipart/form-data" action="https://drumie.com/lien-he">
-                                                <div class="wpforms-field-container">
+                                                <input type="hidden" name="_token" value="8KmbSkAB8rzQGHLPt3TTG3bRlnSlCHdibyQ16bVu" autocomplete="off">                                                <div class="wpforms-field-container">
                                                     <div class="wpforms-field wpforms-field-name" data-field-id="0">
                                                         <label class="wpforms-field-label" for="wpforms-298-field_0">Họ
                                                             tên
@@ -2191,10 +2310,10 @@
 
                                                             <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-b33f874"
                                                                 id="physical-address" data-block-id="b33f874">
-                                                                <h5
+                                                                <p
                                                                     class="stk-block-heading__text has-text-color has-palette-color-8-color">
                                                                     Địa chỉ
-                                                                </h5>
+                                                                </p>
                                                             </div>
 
 
@@ -2231,9 +2350,9 @@
 
                                                             <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-65e6609"
                                                                 id="email-address" data-block-id="65e6609">
-                                                                <h5
+                                                                <p
                                                                     class="stk-block-heading__text has-text-color has-palette-color-8-color">
-                                                                    Email</h5>
+                                                                    Email</p>
                                                             </div>
 
 
@@ -2271,10 +2390,10 @@
 
                                                             <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-43b0b49"
                                                                 id="phone-numbers" data-block-id="43b0b49">
-                                                                <h5
+                                                                <p
                                                                     class="stk-block-heading__text has-text-color has-palette-color-8-color">
                                                                     Điện thoại
-                                                                </h5>
+                                                                </p>
                                                             </div>
 
 
@@ -2319,21 +2438,16 @@
 
 
 
-                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
                             </div>
                         </div>
                         <div class="ct-widget is-layout-flow widget_block" id="block-11">
                             <div class="ct-block-wrapper">
-                                <h3 class="wp-block-heading"
-                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
                                 <div class="ct-socials-block"
                                     style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
                                     <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
-
-
-
-                                        <a href="#" data-network="facebook"
-                                            aria-label="Facebook">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -2343,8 +2457,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="twitter"
-                                            aria-label="X (Twitter)">
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -2354,8 +2467,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="instagram"
-                                            aria-label="Instagram">
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -2366,8 +2478,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="youtube"
-                                            aria-label="YouTube">
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -2412,8 +2523,10 @@
                             <h3 class="widget-title">Liên hệ</h3>
                             <div class="textwidget">
                                 <ul>
-                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
-                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2430,6 +2543,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
         </footer>
     </div>
 
@@ -2487,7 +2601,8 @@
     <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
     <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
 
-    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
     <script>
         const pricing = document.querySelector('.pricing');
         const pricingLink = pricing.querySelector('.ct-menu-link');
@@ -2498,7 +2613,11 @@
             pricingMenu.classList.toggle('active');
         });
     </script>
-        <script src="https://drumie.com/assets/block/post_to_sheet.js"></script>
+    <script>
+    window.askUrl = "https://drumie.com/lien-he";
+    window.debug = true;
+</script>
+<script src="https://drumie.com/assets/block/post_to_sheet.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi_VN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-
-    <title>Web Agency – Just another WordPress site</title>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Về chúng tôi - Azwebsoft</title>
+    <meta name="description" content="Về chúng tôi - Azwebsoft">
     <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website">
     
+    <meta property="og:title" content="Về chúng tôi - Azwebsoft">
+    <meta property="og:description" content="Về chúng tôi - Azwebsoft">
+    <meta property="og:url" content="https://drumie.com/ve-chung-toi">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="og:updated_time" content="2026-05-26T15:03:55+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Về chúng tôi - Azwebsoft">
+    <meta name="twitter:description" content="Về chúng tôi - Azwebsoft">
+    <meta name="twitter:url" content="https://drumie.com/ve-chung-toi">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/ve-chung-toi">
     <style>
         .pricing-sub-menu {
             display: none;
@@ -59,6 +81,104 @@
 
         .order_right {
             order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
         }
 
         @media only screen and (max-width: 689px) {
@@ -1902,7 +2022,7 @@
             }
         }
     </style>
-    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+    
 
 
     <style>
@@ -1997,7 +2117,6 @@
 
 </head>
 
-
 <body
     class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
     data-link="type-2" data-prefix="single_page" data-header="type-1:sticky" data-footer="type-1">
@@ -2046,7 +2165,7 @@
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                    <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                 </li>
                 <li
                     class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
@@ -2164,7 +2283,7 @@
                                     </li>
                                     <li id="menu-item-563"
                                         class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
-                                        <a href="https://drumie.com/tin-tuc/page/1" class="ct-menu-link">Tin tức</a>
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
                                     </li>
                                     <li style="position: relative;"
                                         class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
@@ -2265,7 +2384,7 @@
                                         <nav class="ct-breadcrumbs" data-source="default"
                                             style="margin-bottom:30px;--theme-link-initial-color:var(--wp--preset--color--palette-color-8);--theme-text-color:var(--wp--preset--color--palette-color-1);">
                                             <span class="first-item">
-                                                <a href="https://drumie.com"><span>Trang chủ</span></a>
+                                                <a style="color: yellow;" href="https://drumie.com"><span>Trang chủ</span></a>
                                                 <svg class="ct-separator" fill="currentColor" width="8" height="8"
                                                     viewBox="0 0 8 8" aria-hidden="true" focusable="false">
                                                     <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
@@ -2290,6 +2409,11 @@
                                                             class="stk-block-content stk-inner-blocks stk-d542d57-inner-blocks">
                                                             <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-ba93f5b"
                                                                 id="meet-our-br-leadership-team" data-block-id="ba93f5b">
+                                                                <h1
+                                                                    style="font-size: 16px; font-weight: 600;"
+                                                                    class="stk-block-heading__text has-text-color has-palette-color-8-color">
+                                                                    Về chúng tôi
+                                                                </h1>
                                                                 <h2
                                                                     class="stk-block-heading__text has-text-color has-palette-color-8-color">
                                                                     Đội ngũ nhân viên
@@ -2327,10 +2451,10 @@
 
                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-0e319cf"
                         id="terry-green" data-block-id="0e319cf">
-                        <h5
+                        <p
                             class="stk-block-heading__text has-text-color has-palette-color-8-color has-text-align-center">
                             Nguyễn Thành Nam
-                        </h5>
+                        </p>
                     </div>
 
 
@@ -2413,10 +2537,10 @@
 
                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-0e319cf"
                         id="terry-green" data-block-id="0e319cf">
-                        <h5
+                        <p
                             class="stk-block-heading__text has-text-color has-palette-color-8-color has-text-align-center">
                             Trần Ngọc Vân Anh
-                        </h5>
+                        </p>
                     </div>
 
 
@@ -2499,10 +2623,10 @@
 
                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-0e319cf"
                         id="terry-green" data-block-id="0e319cf">
-                        <h5
+                        <p
                             class="stk-block-heading__text has-text-color has-palette-color-8-color has-text-align-center">
                             Lê Trúc Quỳnh
-                        </h5>
+                        </p>
                     </div>
 
 
@@ -2585,10 +2709,10 @@
 
                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-0e319cf"
                         id="terry-green" data-block-id="0e319cf">
-                        <h5
+                        <p
                             class="stk-block-heading__text has-text-color has-palette-color-8-color has-text-align-center">
                             Trần Chiến Thắng
-                        </h5>
+                        </p>
                     </div>
 
 
@@ -2922,9 +3046,9 @@
                                                                 fill="white" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Hãy là người tử tế, bạn sẽ nhận lại sự tử tế
-                                                    </h2>
-                                                    <p class="card-description">Lan tỏa sự tử tế trong hành động và lời
+                                                    <h3 class="card-title">Hãy là người tử tế, bạn sẽ nhận lại sự tử tế
+                                                    </h3>
+                                                    <p class="text_justify card-description">Lan tỏa sự tử tế trong hành động và lời
                                                         nói, tạo nên một môi trường làm việc tích cực, chuyên nghiệp và đáng
                                                         tin cậy. Chúng tôi tin rằng sự chân thành và tử tế chính là nền tảng
                                                         để xây dựng mối quan hệ bền vững với khách hàng và đồng nghiệp.</p>
@@ -2943,8 +3067,8 @@
                                                                 rx="3" fill="white" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Làm tốt nhất có thể, ngay cả việc nhỏ nhất</h2>
-                                                    <p class="card-description">Dốc hết tâm huyết vào mọi nhiệm vụ, dù nhỏ
+                                                    <h3 class="card-title">Làm tốt nhất có thể, ngay cả việc nhỏ nhất</h3>
+                                                    <p class="text_justify card-description">Dốc hết tâm huyết vào mọi nhiệm vụ, dù nhỏ
                                                         bé, để tạo ra những giá trị lớn lao. Tinh thần trách nhiệm trong
                                                         từng chi tiết chính là yếu tố giúp Azwebsoft không
                                                         ngừng phát
@@ -2965,9 +3089,9 @@
                                                                 stroke-linecap="round" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Tôn trọng, lịch sự, thân thiện, cởi mở với khách
-                                                        hàng</h2>
-                                                    <p class="card-description">Đối xử với khách hàng bằng sự tôn trọng,
+                                                    <h3 class="card-title">Tôn trọng, lịch sự, thân thiện, cởi mở với khách
+                                                        hàng</h3>
+                                                    <p class="text_justify card-description">Đối xử với khách hàng bằng sự tôn trọng,
                                                         luôn thân thiện và sẵn sàng lắng nghe mọi ý kiến đóng góp. Chúng tôi
                                                         xem khách hàng là đối tác đồng hành, không ngừng cải thiện để mang
                                                         lại dịch vụ tốt nhất.</p>
@@ -2987,8 +3111,8 @@
                                                                 stroke-linecap="round" stroke-linejoin="round" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Luôn hỗ trợ khách hàng hết mình</h2>
-                                                    <p class="card-description">Khách hàng là trung tâm trong mọi hoạt động
+                                                    <h3 class="card-title">Luôn hỗ trợ khách hàng hết mình</h3>
+                                                    <p class="text_justify card-description">Khách hàng là trung tâm trong mọi hoạt động
                                                         của chúng tôi. Azwebsoft cam kết hỗ trợ tận tình,
                                                         giải quyết
                                                         mọi vấn đề một cách nhanh chóng và hiệu quả, đảm bảo sự hài lòng cao
@@ -3009,8 +3133,8 @@
                                                                 stroke-linecap="round" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Không đổ lỗi, không trì hoãn</h2>
-                                                    <p class="card-description">Chủ động đối mặt với mọi vấn đề, chịu trách
+                                                    <h3 class="card-title">Không đổ lỗi, không trì hoãn</h3>
+                                                    <p class="text_justify card-description">Chủ động đối mặt với mọi vấn đề, chịu trách
                                                         nhiệm và giải quyết kịp thời. Chúng tôi không tìm lý do, không trì
                                                         hoãn mà luôn tập trung vào việc tìm kiếm giải pháp để mang đến kết
                                                         quả tốt nhất.</p>
@@ -3028,8 +3152,8 @@
                                                                 fill="white" />
                                                         </svg>
                                                     </div>
-                                                    <h2 class="card-title">Có tinh thần trách nhiệm, kỷ luật</h2>
-                                                    <p class="card-description">Cam kết thực hiện mọi nhiệm vụ đúng tiến
+                                                    <h3 class="card-title">Có tinh thần trách nhiệm, kỷ luật</h3>
+                                                    <p class="text_justify card-description">Cam kết thực hiện mọi nhiệm vụ đúng tiến
                                                         độ, đúng cam kết với tinh thần kỷ luật cao. Mỗi cá nhân trong
                                                         Azwebsoft đều làm việc với trách nhiệm cao nhất, góp
                                                         phần tạo nên
@@ -3066,21 +3190,16 @@
 
 
 
-                                <p>Giải pháp toàn diện thiết kế website, app và SEO tổng thể.<br/>Đồng hành cùng doanh nghiệp trong quá trình chuyển đổi số.</p>
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
                             </div>
                         </div>
                         <div class="ct-widget is-layout-flow widget_block" id="block-11">
                             <div class="ct-block-wrapper">
-                                <h3 class="wp-block-heading"
-                                    style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 18px);"></h3>
                                 <div class="ct-socials-block"
                                     style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
                                     <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
-
-
-
-                                        <a href="#" data-network="facebook"
-                                            aria-label="Facebook">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3090,8 +3209,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="twitter"
-                                            aria-label="X (Twitter)">
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
                                             <span class="ct-icon-container">
                                                 <svg width="20px" height="20px" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3101,8 +3219,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="instagram"
-                                            aria-label="Instagram">
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3113,8 +3230,7 @@
                                                 </svg>
                                             </span> </a>
 
-                                        <a href="#" data-network="youtube"
-                                            aria-label="YouTube">
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
                                             <span class="ct-icon-container">
                                                 <svg width="20" height="20" viewBox="0 0 20 20"
                                                     aria-hidden="true">
@@ -3159,8 +3275,10 @@
                             <h3 class="widget-title">Liên hệ</h3>
                             <div class="textwidget">
                                 <ul>
-                                    <li><a href="tel:0915452237">Điện thoại: 0915452237</a></li>
-                                    <li><a href="mailto:azwebsoft@gmail.com">Email: azwebsoft@gmail.com</a></li>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -3177,6 +3295,7 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
         </footer>
     </div>
 
@@ -3234,7 +3353,8 @@
     <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
     <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
 
-    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async="" beacon-completed="true"></script>
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
     <script>
         const pricing = document.querySelector('.pricing');
         const pricingLink = pricing.querySelector('.ct-menu-link');
