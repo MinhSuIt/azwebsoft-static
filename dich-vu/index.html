@@ -4,6 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
     <meta charset="UTF-8">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Android / PWA -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <!-- Web Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
     <meta property="og:locale" content="vi_VN">
         <title>Dịch vụ - Azwebsoft</title>
     <meta name="description" content="Dịch vụ - Azwebsoft">
@@ -15,7 +27,7 @@
     <meta property="og:url" content="https://drumie.com/dich-vu">
     <meta property="og:site_name" content="Azwebsoft">
             
-        <meta property="og:updated_time" content="2026-05-27T12:41:01+00:00">
+        <meta property="og:updated_time" content="2026-05-27T16:06:21+00:00">
     
 
     <meta name="twitter:card" content="summary_large_image">
@@ -181,6 +193,10 @@
             }
         }
 
+        .site-main {
+            padding: 1rem 0 2rem 0;
+        }
+
         @media only screen and (max-width: 689px) {
             .custom-mobile {
                 display: grid !important;
@@ -193,14 +209,15 @@
         }
     </style>
     <link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://drumie.com/assets/global.css" media="all">
-        <style>
+        <link rel="preload" as="image" href="https://drumie.com/assets/block/thiet-ke-web.png">
+    <style>
         img:is([sizes="auto" i],
         [sizes^="auto," i]) {
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
 
-    
+
     <link rel="stylesheet" id="ugb-style-css-css" href="https://drumie.com/assets/frontend_blocks.css" media="all">
     <link rel="stylesheet" href="https://drumie.com/assets/block/ugb-style-css-inline-css.css" media="all">
     <style id="ugb-style-css-inline-css">
@@ -1518,8 +1535,8 @@
     <link rel="stylesheet" id="ct-main-styles-css" href="https://drumie.com/assets/main.min.css" media="all">
     <link rel="stylesheet" id="ct-stackable-styles-css" href="https://drumie.com/assets/stackable.min.css" media="all">
     <link rel="stylesheet" id="ct-wpforms-styles-css" href="https://drumie.com/assets/wpforms.min.css" media="all">
-    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css" href="https://drumie.com/assets/header-account.min.css"
-        media="all">
+    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css"
+        href="https://drumie.com/assets/header-account.min.css" media="all">
     <script src="https://drumie.com/assets/jquery.min.js.download" id="jquery-core-js"></script>
     <script src="https://drumie.com/assets/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
 
@@ -2292,7 +2309,7 @@
         <header data-rocket-location-hash="ec79a8b50d7f14dc6444bd8a706b2130" id="header" class="ct-header"
             data-id="type-1">
             <div data-rocket-location-hash="252865cd7eec5ce9cb808c3bd99dc248" data-device="desktop">
-    <div class="ct-sticky-container" style="height: 120px;">
+    <div class="ct-sticky-container">
         <div data-sticky="fixed:shrink">
             <div data-row="middle" data-column-set="2">
                 <div class="ct-container">
@@ -2460,11 +2477,13 @@
                                                         class="stk-column-wrapper stk-block-column__content stk-container stk-b3ddcb3-container stk--no-background stk--no-padding">
                                                         <div
                                                             class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-b3ddcb3-inner-blocks">
-                                                            <figure class="wp-block-image size-large"><img loading="lazy"
-                                                                    decoding="async" width="650" height="501"
-                                                                    src="https://drumie.com/assets/block/thiet-ke-web.png" alt=""
-                                                                    class="wp-image-225" srcset=""
-                                                                    sizes="auto, (max-width: 650px) 100vw, 650px"></figure>
+                                                            <figure class="wp-block-image size-large">
+                                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                                    width="650" height="501"
+                                                                    src="https://drumie.com/assets/block/thiet-ke-web.png"
+                                                                    alt="" class="wp-image-225" srcset=""
+                                                                    sizes="auto, (max-width: 650px) 100vw, 650px">
+                                                            </figure>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2517,7 +2536,8 @@
                                                                     tế
                                                                 </p>
                                                                 <p class="text_justify stk-block-text__text">
-                                                                    Azwebsoft không chỉ chú trọng yếu tố thẩm
+                                                                    Azwebsoft không chỉ chú trọng yếu tố
+                                                                    thẩm
                                                                     mỹ mà còn tập trung tối ưu hiệu quả vận hành, trải
                                                                     nghiệm người dùng và khả năng phát triển thương hiệu bền
                                                                     vững trên môi trường số.
@@ -2536,8 +2556,7 @@
                                             data-block-id="2ef8d74">
                                             <div
                                                 class="stk-row stk-inner-blocks stk--block-align-2ef8d74 stk-block-content stk-content-align stk-2ef8d74-column">
-                                                <div
-                                                    class="order_right tam_nhin wp-block-stackable-column stk-block-column stk-column stk-block stk-b3ddcb3"
+                                                <div class="order_right tam_nhin wp-block-stackable-column stk-block-column stk-column stk-block stk-b3ddcb3"
                                                     data-block-id="b3ddcb3">
                                                     <div
                                                         class="stk-column-wrapper stk-block-column__content stk-container stk-b3ddcb3-container stk--no-background stk--no-padding">
@@ -2545,8 +2564,8 @@
                                                             class="has-text-align-center-mobile stk-block-content stk-inner-blocks stk-b3ddcb3-inner-blocks">
                                                             <figure class="wp-block-image size-large"><img loading="lazy"
                                                                     decoding="async" width="650" height="501"
-                                                                    src="https://drumie.com/assets/block/dich-vu-seo.png" alt=""
-                                                                    class="wp-image-225" srcset=""
+                                                                    src="https://drumie.com/assets/block/dich-vu-seo.png"
+                                                                    alt="" class="wp-image-225" srcset=""
                                                                     sizes="auto, (max-width: 650px) 100vw, 650px"></figure>
                                                         </div>
                                                     </div>
@@ -2585,7 +2604,8 @@
                                                                 data-block-id="15dcdba">
                                                                 <p class="text_justify stk-block-text__text">
                                                                     Với kinh nghiệm triển khai SEO cho nhiều lĩnh vực khác
-                                                                    nhau, Azwebsoft cung cấp dịch vụ SEO tổng
+                                                                    nhau, Azwebsoft cung cấp dịch vụ SEO
+                                                                    tổng
                                                                     thể giúp doanh
                                                                     nghiệp nâng cao thứ hạng từ khóa, tăng lượng truy cập tự
                                                                     nhiên và phát triển thương hiệu bền vững trên Google.
@@ -2699,7 +2719,8 @@
                                                                     đổi
                                                                 </p>
                                                                 <p class="text_justify stk-block-text__text">
-                                                                    Azwebsoft không chỉ tạo ra những bài viết
+                                                                    Azwebsoft không chỉ tạo ra những bài
+                                                                    viết
                                                                     hấp dẫn mà còn chú trọng giá trị thực tiễn, giúp doanh
                                                                     nghiệp xây dựng hình ảnh chuyên nghiệp, kết nối hiệu quả
                                                                     với khách hàng và phát triển thương hiệu bền vững trên
@@ -2878,13 +2899,11 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h3 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;font-size: 1.25rem;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Tôi đã có website nhưng chưa có khách hàng thì nên làm gì?
                                                                         </h3>
                                                                     </div>
-
-
 
                                                                     <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
                                                                         data-block-id="0d74e44"><span
@@ -2929,7 +2948,8 @@
                                                             class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
                                                             <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
                                                                 data-block-id="545fe33">
-                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                <p class="stk-block-text__text"
+                                                                    style="text-align:justify;">
                                                                     Có website nhưng chưa có khách hàng là vấn đề nhiều doanh nghiệp thường gặp khi mới bắt đầu. Để website mang lại hiệu quả, bạn cần tối ưu SEO, cải thiện tốc độ tải trang và xây dựng nội dung chất lượng đúng nhu cầu khách hàng. Khi được đầu tư đúng chiến lược, website sẽ dần tăng thứ hạng, thu hút khách hàng và tạo doanh thu bền vững.
                                                                 </p>
                                                             </div>
@@ -2953,13 +2973,11 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h3 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;font-size: 1.25rem;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Dịch vụ mà Azwebsoft có gì nổi bật so với các dịch vụ trên thị trường?
                                                                         </h3>
                                                                     </div>
-
-
 
                                                                     <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
                                                                         data-block-id="0d74e44"><span
@@ -3004,7 +3022,8 @@
                                                             class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
                                                             <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
                                                                 data-block-id="545fe33">
-                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                <p class="stk-block-text__text"
+                                                                    style="text-align:justify;">
                                                                     Azwebsoft không chỉ tập trung vào việc thiết kế một website đẹp mà còn chú trọng tối ưu toàn diện về tốc độ, chuẩn SEO, bảo mật và trải nghiệm người dùng. Chúng tôi luôn tư vấn giải pháp phù hợp theo từng lĩnh vực kinh doanh, giúp doanh nghiệp dễ dàng vận hành và phát triển hiệu quả trên môi trường số. Với đội ngũ giàu kinh nghiệm, quy trình làm việc minh bạch và chính sách hỗ trợ lâu dài, Azwebsoft cam kết đồng hành cùng khách hàng từ khi triển khai đến quá trình vận hành và phát triển website bền vững.
                                                                 </p>
                                                             </div>
@@ -3028,13 +3047,11 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h3 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;font-size: 1.25rem;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Azwebsoft có hỗ trợ giá cho doanh nghiệp nhỏ, mới thành lập hay không?
                                                                         </h3>
                                                                     </div>
-
-
 
                                                                     <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
                                                                         data-block-id="0d74e44"><span
@@ -3079,7 +3096,8 @@
                                                             class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
                                                             <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
                                                                 data-block-id="545fe33">
-                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                <p class="stk-block-text__text"
+                                                                    style="text-align:justify;">
                                                                     Azwebsoft luôn có những giải pháp và mức chi phí linh hoạt dành cho doanh nghiệp nhỏ, startup và cá nhân mới bắt đầu kinh doanh. Chúng tôi tư vấn gói website phù hợp với ngân sách nhưng vẫn đảm bảo đầy đủ các tiêu chí về giao diện chuyên nghiệp, chuẩn SEO, tốc độ và khả năng phát triển lâu dài. Ngoài ra, Azwebsoft cũng hỗ trợ định hướng vận hành và marketing online cơ bản để giúp doanh nghiệp tối ưu chi phí trong giai đoạn khởi đầu, hãy liên hệ trực tiếp nếu bạn gặp khó khăn về chi phí.
                                                                 </p>
                                                             </div>
@@ -3103,13 +3121,11 @@
                                                                     <div class="wp-block-stackable-heading stk-block-heading stk-block-heading--v2 stk-block stk-c0f694a"
                                                                         id="suspendisse-sed-ultricies-nisl-pharetra-rutrum-mauris"
                                                                         data-block-id="c0f694a">
-                                                                        <h3 style="text-align:justify;"
+                                                                        <h3 style="text-align:justify;font-size: 1.25rem;"
                                                                             class="stk-block-heading__text stk-block-heading--use-theme-margins">
                                                                             Chính sách hỗ trợ khách hàng sau khi bàn giao như nào?
                                                                         </h3>
                                                                     </div>
-
-
 
                                                                     <div class="wp-block-stackable-icon stk-block-icon stk-block stk-0d74e44"
                                                                         data-block-id="0d74e44"><span
@@ -3154,7 +3170,8 @@
                                                             class="stk-block-content stk-inner-blocks stk-ed20f4a-inner-blocks">
                                                             <div class="wp-block-stackable-text stk-block-text stk-block stk-545fe33"
                                                                 data-block-id="545fe33">
-                                                                <p class="stk-block-text__text" style="text-align:justify;">
+                                                                <p class="stk-block-text__text"
+                                                                    style="text-align:justify;">
                                                                     Sau khi bàn giao website, Azwebsoft vẫn tiếp tục đồng hành và hỗ trợ khách hàng trong quá trình vận hành hệ thống. Chúng tôi hỗ trợ hướng dẫn quản trị website, cập nhật nội dung cơ bản, xử lý lỗi kỹ thuật và tư vấn tối ưu hiệu quả hoạt động khi cần thiết. Ngoài ra, khách hàng còn được hỗ trợ bảo trì, sao lưu dữ liệu và tư vấn nâng cấp tính năng nhằm đảm bảo website hoạt động ổn định, an toàn và phát triển lâu dài.
                                                                 </p>
                                                             </div>
