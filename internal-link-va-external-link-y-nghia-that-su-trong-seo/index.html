@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="vi_VN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Internal link và External link, ý nghĩa thật sự trong SEO</title>
+    <meta name="description" content="Internal link và External link, ý nghĩa thật sự trong SEO">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="article">
+    
+    <meta property="og:title" content="Internal link và External link, ý nghĩa thật sự trong SEO">
+    <meta property="og:description" content="Internal link và External link, ý nghĩa thật sự trong SEO">
+    <meta property="og:url" content="https://drumie.com/internal-link-va-external-link-y-nghia-that-su-trong-seo">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="article:published_time" content="2026-05-10T16:43:45+00:00">
+        <meta property="article:modified_time" content="2026-05-27T11:56:06+00:00">
+        <meta property="og:updated_time" content="2026-05-27T11:56:06+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Internal link và External link, ý nghĩa thật sự trong SEO">
+    <meta name="twitter:description" content="Internal link và External link, ý nghĩa thật sự trong SEO">
+    <meta name="twitter:url" content="https://drumie.com/internal-link-va-external-link-y-nghia-that-su-trong-seo">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/internal-link-va-external-link-y-nghia-that-su-trong-seo">
+    <style>
+        .pricing-sub-menu {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            background: #fff;
+            padding: 0.75rem 1rem !important;
+            width: max-content;
+            color: black !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .pricing-sub-menu.active {
+            display: block;
+            opacity: 1;
+        }
+
+        nav[aria-label='Pagination Navigation'] {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .line-clamp-1 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+
+        .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .line-clamp-3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .order_right {
+            order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 689px) {
+            .custom-mobile {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tam_nhin {
+                order: 1 !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://drumie.com/assets/global.css" media="all">
+        <style>
+        img:is([sizes="auto" i],
+        [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+
+    <link rel="stylesheet" id="wp-block-library-css" href="https://drumie.com/assets/style.min.css" media="all">
+    <style id="global-styles-inline-css">
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--palette-color-1: var(--theme-palette-color-1, #ffd800);
+            --wp--preset--color--palette-color-2: var(--theme-palette-color-2, #ffc900);
+            --wp--preset--color--palette-color-3: var(--theme-palette-color-3, #5a5a5a);
+            --wp--preset--color--palette-color-4: var(--theme-palette-color-4, #000000);
+            --wp--preset--color--palette-color-5: var(--theme-palette-color-5, #edeff2);
+            --wp--preset--color--palette-color-6: var(--theme-palette-color-6, #f9fafb);
+            --wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FDFDFD);
+            --wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            --wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            --wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+            --wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            --wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            --wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            --wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+            --wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+            --wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+            --wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+            --wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+            --wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            --wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+            --wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            --wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            --wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+            --wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+            --wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+            --wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);
+            --wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+            --wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);
+            --wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+            --wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+            --wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+            --wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+            --wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            --wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+            --wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+            --wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+            --wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+            --wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            --wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+            --wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            --wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            --wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+            --wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+            --wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+            --wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+            --wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            --wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+            --wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            --wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);
+            --wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);
+            --wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :root {
+            --wp--style--global--content-size: var(--theme-block-max-width);
+            --wp--style--global--wide-size: var(--theme-block-wide-max-width);
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: var(--theme-content-spacing);
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-color {
+            color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-color {
+            color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-color {
+            color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-color {
+            color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-color {
+            color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-color {
+            color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-color {
+            color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-color {
+            color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-background-color {
+            background-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-background-color {
+            background-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-background-color {
+            background-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-background-color {
+            background-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-background-color {
+            background-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-background-color {
+            background-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-background-color {
+            background-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-background-color {
+            background-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-border-color {
+            border-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-border-color {
+            border-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-border-color {
+            border-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-border-color {
+            border-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-border-color {
+            border-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-border-color {
+            border-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-border-color {
+            border-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-border-color {
+            border-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-juicy-peach-gradient-background {
+            background: var(--wp--preset--gradient--juicy-peach) !important;
+        }
+
+        .has-young-passion-gradient-background {
+            background: var(--wp--preset--gradient--young-passion) !important;
+        }
+
+        .has-true-sunset-gradient-background {
+            background: var(--wp--preset--gradient--true-sunset) !important;
+        }
+
+        .has-morpheus-den-gradient-background {
+            background: var(--wp--preset--gradient--morpheus-den) !important;
+        }
+
+        .has-plum-plate-gradient-background {
+            background: var(--wp--preset--gradient--plum-plate) !important;
+        }
+
+        .has-aqua-splash-gradient-background {
+            background: var(--wp--preset--gradient--aqua-splash) !important;
+        }
+
+        .has-love-kiss-gradient-background {
+            background: var(--wp--preset--gradient--love-kiss) !important;
+        }
+
+        .has-new-retrowave-gradient-background {
+            background: var(--wp--preset--gradient--new-retrowave) !important;
+        }
+
+        .has-plum-bath-gradient-background {
+            background: var(--wp--preset--gradient--plum-bath) !important;
+        }
+
+        .has-high-flight-gradient-background {
+            background: var(--wp--preset--gradient--high-flight) !important;
+        }
+
+        .has-teen-party-gradient-background {
+            background: var(--wp--preset--gradient--teen-party) !important;
+        }
+
+        .has-fabled-sunset-gradient-background {
+            background: var(--wp--preset--gradient--fabled-sunset) !important;
+        }
+
+        .has-arielle-smile-gradient-background {
+            background: var(--wp--preset--gradient--arielle-smile) !important;
+        }
+
+        .has-itmeo-branding-gradient-background {
+            background: var(--wp--preset--gradient--itmeo-branding) !important;
+        }
+
+        .has-deep-blue-gradient-background {
+            background: var(--wp--preset--gradient--deep-blue) !important;
+        }
+
+        .has-strong-bliss-gradient-background {
+            background: var(--wp--preset--gradient--strong-bliss) !important;
+        }
+
+        .has-sweet-period-gradient-background {
+            background: var(--wp--preset--gradient--sweet-period) !important;
+        }
+
+        .has-purple-division-gradient-background {
+            background: var(--wp--preset--gradient--purple-division) !important;
+        }
+
+        .has-cold-evening-gradient-background {
+            background: var(--wp--preset--gradient--cold-evening) !important;
+        }
+
+        .has-mountain-rock-gradient-background {
+            background: var(--wp--preset--gradient--mountain-rock) !important;
+        }
+
+        .has-desert-hump-gradient-background {
+            background: var(--wp--preset--gradient--desert-hump) !important;
+        }
+
+        .has-ethernal-constance-gradient-background {
+            background: var(--wp--preset--gradient--ethernal-constance) !important;
+        }
+
+        .has-happy-memories-gradient-background {
+            background: var(--wp--preset--gradient--happy-memories) !important;
+        }
+
+        .has-grown-early-gradient-background {
+            background: var(--wp--preset--gradient--grown-early) !important;
+        }
+
+        .has-morning-salad-gradient-background {
+            background: var(--wp--preset--gradient--morning-salad) !important;
+        }
+
+        .has-night-call-gradient-background {
+            background: var(--wp--preset--gradient--night-call) !important;
+        }
+
+        .has-mind-crawl-gradient-background {
+            background: var(--wp--preset--gradient--mind-crawl) !important;
+        }
+
+        .has-angel-care-gradient-background {
+            background: var(--wp--preset--gradient--angel-care) !important;
+        }
+
+        .has-juicy-cake-gradient-background {
+            background: var(--wp--preset--gradient--juicy-cake) !important;
+        }
+
+        .has-rich-metal-gradient-background {
+            background: var(--wp--preset--gradient--rich-metal) !important;
+        }
+
+        .has-mole-hall-gradient-background {
+            background: var(--wp--preset--gradient--mole-hall) !important;
+        }
+
+        .has-cloudy-knoxville-gradient-background {
+            background: var(--wp--preset--gradient--cloudy-knoxville) !important;
+        }
+
+        .has-soft-grass-gradient-background {
+            background: var(--wp--preset--gradient--soft-grass) !important;
+        }
+
+        .has-saint-petersburg-gradient-background {
+            background: var(--wp--preset--gradient--saint-petersburg) !important;
+        }
+
+        .has-everlasting-sky-gradient-background {
+            background: var(--wp--preset--gradient--everlasting-sky) !important;
+        }
+
+        .has-kind-steel-gradient-background {
+            background: var(--wp--preset--gradient--kind-steel) !important;
+        }
+
+        .has-over-sun-gradient-background {
+            background: var(--wp--preset--gradient--over-sun) !important;
+        }
+
+        .has-premium-white-gradient-background {
+            background: var(--wp--preset--gradient--premium-white) !important;
+        }
+
+        .has-clean-mirror-gradient-background {
+            background: var(--wp--preset--gradient--clean-mirror) !important;
+        }
+
+        .has-wild-apple-gradient-background {
+            background: var(--wp--preset--gradient--wild-apple) !important;
+        }
+
+        .has-snow-again-gradient-background {
+            background: var(--wp--preset--gradient--snow-again) !important;
+        }
+
+        .has-confident-cloud-gradient-background {
+            background: var(--wp--preset--gradient--confident-cloud) !important;
+        }
+
+        .has-glass-water-gradient-background {
+            background: var(--wp--preset--gradient--glass-water) !important;
+        }
+
+        .has-perfect-white-gradient-background {
+            background: var(--wp--preset--gradient--perfect-white) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .has-xx-large-font-size {
+            font-size: var(--wp--preset--font-size--xx-large) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.645), 1.5em);
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" id="wpa-css-css" href="https://drumie.com/assets/wpa.css" media="all">
+    <link rel="stylesheet" id="ct-main-styles-css" href="https://drumie.com/assets/main.min.css" media="all">
+    <link rel="stylesheet" id="ct-page-title-styles-css" href="https://drumie.com/assets/page-title.min.css" media="all">
+    <link rel="stylesheet" id="ct-comments-styles-css" href="https://drumie.com/assets/comments.min.css" media="all">
+    <link rel="stylesheet" id="ct-stackable-styles-css" href="https://drumie.com/assets/stackable.min.css" media="all">
+    <link rel="stylesheet" id="ct-wpforms-styles-css" href="https://drumie.com/assets/wpforms.min.css" media="all">
+    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css"
+        href="https://drumie.com/assets/header-account.min.css" media="all">
+    <script src="https://drumie.com/assets/jquery.min.js.download" id="jquery-core-js"></script>
+    <script src="https://drumie.com/assets/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        summary {
+            list-style: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &::marker {
+                display: none;
+                content: "";
+            }
+        }
+
+        .tags {
+            padding: 2rem 0;
+            display: flex;
+            gap: 0.25rem;
+        }
+    </style>
+    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+
+</head>
+
+<body
+    class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
+    data-link="type-2" data-prefix="single_page" data-header="type-1:sticky" data-footer="type-1">
+
+    <div data-rocket-location-hash="6ca16749434ffeb6798230cf77b3e4ff" class="ct-drawer-canvas" data-location="start">
+        <div data-rocket-location-hash="acd6a28fd2ca5c0a76550d90db42be32" id="offcanvas" class="ct-panel ct-header"
+            data-behaviour="modal" role="dialog" aria-label="Offcanvas modal" inert="">
+            <div data-rocket-location-hash="79dc0a17d75ed337f37e2b08b92b5134" class="ct-panel-actions">
+
+                <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+                    <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+                        <path
+                            d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div data-rocket-location-hash="0f43dfbd9ae87fd5d0585f1a8f8a8349" class="ct-panel-content"
+                data-device="desktop">
+                <div class="ct-panel-content-inner"></div>
+            </div>
+            <div data-rocket-location-hash="bece1ae6d45638fbcee2f115434c8182" class="ct-panel-content" data-device="mobile">
+    <div class="ct-panel-content-inner">
+        <div class="ct-header-text " data-id="text">
+            <div class="entry-content is-layout-flow">
+                
+                Azwebsoft
+            </div>
+        </div>
+
+        <nav class="mobile-menu menu-container" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1"
+            data-submenu-dots="yes" aria-label="Main Menu">
+
+            <ul id="menu-main-menu-1" class="">
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                    <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                    <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                    <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                </li>
+                <hr />
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/thiet-ke-web" class="ct-menu-link">Bảng giá thiết kế web</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/dich-vu-seo" class="ct-menu-link">Bảng giá dịch vụ SEO</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo" class="ct-menu-link">Bảng giá content
+                        writing</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="ct-header-cta" data-id="button">
+            <a href="tel:0915452237" class="ct-button" data-size="medium"
+                aria-label="Tư vấn: 0915452237">
+                Tư vấn: 0915452237</a>
+        </div>
+
+        <div class="ct-header-socials " data-id="socials">
+
+
+            <div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="rounded:outline">
+
+
+
+                <a href="#" data-network="facebook" aria-label="Facebook">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="instagram" aria-label="Instagram">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <circle cx="10" cy="10" r="3.3"></circle>
+                            <path
+                                d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="youtube" aria-label="YouTube">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div data-rocket-location-hash="dabd21537b68211e9f9db0f1c516c864" id="main-container">
+        <header data-rocket-location-hash="ec79a8b50d7f14dc6444bd8a706b2130" id="header" class="ct-header"
+            data-id="type-1">
+            <div data-rocket-location-hash="252865cd7eec5ce9cb808c3bd99dc248" data-device="desktop">
+    <div class="ct-sticky-container" style="height: 120px;">
+        <div data-sticky="fixed:shrink">
+            <div data-row="middle" data-column-set="2">
+                <div class="ct-container">
+                    <div data-column="start" data-placements="1">
+                        <div data-items="primary" style="">
+                            <div class="site-branding" data-id="logo">
+                                <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                    itemprop="url">Azwebsoft</a>
+                            </div>
+
+
+                            <nav id="header-menu-1" class="header-menu-1 menu-container" data-id="menu"
+                                data-interaction="hover" data-menu="type-2:center" data-dropdown="type-1:simple"
+                                data-responsive="yes" aria-label="Main Menu">
+
+                                <ul id="menu-main-menu" class="menu">
+                                    <li id="menu-item-897"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                                        <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-900"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                                        <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                                    </li>
+                                    <li id="menu-item-898"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                                        <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                                    </li>
+                                    <li id="menu-item-563"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
+                                    </li>
+                                    <li style="position: relative;"
+                                        class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="" class="ct-menu-link">Bảng giá</a>
+                                        <ul class="pricing-sub-menu">
+                                            <li id="menu-item-pricing-web"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-web">
+                                                <a href="https://drumie.com/bang-gia/thiet-ke-web">Thiết kế website</a>
+                                            </li>
+                                            <li id="menu-item-pricing-seo"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-seo">
+                                                <a href="https://drumie.com/bang-gia/dich-vu-seo">Dịch vụ SEO</a>
+                                            </li>
+                                            <li id="menu-item-pricing-marketing"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-marketing">
+                                                <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo">Content Writing</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-899"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                                        <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div data-column="end" data-placements="1">
+                        <div data-items="primary">
+                            <div class="ct-header-cta" data-id="button">
+                                <a href="tel:0915452237" class="ct-button" data-size="medium"
+                                    aria-label="Tư vấn: 0915452237">
+                                    Tư vấn: 0915452237</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div data-rocket-location-hash="e23057b5ce826268727143abf068948f" data-device="mobile">
+                <div class="ct-sticky-container">
+                    <div data-sticky="shrink">
+                        <div data-row="middle" data-column-set="2">
+                            <div class="ct-container">
+                                <div data-column="start" data-placements="1">
+                                    <div data-items="primary">
+                                        <div class="site-branding" data-id="logo">
+
+                                            <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                                itemprop="url">Azwebsoft</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-column="end" data-placements="1">
+                                    <div data-items="primary">
+                                        <button class="ct-header-trigger ct-toggle " data-toggle-panel="#offcanvas"
+                                            aria-controls="offcanvas" data-design="simple" data-label="right"
+                                            aria-label="Menu" data-id="trigger">
+
+                                            <span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg"
+                                                aria-hidden="true">Menu</span>
+
+                                            <svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14"
+                                                data-type="type-1" aria-hidden="true">
+                                                <rect y="0.00" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="6.15" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="12.3" width="18" height="1.7" rx="1"></rect>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+            <main data-rocket-location-hash="4120c4747d19301afbb8805e60c95cd3" id="main" class="site-main hfeed">
+
+
+        <div data-rocket-location-hash="6e6a200e925b8ce0a3ee71e64be788b4" class="hero-section" data-type="type-2">
+
+            <div class="entry-header ct-container-narrow">
+
+                <nav class="ct-breadcrumbs" data-source="default">
+                    <span class="first-item">
+                        <a href="https://drumie.com"><span>Trang chủ</span></a>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                    </span>
+                                            <span class="item-0">
+                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1">Kinh nghiệm SEO tổng thể
+                            </a>
+                        </span>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                                        </span><span class="last-item" aria-current="page">
+                        <span>
+                            Internal link và External link, ý nghĩa thật sự trong SEO
+                        </span>
+                    </span>
+                </nav>
+
+                <h1 class="page-title">Internal link và External link, ý nghĩa thật sự trong SEO</h1>
+                <ul class="entry-meta" data-type="simple:slash">
+                    <li class="meta-author">
+                        <a href="" tabindex="-1" class="ct-media-container-static">
+                            
+                        </a><a class="ct-meta-element-author" href="" title="Admin"
+                            rel="author"><span>Admin</span></a>
+                    </li>
+                    <li class="meta-date"><time class="ct-meta-element-date"
+                            datetime="2021-07-05T15:41:41+00:00">27-05-2026</time>
+                    </li>
+                                            <li class="meta-categories" data-type="simple">
+                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1" rel="tag"
+                                    class="ct-term-3">
+                                    Kinh nghiệm SEO tổng thể
+                                </a>
+                                                    </li>
+                                    </ul>
+            </div>
+        </div>
+
+        <div class="ct-container-narrow" data-content="narrow">
+            <article id="post-441"
+                class="post-441 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+                <div style="text-align:justify;" class="entry-content is-layout-constrained">
+                    
+                    
+<details class="toc">
+    <summary class="toc-title">
+        <strong>Mục lục</strong>
+    </summary>
+
+    <div class="toc-content">
+            <ol>
+      <li class="first">
+        <a href="#tong-quan-ve-internal-link-va-external-link-trong-the-gioi-seo">Tổng quan về Internal link và External link trong thế giới SEO</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#dinh-nghia-ve-internal-link-va-vai-tro-cau-truc">Định nghĩa về Internal link và vai trò cấu trúc</a>
+          </li>
+          <li class="last">
+            <a href="#ban-chat-cua-external-link-va-tam-anh-huong-thuc-te">Bản chất của External link và tầm ảnh hưởng thực tế</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#y-nghia-that-su-cua-internal-link-trong-chien-luoc-noi-dung">Ý nghĩa thật sự của Internal link trong chiến lược nội dung</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#tang-cuong-trai-nghiem-nguoi-dung-thong-qua-dieu-huong">Tăng cường trải nghiệm người dùng thông qua điều hướng</a>
+          </li>
+          <li>
+            <a href="#truyen-tai-suc-manh-trang-link-juice-hieu-qua">Truyền tải sức mạnh trang (Link Juice) hiệu quả</a>
+          </li>
+          <li>
+            <a href="#ho-tro-google-bot-lap-chi-muc-trang-nhanh-chong">Hỗ trợ Google Bot lập chỉ mục trang nhanh chóng</a>
+          </li>
+          <li class="last">
+            <a href="#phan-loai-va-dinh-hinh-chu-de-bang-internal-link">Phân loại và định hình chủ đề bằng Internal link</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#external-link-va-chien-luoc-xay-dung-uy-tin-tu-ben-ngoai">External link và chiến lược xây dựng uy tín từ bên ngoài</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#tang-tinh-tham-quyen-authority-thong-qua-trich-dan-nguon-uy-tin">Tăng tính thẩm quyền (Authority) thông qua trích dẫn nguồn uy tín</a>
+          </li>
+          <li>
+            <a href="#xay-dung-moi-quan-he-va-kha-nang-tiep-can-trong-nganh">Xây dựng mối quan hệ và khả năng tiếp cận trong ngành</a>
+          </li>
+          <li>
+            <a href="#tranh-cac-rui-ro-tu-lien-ket-kem-chat-luong-spam-link">Tránh các rủi ro từ liên kết kém chất lượng (Spam link)</a>
+          </li>
+          <li class="last">
+            <a href="#su-can-bang-hoan-hao-giua-internal-link-va-external-link">Sự cân bằng hoàn hảo giữa Internal link và External link</a>
+          </li>
+        </ol>
+      </li>
+      <li class="last">
+        <a href="#ket-luan-va-dinh-huong-phat-trien-he-thong-lien-ket">Kết luận và định hướng phát triển hệ thống liên kết</a>
+      </li>
+    </ol>
+
+    </div>
+</details><div class='content'><h2 id="tong-quan-ve-internal-link-va-external-link-trong-the-gioi-seo">Tổng quan về Internal link và External link trong thế giới SEO</h2>
+
+<p>Internal link và External link là hai cột trụ không thể tách rời trong chiến lược tối ưu hóa công cụ tìm kiếm hiện đại. Việc hiểu rõ cách vận hành của chúng sẽ giúp website của bạn xây dựng được uy tín vững chắc trước mắt các công cụ tìm kiếm. Đây không chỉ là kỹ thuật đặt liên kết đơn thuần mà là nghệ thuật dẫn dắt người dùng và bot tìm kiếm.</p>
+
+<p>Hệ thống liên kết đóng vai trò như những con đường huyết mạch nối liền các trang thông tin trên mạng internet toàn cầu. Khi bạn xây dựng chiến lược liên kết đúng cách, website sẽ có cơ hội tăng trưởng thứ hạng vượt bậc. Hãy cùng đi sâu vào tìm hiểu tầm quan trọng của từng loại liên kết trong bài viết chuyên sâu này.</p>
+
+<p>Nhiều người làm SEO thường chỉ tập trung vào nội dung mà quên mất cấu trúc liên kết nội bộ và ngoại bộ. Tuy nhiên, sự kết nối giữa các trang chính là cách Google đánh giá mức độ liên quan và tính thẩm quyền. Bạn cần nắm vững những nguyên tắc cốt lõi để không mắc phải những sai lầm đáng tiếc.</p>
+
+<p>Việc tối ưu hóa liên kết đòi hỏi sự kiên trì, quan sát kỹ lưỡng và chiến lược dài hạn từ người quản trị. Chúng ta sẽ cùng phân tích từng khía cạnh để bạn có cái nhìn toàn diện nhất về vấn đề này. Hãy bắt đầu hành trình khám phá sức mạnh thực sự của Internal link và External link ngay sau đây.</p>
+
+<h3 id="dinh-nghia-ve-internal-link-va-vai-tro-cau-truc">Định nghĩa về Internal link và vai trò cấu trúc</h3>
+
+<p>Internal link là các liên kết trỏ từ trang này sang trang khác trong cùng một tên miền website. Đây là công cụ đắc lực giúp người dùng di chuyển dễ dàng giữa các danh mục nội dung. Việc tổ chức liên kết nội bộ hợp lý giúp tạo ra một cấu trúc website logic và chặt chẽ.</p>
+
+<p>Đối với các công cụ tìm kiếm như Google, Internal link giống như những chỉ dẫn giúp bot thu thập dữ liệu nhanh chóng. Nhờ vào các liên kết này, Google hiểu rõ được trang nào là quan trọng nhất trên website của bạn. Một cấu trúc liên kết tốt sẽ giúp phân bổ sức mạnh từ các trang có traffic cao sang trang yếu hơn.</p>
+
+<p>Khi người dùng nhấp vào một Internal link, họ sẽ ở lại website của bạn lâu hơn và giảm tỷ lệ thoát trang. Điều này gửi đi tín hiệu tích cực cho các thuật toán đánh giá trải nghiệm người dùng hiện nay. Càng giữ chân được người dùng, website của bạn càng có cơ hội thăng hạng cao hơn trên kết quả tìm kiếm.</p>
+
+<p>Xây dựng liên kết nội bộ là cách để bạn tự chủ trong việc dẫn dắt luồng truy cập của khách hàng. Bạn có thể sử dụng các từ khóa chứa liên kết để tối ưu hóa khả năng nhận diện chủ đề của trang đích. Đây là bước đệm quan trọng để xây dựng nền tảng vững chắc trước khi tiến xa hơn với các kỹ thuật SEO khác.</p>
+
+<h3 id="ban-chat-cua-external-link-va-tam-anh-huong-thuc-te">Bản chất của External link và tầm ảnh hưởng thực tế</h3>
+
+<p>External link là các liên kết trỏ từ website của bạn đến các trang web nằm trên tên miền khác. Loại liên kết này thường được chia thành hai nhóm chính là liên kết đi ra và liên kết trỏ về. Cả hai đều mang những ý nghĩa khác nhau trong việc định hình uy tín cho thương hiệu của bạn.</p>
+
+<p>Khi bạn trỏ liên kết đến các trang web uy tín, bạn đang cung cấp thêm giá trị cho người đọc của mình. Google đánh giá cao những nội dung có dẫn chứng cụ thể từ các nguồn thông tin tin cậy và chính thống. Điều này giúp website của bạn tăng thêm tính khách quan và chiều sâu cho nội dung được truyền tải.</p>
+
+<p>Ngược lại, External link trỏ về website của bạn, hay còn gọi là Backlink, đóng vai trò như những lá phiếu bình chọn. Mỗi liên kết chất lượng từ website khác trỏ về là minh chứng cho giá trị nội dung của bạn. Đây là yếu tố then chốt để đẩy nhanh quá trình xếp hạng từ khóa trên các công cụ tìm kiếm.</p>
+
+<p>Tuy nhiên, không phải External link nào cũng có lợi, bạn cần phải cẩn trọng trong việc lựa chọn đối tác liên kết. Những liên kết từ các trang web độc hại hoặc không cùng chủ đề sẽ gây hại trực tiếp cho website. Hãy luôn ưu tiên chất lượng hơn số lượng để duy trì sự an toàn cho tài sản kỹ thuật số của bạn.</p>
+
+<h2 id="y-nghia-that-su-cua-internal-link-trong-chien-luoc-noi-dung">Ý nghĩa thật sự của Internal link trong chiến lược nội dung</h2>
+
+<p>Internal link không chỉ dừng lại ở việc kết nối các bài viết mà nó là linh hồn của sự điều hướng. Một chiến lược liên kết nội bộ thông minh giúp tối ưu hóa luồng dữ liệu trên toàn bộ website. Nó giúp đảm bảo rằng không có trang nào bị bỏ lại phía sau hoặc trở thành trang mồ côi.</p>
+
+<p>Việc thiết lập Internal link cần có chiến lược rõ ràng thay vì thực hiện một cách ngẫu hứng. Bạn nên dựa trên cấu trúc hình tháp hoặc cấu trúc Silo để phân tầng nội dung một cách khoa học. Điều này giúp Google hiểu được đâu là nội dung chủ chốt và đâu là nội dung hỗ trợ.</p>
+
+<p>Sự kết nối này còn giúp giảm bớt gánh nặng cho người dùng khi họ cần tìm kiếm thêm thông tin liên quan. Khi nội dung có sự liên kết logic, người dùng sẽ cảm thấy website của bạn thực sự chuyên nghiệp. Sự hài lòng của khách hàng chính là đích đến cuối cùng của bất kỳ chiến lược SEO nào.</p>
+
+<p>Bạn cũng cần thường xuyên kiểm tra các liên kết nội bộ để đảm bảo chúng không bị gãy hoặc chuyển hướng sai. Những liên kết lỗi sẽ gây trải nghiệm cực kỳ tệ hại và khiến bot tìm kiếm mất niềm tin vào website. Hãy duy trì sự tươi mới và chính xác cho hệ thống liên kết nội bộ theo từng giai đoạn phát triển.</p>
+
+<h3 id="tang-cuong-trai-nghiem-nguoi-dung-thong-qua-dieu-huong">Tăng cường trải nghiệm người dùng thông qua điều hướng</h3>
+
+<p>Người dùng thường có xu hướng tìm kiếm những nội dung chuyên sâu hơn khi đọc xong một bài viết cơ bản. Internal link đóng vai trò như một người hướng dẫn tận tình, dẫn lối họ đến những thông tin cần thiết. Điều này giúp gia tăng đáng kể thời gian trung bình người dùng ở lại trên website của bạn.</p>
+
+<p>Một giao diện thân thiện với các liên kết nội bộ được đặt đúng chỗ sẽ kích thích hành vi khám phá. Bạn có thể sử dụng các đoạn văn gợi ý như "xem thêm tại đây" hoặc chèn link trực tiếp vào từ khóa. Phương pháp này tạo ra một sự liền mạch trong hành trình tiếp nhận kiến thức của người đọc.</p>
+
+<p>Khi người dùng tìm thấy câu trả lời cho các thắc mắc ngay tại website của bạn, họ sẽ tin tưởng thương hiệu hơn. Sự tin tưởng này là tiền đề để chuyển đổi khách truy cập thành khách hàng trung thành trong tương lai. Internal link thực sự là công cụ marketing ngầm hiệu quả nhất mà bạn đang sở hữu.</p>
+
+<p>Đừng làm dụng liên kết nội bộ bằng cách nhồi nhét quá nhiều vào một đoạn văn ngắn. Hãy để các liên kết xuất hiện một cách tự nhiên và giải quyết đúng nhu cầu tìm hiểu của người đọc. Sự tinh tế trong cách đặt link sẽ mang lại hiệu quả cao hơn nhiều so với việc ép buộc người dùng.</p>
+
+<h3 id="truyen-tai-suc-manh-trang-link-juice-hieu-qua">Truyền tải sức mạnh trang (Link Juice) hiệu quả</h3>
+
+<p>Link Juice là khái niệm ám chỉ sức mạnh hoặc uy tín mà một trang web truyền đến các trang liên quan khác. Mỗi liên kết nội bộ đóng vai trò là một đường dẫn cho sức mạnh này lưu chuyển khắp website. Trang càng có nhiều sức mạnh thì khả năng đẩy các trang khác lên top càng dễ dàng.</p>
+
+<p>Bạn nên tận dụng những bài viết có lượng truy cập cao để đặt liên kết đến các trang cần SEO. Đây là cách nhanh nhất để "chia sẻ" sức mạnh từ bài viết thành công sang bài viết mới hoặc bài viết chưa mạnh. Hãy lập bảng theo dõi các trang có độ uy tín cao để có kế hoạch điều hướng hiệu quả.</p>
+
+<p>Cấu trúc website phẳng là một lợi thế để sức mạnh truyền tải không bị phân tán quá nhiều qua nhiều lớp. Khi liên kết được đặt ở những vị trí chiến lược như trang chủ hoặc menu, sức mạnh sẽ được lan tỏa đều hơn. Hãy kiểm soát chặt chẽ các con đường mà sức mạnh trang đang chảy qua hàng ngày.</p>
+
+<p>Nếu bạn để các liên kết nội bộ trỏ đến những trang không quan trọng, sức mạnh trang sẽ bị lãng phí. Hãy tập trung ưu tiên cho các trang mang tính chuyển đổi hoặc các bài viết quan trọng nhất của doanh nghiệp. Việc quản lý dòng chảy Link Juice là chìa khóa để làm chủ cuộc chơi thứ hạng trên Google.</p>
+
+<h3 id="ho-tro-google-bot-lap-chi-muc-trang-nhanh-chong">Hỗ trợ Google Bot lập chỉ mục trang nhanh chóng</h3>
+
+<p>Google Bot hoạt động dựa trên cơ chế thu thập dữ liệu bằng cách theo dõi các liên kết trên website. Nếu bạn không có Internal link trỏ đến các bài viết mới, bot sẽ mất rất nhiều thời gian để tìm thấy chúng. Hệ thống liên kết nội bộ mạnh mẽ giúp bot tìm đến tận cùng các trang ngách nhỏ nhất.</p>
+
+<p>Khi bot thu thập dữ liệu nhanh, các nội dung mới của bạn sẽ sớm được index trên kết quả tìm kiếm. Điều này mang lại lợi thế cạnh tranh lớn, đặc biệt là với các trang tin tức cần tốc độ cập nhật nhanh. Bạn nên sử dụng sơ đồ trang web (Sitemap) kết hợp với Internal link để tối ưu quá trình này.</p>
+
+<p>Các trang có liên kết nội bộ dày đặc thường được bot "ưu ái" ghé thăm thường xuyên hơn các trang cô độc. Khi bot nhận thấy nội dung luôn được cập nhật và liên kết thông suốt, nó sẽ đánh giá website có tính năng động cao. Đây là tín hiệu tốt để Google tăng tần suất quét (crawl budget) cho toàn bộ tên miền.</p>
+
+<p>Hãy đảm bảo rằng các đường dẫn liên kết của bạn được viết theo chuẩn SEO và dễ hiểu. Sử dụng anchor text chứa từ khóa liên quan sẽ giúp bot nắm bắt nội dung của trang đích tốt hơn. Sự đồng bộ giữa nội dung và liên kết là yếu tố quyết định tốc độ lập chỉ mục của website.</p>
+
+<h3 id="phan-loai-va-dinh-hinh-chu-de-bang-internal-link">Phân loại và định hình chủ đề bằng Internal link</h3>
+
+<p>Internal link giúp phân chia website thành các chủ đề cụ thể thông qua các nhóm bài viết có liên quan. Khi bạn liên kết các bài viết trong cùng một chuyên mục, Google sẽ nhận ra website của bạn là chuyên gia trong lĩnh vực đó. Điều này hình thành nên uy tín chủ đề (Topical Authority) rất quan trọng trong SEO hiện nay.</p>
+
+<p>Đừng bao giờ đặt liên kết nội bộ một cách ngẫu hứng giữa các chủ đề không liên quan đến nhau. Việc này khiến bot tìm kiếm bị bối rối và làm giảm độ uy tín của cấu trúc website tổng thể. Hãy luôn duy trì sự liên kết chặt chẽ trong từng phân khúc nội dung chuyên biệt.</p>
+
+<p>Bạn có thể tạo ra các bài viết trụ cột (pillar page) và liên kết các bài viết vệ tinh (cluster content) xoay quanh nó. Mô hình này giúp củng cố vị thế của bài viết chính và đẩy mạnh thứ hạng cho hàng loạt từ khóa phụ. Đây là phương pháp tối ưu nhất để phủ rộng thị trường thông tin trong ngách ngành của bạn.</p>
+
+<p>Sự rõ ràng trong cấu trúc liên kết nội bộ giúp người dùng không bao giờ cảm thấy bị lạc lối. Khi họ có thể dễ dàng chuyển từ chủ đề này sang chủ đề liên quan, họ sẽ ở lại website lâu hơn. Một website có hệ thống chủ đề rõ ràng luôn được Google ưu tiên xếp hạng cao hơn website lộn xộn.</p>
+
+<h2 id="external-link-va-chien-luoc-xay-dung-uy-tin-tu-ben-ngoai">External link và chiến lược xây dựng uy tín từ bên ngoài</h2>
+
+<p>External link hay các liên kết ra ngoài không chỉ là việc trích dẫn nguồn mà là lời khẳng định uy tín. Khi bạn liên kết tới các nguồn dữ liệu có độ tin cậy cao, bạn đang tự nâng tầm cho nội dung của chính mình. Google rất hoan nghênh các trang web đóng góp giá trị thực sự thông qua việc dẫn chứng nguồn tin.</p>
+
+<p>Việc sử dụng các liên kết ra ngoài cũng giúp website của bạn hòa nhập vào hệ sinh thái internet rộng lớn. Khi các website uy tín thấy bạn trích dẫn họ, đôi khi họ cũng sẽ chú ý và tương tác lại với bạn. Đây là cách bắt đầu quá trình xây dựng quan hệ hữu nghị với các trang cùng ngành hiệu quả.</p>
+
+<p>Tuy nhiên, bạn cần phân biệt rõ giữa liên kết trỏ ra và liên kết nhận về để có chiến lược riêng. Liên kết trỏ ra cần hướng đến các trang có thẩm quyền (Authority sites) để gia tăng giá trị người dùng. Liên kết nhận về là mục tiêu cao nhất để gia tăng sức mạnh xếp hạng trong dài hạn.</p>
+
+<p>Xây dựng External link đòi hỏi sự thận trọng vì bạn đang dẫn người dùng rời khỏi website của mình. Hãy luôn cân nhắc đặt liên kết ở những vị trí hợp lý và mở trong tab mới để không làm mất lượt truy cập. Sự cân bằng giữa việc trích dẫn và giữ chân người dùng là một nghệ thuật mà người làm SEO cần học hỏi.</p>
+
+<h3 id="tang-tinh-tham-quyen-authority-thong-qua-trich-dan-nguon-uy-tin">Tăng tính thẩm quyền (Authority) thông qua trích dẫn nguồn uy tín</h3>
+
+<p>Khi trích dẫn số liệu hoặc thông tin từ các trang có tầm ảnh hưởng lớn, website của bạn sẽ được thừa hưởng uy tín đó. Người đọc sẽ cảm thấy tin tưởng vào các thông tin bạn cung cấp hơn nhờ có sự bảo chứng từ các nguồn uy tín. Điều này giúp giảm tỷ lệ thoát trang do nghi ngờ tính xác thực của thông tin.</p>
+
+<p>Các công cụ tìm kiếm hiện đại cực kỳ thông minh trong việc đánh giá mức độ tin cậy của một trang web. Một bài viết chứa nhiều External link đến các trang chính thống (như báo lớn, đại học, tổ chức uy tín) được đánh giá cao hơn. Đây là phương pháp đơn giản nhưng cực kỳ hiệu quả để tạo sự khác biệt so với đối thủ.</p>
+
+<p>Hãy đảm bảo rằng các liên kết trỏ ra ngoài đều mang tính chất hỗ trợ và làm rõ thêm cho nội dung chính. Đừng lạm dụng liên kết ra ngoài chỉ để hy vọng được đối tác quan tâm hoặc để "làm màu". Giá trị thực sự nằm ở việc bạn cung cấp cho người dùng một tài liệu tham khảo chất lượng nhất.</p>
+
+<p>Việc xây dựng uy tín không diễn ra trong ngày một ngày hai mà là kết quả của sự tích lũy bền bỉ. Mỗi liên kết ra ngoài chất lượng là một lần bạn khẳng định sự chuyên nghiệp trong khâu biên tập nội dung. Hãy tạo thói quen kiểm tra độ uy tín của các trang web trước khi quyết định đặt link trỏ ra.</p>
+
+<h3 id="xay-dung-moi-quan-he-va-kha-nang-tiep-can-trong-nganh">Xây dựng mối quan hệ và khả năng tiếp cận trong ngành</h3>
+
+<p>Liên kết với các trang cùng ngành không chỉ tốt cho SEO mà còn là cơ hội để mở rộng mạng lưới quan hệ. Khi bạn trỏ link tới các blogger hoặc doanh nghiệp khác, họ có thể nhận được thông báo từ công cụ phân tích. Đây là cơ hội để bắt đầu những mối quan hệ hợp tác cùng có lợi trong tương lai.</p>
+
+<p>Nếu nội dung của bạn thực sự xuất sắc, việc trích dẫn các trang lớn có thể giúp bạn được họ chú ý. Trong trường hợp họ thấy nội dung của bạn giá trị, họ có thể trích dẫn lại (link back) về website của bạn. Đây là cách làm SEO tự nhiên và bền vững nhất mà mọi chuyên gia đều khuyên dùng.</p>
+
+<p>Bạn không nên giới hạn website của mình trong một "ốc đảo" mà cần kết nối với cộng đồng. Việc tham gia vào các hệ thống liên kết tự nhiên giúp website có tiếng nói mạnh mẽ hơn trong lĩnh vực. Hãy chủ động tìm kiếm những đối tác uy tín để xây dựng mối quan hệ bền chặt dựa trên chất lượng nội dung.</p>
+
+<p>Sự tương tác qua lại giữa các website là dấu hiệu của một mạng lưới thông tin khỏe mạnh trên internet. Khi website của bạn trở thành một mắt xích trong mạng lưới đó, bạn sẽ có vị thế tốt hơn. Hãy bắt đầu bằng việc liên kết đến những người mà bạn thực sự ngưỡng mộ và tôn trọng trong ngành.</p>
+
+<h3 id="tranh-cac-rui-ro-tu-lien-ket-kem-chat-luong-spam-link">Tránh các rủi ro từ liên kết kém chất lượng (Spam link)</h3>
+
+<p>Liên kết đến các trang web xấu hoặc trang spam sẽ ngay lập tức khiến Google đánh giá thấp website của bạn. Các thuật toán như Penguin luôn rình rập để phát hiện và xử lý những liên kết không tự nhiên. Một khi đã bị dán nhãn spam, việc khôi phục lại thứ hạng sẽ mất rất nhiều công sức và thời gian.</p>
+
+<p>Hãy kiểm tra kỹ lưỡng danh sách các website mà bạn định trỏ liên kết đến để đảm bảo chúng an toàn. Tránh xa các trang chứa nội dung đồi trụy, cờ bạc hoặc các trang không có giá trị cho người dùng. Liên kết đến các trang này là hành động tự sát đối với bất kỳ chiến lược SEO chuyên nghiệp nào.</p>
+
+<p>Nếu bạn vô tình có các liên kết xấu trỏ về website, hãy sử dụng công cụ Disavow để từ chối chúng với Google. Việc dọn dẹp hệ thống liên kết định kỳ là nhiệm vụ sống còn để duy trì sức khỏe website. Đừng bao giờ chủ quan với các liên kết trỏ về vì chúng ảnh hưởng trực tiếp đến uy tín tên miền.</p>
+
+<p>Sự an toàn của website luôn được ưu tiên hàng đầu trước khi nói đến việc tăng thứ hạng. Một hệ thống liên kết sạch sẽ giúp bạn yên tâm phát triển nội dung mà không lo bị phạt. Hãy luôn áp dụng phương châm "chất lượng hơn số lượng" trong mọi hoạt động liên kết của mình.</p>
+
+<h3 id="su-can-bang-hoan-hao-giua-internal-link-va-external-link">Sự cân bằng hoàn hảo giữa Internal link và External link</h3>
+
+<p>Một chiến lược SEO thành công cần có sự kết hợp hài hòa giữa việc điều hướng nội bộ và kết nối bên ngoài. Internal link giữ người dùng ở lại lâu hơn và xây dựng cấu trúc website chặt chẽ. External link khẳng định uy tín và giúp website hòa nhập vào cộng đồng thông tin rộng lớn.</p>
+
+<p>Bạn nên lập kế hoạch cụ thể cho tỷ lệ phân bổ các liên kết trong từng bài viết của mình. Một bài viết tốt thường có sự đan xen giữa cả hai loại liên kết ở những vị trí tự nhiên nhất. Sự cân bằng này tạo ra một trải nghiệm người dùng tối ưu và làm hài lòng các thuật toán tìm kiếm.</p>
+
+<p>Hãy liên tục theo dõi hiệu quả của các liên kết thông qua Google Search Console và các công cụ phân tích khác. Nếu nhận thấy một liên kết không mang lại giá trị hoặc người dùng không nhấp vào, hãy mạnh dạn thay đổi. SEO là quá trình thử nghiệm và tối ưu liên tục để đạt được kết quả tốt nhất.</p>
+
+<p>Cuối cùng, hãy nhớ rằng mục tiêu cốt lõi của cả Internal link và External link đều là phục vụ người đọc. Khi giá trị được đặt lên hàng đầu, các chỉ số SEO sẽ tự khắc tăng trưởng theo hướng tích cực. Hãy kiên trì với chiến lược của mình và luôn giữ vững tinh thần làm SEO tử tế.</p>
+
+<h2 id="ket-luan-va-dinh-huong-phat-trien-he-thong-lien-ket">Kết luận và định hướng phát triển hệ thống liên kết</h2>
+
+<p>Internal link và External link không chỉ là các kỹ thuật phụ trợ mà là xương sống của mọi chiến lược SEO bền vững. Việc hiểu và áp dụng đúng cách hai loại liên kết này sẽ giúp website của bạn bứt phá khỏi sự cạnh tranh khốc liệt. Hãy dành thời gian để xây dựng một hệ thống liên kết khoa học, minh bạch và đầy giá trị.</p>
+
+<p>Sự thay đổi không ngừng của các thuật toán tìm kiếm đòi hỏi người làm SEO phải luôn cập nhật kiến thức. Tuy nhiên, các giá trị cơ bản như trải nghiệm người dùng và sự liên quan vẫn là kim chỉ nam không đổi. Hãy tập trung vào việc tạo ra nội dung tuyệt vời và kết nối nó một cách khéo léo với thế giới bên ngoài.</p>
+
+<p>Đừng bao giờ tìm cách lách luật hay sử dụng các thủ thuật đen tối trong việc xây dựng liên kết. Con đường dài nhất nhưng an toàn nhất chính là con đường hướng đến giá trị thật sự cho khách hàng. Với chiến lược liên kết đúng đắn, website của bạn chắc chắn sẽ gặt hái được những thành quả xứng đáng.</p>
+
+<p>Hy vọng bài viết này đã mang đến cho bạn cái nhìn sâu sắc về ý nghĩa thật sự của Internal và External link. Chúc bạn thành công trong việc tối ưu hóa website và sớm đạt được những vị trí cao trên bảng xếp hạng Google. Hãy bắt tay vào hành động ngay hôm nay để tạo ra sự khác biệt cho thương hiệu của chính mình.</p></div>
+                </div>
+                            </article>
+        </div>
+                    <div class="ct-container">
+                <div class="wp-block-stackable-heading stk-block-heading stk-block stk-02dc96b" id="latest-from-blog"
+                    data-block-id="02dc96b">
+                    <h2 style="padding:2rem 0" class="stk-block-heading__text has-text-align-center">BÀI VIẾT LIÊN QUAN
+                    </h2>
+                </div>
+                <div class="ct-posts-shortcode" data-prefix="blog">
+                    <div class="entries" data-archive="default" data-layout="grid" data-cards="boxed"
+                        data-hover="zoom-in">
+                        
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/y-nghia-that-su-cua-link-juice-trong-seo" aria-label="Ý nghĩa thật sự của Link Juice trong SEO"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/y-nghia-that-su-cua-link-juice-trong-seo"
+                                    rel="bookmark" alt="Ý nghĩa thật sự của Link Juice trong SEO">
+                                    Ý nghĩa thật sự của Link Juice trong SEO
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Ý nghĩa thật sự của Link Juice trong SEO</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/seo-audit-la-gi-khi-nao-can-trien-khai-seo-audit" aria-label="SEO Audit là gì? Khi nào cần triển khai SEO Audit"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/seo-audit-la-gi-khi-nao-can-trien-khai-seo-audit"
+                                    rel="bookmark" alt="SEO Audit là gì? Khi nào cần triển khai SEO Audit">
+                                    SEO Audit là gì? Khi nào cần triển khai SEO Audit
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>SEO Audit là gì? Khi nào cần triển khai SEO Audit</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/khi-nao-can-day-manh-seo-cho-website" aria-label="Khi nào bạn cần đẩy mạnh SEO cho website"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/khi-nao-can-day-manh-seo-cho-website"
+                                    rel="bookmark" alt="Khi nào bạn cần đẩy mạnh SEO cho website">
+                                    Khi nào bạn cần đẩy mạnh SEO cho website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Khi nào bạn cần đẩy mạnh SEO cho website.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/google-trends-la-gi-va-cach-ung-dung-thuc-te-trong-seo" aria-label="Google Trends là gì và cách ứng dụng thực tế trong SEO"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/google-trends-la-gi-va-cach-ung-dung-thuc-te-trong-seo"
+                                    rel="bookmark" alt="Google Trends là gì và cách ứng dụng thực tế trong SEO">
+                                    Google Trends là gì và cách ứng dụng thực tế trong SEO
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Google Trends là gì và cách ứng dụng thực tế trong SEO</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/top-10-sai-lam-khi-lam-seo-ma-nguoi-lam-seo-can-tranh" aria-label="Top 10 sai lầm khi làm SEO mà người làm SEO cần tránh"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/top-10-sai-lam-khi-lam-seo-ma-nguoi-lam-seo-can-tranh"
+                                    rel="bookmark" alt="Top 10 sai lầm khi làm SEO mà người làm SEO cần tránh">
+                                    Top 10 sai lầm khi làm SEO mà người làm SEO cần tránh
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Top 10 sai lầm khi làm SEO mà người làm SEO cần tránh</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/technical-seo-la-gi-cach-toi-uu-technical-seo-quan-trong-cho-website" aria-label="Technical SEO Là Gì? Cách Tối Ưu Technical SEO quan trọng cho website"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-seo-tong-the/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm SEO tổng thể
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/technical-seo-la-gi-cach-toi-uu-technical-seo-quan-trong-cho-website"
+                                    rel="bookmark" alt="Technical SEO Là Gì? Cách Tối Ưu Technical SEO quan trọng cho website">
+                                    Technical SEO Là Gì? Cách Tối Ưu Technical SEO quan trọng cho website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Technical SEO Là Gì? Cách Tối Ưu Technical SEO quan trọng cho website</p>
+                            </div>
+                        </article>
+                                                
+                    </div>
+                </div>
+                <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-81fea2c"
+                    data-block-id="81fea2c"></div>
+            </div>
+                
+    </main>
+
+
+
+        <footer data-rocket-location-hash="d38d20286372344a09d3e0d897293bbe" id="footer" class="ct-footer"
+            data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter">
+            <div data-rocket-location-hash="c84742f06f81ae4bd02dfacf04ac6326" data-row="middle">
+                <div class="ct-container" data-columns-divider="md">
+                    <div data-column="widget-area-1">
+                        <div class="ct-widget is-layout-flow widget_block" id="block-10">
+                            <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+                                <figure class="wp-block-image is-resized" style="margin-bottom: 14.5px;">
+                                    
+                                    <a href="https://drumie.com"><b>Azwebsoft</b></a>
+                                </figure>
+
+
+
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
+                            </div>
+                        </div>
+                        <div class="ct-widget is-layout-flow widget_block" id="block-11">
+                            <div class="ct-block-wrapper">
+                                <div class="ct-socials-block"
+                                    style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
+                                    <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <circle cx="10" cy="10" r="3.3"></circle>
+                                                    <path
+                                                        d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-2">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-2">
+                            <h3 class="widget-title">Về chúng tôi</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Lịch sử phát triển</a></li>
+                                    <li><a href="#">Sứ mệnh – Tầm nhìn</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-3">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-3">
+                            <h3 class="widget-title">Chính sách</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Chính sách riêng tư</a></li>
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-4">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-4">
+                            <h3 class="widget-title">Liên hệ</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-rocket-location-hash="0adbe0e2f82f32229c3117fb330757fe" data-row="bottom">
+                <div class="ct-container">
+                    <div data-column="copyright">
+                        <div class="ct-footer-copyright" data-id="copyright">
+
+                            Copyright © 2026 - Powered by <a
+                                href="https://drumie.com">Azwebsoft</a></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
+        </footer>
+    </div>
+
+
+    <script id="ct-scripts-js-extra">
+        var ct_localizations = {
+            "ajax_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-admin\/admin-ajax.php",
+            "public_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/",
+            "rest_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-json\/",
+            "search_url": "https:\/\/startersites.io\/blocksy\/web-agency\/search\/QUERY_STRING\/",
+            "show_more_text": "Show more",
+            "more_text": "More",
+            "search_live_results": "Search results",
+            "search_live_no_results": "No results",
+            "search_live_no_result": "No results",
+            "search_live_one_result": "You got %s result. Please press Tab to select it.",
+            "search_live_many_results": "You got %s results. Please press Tab to select one.",
+            "clipboard_copied": "Copied!",
+            "clipboard_failed": "Failed to Copy",
+            "expand_submenu": "Expand dropdown menu",
+            "collapse_submenu": "Collapse dropdown menu",
+            "dynamic_js_chunks": [{
+                "id": "blocksy_account",
+                "selector": ".ct-account-item[href*=\"account-modal\"], .must-log-in a",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/account.js?ver=2.1.20",
+                "deps": [],
+                "global_data": [],
+                "trigger": "click",
+                "deps_data": []
+            }, {
+                "id": "blocksy_sticky_header",
+                "selector": "header [data-sticky]",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.1.20"
+            }],
+            "dynamic_styles": {
+                "lazy_load": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.1.20",
+                "search_lazy": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.1.20",
+                "back_to_top": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.1.20"
+            },
+            "dynamic_styles_selectors": [{
+                "selector": ".ct-header-cart, #woo-cart-panel",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".flexy",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.1.20"
+            }, {
+                "selector": "#account-modal",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".ct-header-account",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.1.20"
+            }]
+        };
+    </script>
+    <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
+    <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
+
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
+    <script>
+        const pricing = document.querySelector('.pricing');
+        const pricingLink = pricing.querySelector('.ct-menu-link');
+        const pricingMenu = document.querySelector('.pricing-sub-menu');
+
+        pricingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            pricingMenu.classList.toggle('active');
+        });
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="vi_VN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="vi_VN">
+        <title>Google Pagespeed Insights, công cụ Tối Ưu Tốc Độ Website hữu ích</title>
+    <meta name="description" content="Công cụ kiểm tra tốc độ website của Google.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="article">
+    
+    <meta property="og:title" content="Google Pagespeed Insights, công cụ Tối Ưu Tốc Độ Website hữu ích">
+    <meta property="og:description" content="Công cụ kiểm tra tốc độ website của Google.">
+    <meta property="og:url" content="https://drumie.com/google-pagespeed-insights-toi-uu-toc-do-website">
+    <meta property="og:site_name" content="Azwebsoft">
+            
+        <meta property="article:published_time" content="2026-04-19T04:00:45+00:00">
+        <meta property="article:modified_time" content="2026-05-27T10:13:43+00:00">
+        <meta property="og:updated_time" content="2026-05-27T10:13:43+00:00">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Google Pagespeed Insights, công cụ Tối Ưu Tốc Độ Website hữu ích">
+    <meta name="twitter:description" content="Công cụ kiểm tra tốc độ website của Google.">
+    <meta name="twitter:url" content="https://drumie.com/google-pagespeed-insights-toi-uu-toc-do-website">
+    <meta name="twitter:site" content="@yourhandle">
+
+    <meta name="twitter:label1" content="Tác giả ">
+    <meta name="twitter:data1" content="Azwebsoft">
+    <meta name="twitter:label1" content="Thời gian đọc">
+    <meta name="twitter:data1" content="5 phút">
+
+    <link rel="canonical" href="https://drumie.com/google-pagespeed-insights-toi-uu-toc-do-website">
+    <style>
+        .pricing-sub-menu {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            position: absolute;
+            top: 75px;
+            left: 0;
+            background: #fff;
+            padding: 0.75rem 1rem !important;
+            width: max-content;
+            color: black !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .pricing-sub-menu.active {
+            display: block;
+            opacity: 1;
+        }
+
+        nav[aria-label='Pagination Navigation'] {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .line-clamp-1 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+
+        .line-clamp-2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .line-clamp-3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .order_right {
+            order: 3 !important;
+        }
+
+        .text_justify {
+            text-align: justify !important;
+        }
+
+        #header [data-items] {
+            height: 80px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+
+            max-height: 300px;
+            overflow-y: scroll;
+            scrollbar-gutter: stable;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #eee;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 999px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #666;
+            }
+
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: Arial,
+            sans-serif;
+
+            ol {
+                list-style-type: none;
+                counter-reset: item;
+                margin: 0;
+                padding: 0;
+
+                >li:before {
+                    counter-increment: item;
+                    margin: 0;
+                    padding: 0;
+                    content: counters(item, ".") ". ";
+                }
+            }
+
+            ol.menu_level_2 {
+                padding: 0 1.5rem;
+            }
+
+            summary {
+                cursor: pointer;
+                font-weight: 600;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &::after {
+                    content: "▶";
+                    font-size: 12px;
+                    transition: transform 0.2s ease;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .toc-content {
+                margin-top: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 689px) {
+            .custom-mobile {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tam_nhin {
+                order: 1 !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://drumie.com/assets/global.css" media="all">
+        <style>
+        img:is([sizes="auto" i],
+        [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+
+    <link rel="stylesheet" id="wp-block-library-css" href="https://drumie.com/assets/style.min.css" media="all">
+    <style id="global-styles-inline-css">
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--palette-color-1: var(--theme-palette-color-1, #ffd800);
+            --wp--preset--color--palette-color-2: var(--theme-palette-color-2, #ffc900);
+            --wp--preset--color--palette-color-3: var(--theme-palette-color-3, #5a5a5a);
+            --wp--preset--color--palette-color-4: var(--theme-palette-color-4, #000000);
+            --wp--preset--color--palette-color-5: var(--theme-palette-color-5, #edeff2);
+            --wp--preset--color--palette-color-6: var(--theme-palette-color-6, #f9fafb);
+            --wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FDFDFD);
+            --wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            --wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            --wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+            --wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            --wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            --wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            --wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+            --wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+            --wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+            --wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+            --wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+            --wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            --wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+            --wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            --wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            --wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+            --wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+            --wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+            --wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);
+            --wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+            --wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);
+            --wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+            --wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+            --wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+            --wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+            --wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            --wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+            --wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+            --wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+            --wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+            --wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            --wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+            --wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            --wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            --wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+            --wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+            --wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+            --wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+            --wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            --wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+            --wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            --wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);
+            --wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);
+            --wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :root {
+            --wp--style--global--content-size: var(--theme-block-max-width);
+            --wp--style--global--wide-size: var(--theme-block-wide-max-width);
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: var(--theme-content-spacing);
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: var(--theme-content-spacing);
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: var(--theme-content-spacing);
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-color {
+            color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-color {
+            color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-color {
+            color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-color {
+            color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-color {
+            color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-color {
+            color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-color {
+            color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-color {
+            color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-background-color {
+            background-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-background-color {
+            background-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-background-color {
+            background-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-background-color {
+            background-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-background-color {
+            background-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-background-color {
+            background-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-background-color {
+            background-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-background-color {
+            background-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-palette-color-1-border-color {
+            border-color: var(--wp--preset--color--palette-color-1) !important;
+        }
+
+        .has-palette-color-2-border-color {
+            border-color: var(--wp--preset--color--palette-color-2) !important;
+        }
+
+        .has-palette-color-3-border-color {
+            border-color: var(--wp--preset--color--palette-color-3) !important;
+        }
+
+        .has-palette-color-4-border-color {
+            border-color: var(--wp--preset--color--palette-color-4) !important;
+        }
+
+        .has-palette-color-5-border-color {
+            border-color: var(--wp--preset--color--palette-color-5) !important;
+        }
+
+        .has-palette-color-6-border-color {
+            border-color: var(--wp--preset--color--palette-color-6) !important;
+        }
+
+        .has-palette-color-7-border-color {
+            border-color: var(--wp--preset--color--palette-color-7) !important;
+        }
+
+        .has-palette-color-8-border-color {
+            border-color: var(--wp--preset--color--palette-color-8) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-juicy-peach-gradient-background {
+            background: var(--wp--preset--gradient--juicy-peach) !important;
+        }
+
+        .has-young-passion-gradient-background {
+            background: var(--wp--preset--gradient--young-passion) !important;
+        }
+
+        .has-true-sunset-gradient-background {
+            background: var(--wp--preset--gradient--true-sunset) !important;
+        }
+
+        .has-morpheus-den-gradient-background {
+            background: var(--wp--preset--gradient--morpheus-den) !important;
+        }
+
+        .has-plum-plate-gradient-background {
+            background: var(--wp--preset--gradient--plum-plate) !important;
+        }
+
+        .has-aqua-splash-gradient-background {
+            background: var(--wp--preset--gradient--aqua-splash) !important;
+        }
+
+        .has-love-kiss-gradient-background {
+            background: var(--wp--preset--gradient--love-kiss) !important;
+        }
+
+        .has-new-retrowave-gradient-background {
+            background: var(--wp--preset--gradient--new-retrowave) !important;
+        }
+
+        .has-plum-bath-gradient-background {
+            background: var(--wp--preset--gradient--plum-bath) !important;
+        }
+
+        .has-high-flight-gradient-background {
+            background: var(--wp--preset--gradient--high-flight) !important;
+        }
+
+        .has-teen-party-gradient-background {
+            background: var(--wp--preset--gradient--teen-party) !important;
+        }
+
+        .has-fabled-sunset-gradient-background {
+            background: var(--wp--preset--gradient--fabled-sunset) !important;
+        }
+
+        .has-arielle-smile-gradient-background {
+            background: var(--wp--preset--gradient--arielle-smile) !important;
+        }
+
+        .has-itmeo-branding-gradient-background {
+            background: var(--wp--preset--gradient--itmeo-branding) !important;
+        }
+
+        .has-deep-blue-gradient-background {
+            background: var(--wp--preset--gradient--deep-blue) !important;
+        }
+
+        .has-strong-bliss-gradient-background {
+            background: var(--wp--preset--gradient--strong-bliss) !important;
+        }
+
+        .has-sweet-period-gradient-background {
+            background: var(--wp--preset--gradient--sweet-period) !important;
+        }
+
+        .has-purple-division-gradient-background {
+            background: var(--wp--preset--gradient--purple-division) !important;
+        }
+
+        .has-cold-evening-gradient-background {
+            background: var(--wp--preset--gradient--cold-evening) !important;
+        }
+
+        .has-mountain-rock-gradient-background {
+            background: var(--wp--preset--gradient--mountain-rock) !important;
+        }
+
+        .has-desert-hump-gradient-background {
+            background: var(--wp--preset--gradient--desert-hump) !important;
+        }
+
+        .has-ethernal-constance-gradient-background {
+            background: var(--wp--preset--gradient--ethernal-constance) !important;
+        }
+
+        .has-happy-memories-gradient-background {
+            background: var(--wp--preset--gradient--happy-memories) !important;
+        }
+
+        .has-grown-early-gradient-background {
+            background: var(--wp--preset--gradient--grown-early) !important;
+        }
+
+        .has-morning-salad-gradient-background {
+            background: var(--wp--preset--gradient--morning-salad) !important;
+        }
+
+        .has-night-call-gradient-background {
+            background: var(--wp--preset--gradient--night-call) !important;
+        }
+
+        .has-mind-crawl-gradient-background {
+            background: var(--wp--preset--gradient--mind-crawl) !important;
+        }
+
+        .has-angel-care-gradient-background {
+            background: var(--wp--preset--gradient--angel-care) !important;
+        }
+
+        .has-juicy-cake-gradient-background {
+            background: var(--wp--preset--gradient--juicy-cake) !important;
+        }
+
+        .has-rich-metal-gradient-background {
+            background: var(--wp--preset--gradient--rich-metal) !important;
+        }
+
+        .has-mole-hall-gradient-background {
+            background: var(--wp--preset--gradient--mole-hall) !important;
+        }
+
+        .has-cloudy-knoxville-gradient-background {
+            background: var(--wp--preset--gradient--cloudy-knoxville) !important;
+        }
+
+        .has-soft-grass-gradient-background {
+            background: var(--wp--preset--gradient--soft-grass) !important;
+        }
+
+        .has-saint-petersburg-gradient-background {
+            background: var(--wp--preset--gradient--saint-petersburg) !important;
+        }
+
+        .has-everlasting-sky-gradient-background {
+            background: var(--wp--preset--gradient--everlasting-sky) !important;
+        }
+
+        .has-kind-steel-gradient-background {
+            background: var(--wp--preset--gradient--kind-steel) !important;
+        }
+
+        .has-over-sun-gradient-background {
+            background: var(--wp--preset--gradient--over-sun) !important;
+        }
+
+        .has-premium-white-gradient-background {
+            background: var(--wp--preset--gradient--premium-white) !important;
+        }
+
+        .has-clean-mirror-gradient-background {
+            background: var(--wp--preset--gradient--clean-mirror) !important;
+        }
+
+        .has-wild-apple-gradient-background {
+            background: var(--wp--preset--gradient--wild-apple) !important;
+        }
+
+        .has-snow-again-gradient-background {
+            background: var(--wp--preset--gradient--snow-again) !important;
+        }
+
+        .has-confident-cloud-gradient-background {
+            background: var(--wp--preset--gradient--confident-cloud) !important;
+        }
+
+        .has-glass-water-gradient-background {
+            background: var(--wp--preset--gradient--glass-water) !important;
+        }
+
+        .has-perfect-white-gradient-background {
+            background: var(--wp--preset--gradient--perfect-white) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .has-xx-large-font-size {
+            font-size: var(--wp--preset--font-size--xx-large) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.645), 1.5em);
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" id="wpa-css-css" href="https://drumie.com/assets/wpa.css" media="all">
+    <link rel="stylesheet" id="ct-main-styles-css" href="https://drumie.com/assets/main.min.css" media="all">
+    <link rel="stylesheet" id="ct-page-title-styles-css" href="https://drumie.com/assets/page-title.min.css" media="all">
+    <link rel="stylesheet" id="ct-comments-styles-css" href="https://drumie.com/assets/comments.min.css" media="all">
+    <link rel="stylesheet" id="ct-stackable-styles-css" href="https://drumie.com/assets/stackable.min.css" media="all">
+    <link rel="stylesheet" id="ct-wpforms-styles-css" href="https://drumie.com/assets/wpforms.min.css" media="all">
+    <link rel="stylesheet" id="blocksy-companion-header-account-styles-css"
+        href="https://drumie.com/assets/header-account.min.css" media="all">
+    <script src="https://drumie.com/assets/jquery.min.js.download" id="jquery-core-js"></script>
+    <script src="https://drumie.com/assets/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+    <style>
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        summary {
+            list-style: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &::marker {
+                display: none;
+                content: "";
+            }
+        }
+
+        .tags {
+            padding: 2rem 0;
+            display: flex;
+            gap: 0.25rem;
+        }
+    </style>
+    <script async="" src="https://drumie.com/assets/sticky.js.download"></script>
+
+</head>
+
+<body
+    class="home wp-singular page-template-default page page-id-771 wp-custom-logo wp-embed-responsive wp-theme-blocksy stk--is-blocksy-theme stk--anim-init"
+    data-link="type-2" data-prefix="single_page" data-header="type-1:sticky" data-footer="type-1">
+
+    <div data-rocket-location-hash="6ca16749434ffeb6798230cf77b3e4ff" class="ct-drawer-canvas" data-location="start">
+        <div data-rocket-location-hash="acd6a28fd2ca5c0a76550d90db42be32" id="offcanvas" class="ct-panel ct-header"
+            data-behaviour="modal" role="dialog" aria-label="Offcanvas modal" inert="">
+            <div data-rocket-location-hash="79dc0a17d75ed337f37e2b08b92b5134" class="ct-panel-actions">
+
+                <button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+                    <svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+                        <path
+                            d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div data-rocket-location-hash="0f43dfbd9ae87fd5d0585f1a8f8a8349" class="ct-panel-content"
+                data-device="desktop">
+                <div class="ct-panel-content-inner"></div>
+            </div>
+            <div data-rocket-location-hash="bece1ae6d45638fbcee2f115434c8182" class="ct-panel-content" data-device="mobile">
+    <div class="ct-panel-content-inner">
+        <div class="ct-header-text " data-id="text">
+            <div class="entry-content is-layout-flow">
+                
+                Azwebsoft
+            </div>
+        </div>
+
+        <nav class="mobile-menu menu-container" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1"
+            data-submenu-dots="yes" aria-label="Main Menu">
+
+            <ul id="menu-main-menu-1" class="">
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                    <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                    <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                    <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                    <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                </li>
+                <hr />
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/thiet-ke-web" class="ct-menu-link">Bảng giá thiết kế web</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/dich-vu-seo" class="ct-menu-link">Bảng giá dịch vụ SEO</a>
+                </li>
+                <li
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                    <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo" class="ct-menu-link">Bảng giá content
+                        writing</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="ct-header-cta" data-id="button">
+            <a href="tel:0915452237" class="ct-button" data-size="medium"
+                aria-label="Tư vấn: 0915452237">
+                Tư vấn: 0915452237</a>
+        </div>
+
+        <div class="ct-header-socials " data-id="socials">
+
+
+            <div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="rounded:outline">
+
+
+
+                <a href="#" data-network="facebook" aria-label="Facebook">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                    <span class="ct-icon-container">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="instagram" aria-label="Instagram">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <circle cx="10" cy="10" r="3.3"></circle>
+                            <path
+                                d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+                <a href="#" data-network="youtube" aria-label="YouTube">
+                    <span class="ct-icon-container">
+                        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                            <path
+                                d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                            </path>
+                        </svg>
+                    </span> </a>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div data-rocket-location-hash="dabd21537b68211e9f9db0f1c516c864" id="main-container">
+        <header data-rocket-location-hash="ec79a8b50d7f14dc6444bd8a706b2130" id="header" class="ct-header"
+            data-id="type-1">
+            <div data-rocket-location-hash="252865cd7eec5ce9cb808c3bd99dc248" data-device="desktop">
+    <div class="ct-sticky-container" style="height: 120px;">
+        <div data-sticky="fixed:shrink">
+            <div data-row="middle" data-column-set="2">
+                <div class="ct-container">
+                    <div data-column="start" data-placements="1">
+                        <div data-items="primary" style="">
+                            <div class="site-branding" data-id="logo">
+                                <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                    itemprop="url">Azwebsoft</a>
+                            </div>
+
+
+                            <nav id="header-menu-1" class="header-menu-1 menu-container" data-id="menu"
+                                data-interaction="hover" data-menu="type-2:center" data-dropdown="type-1:simple"
+                                data-responsive="yes" aria-label="Main Menu">
+
+                                <ul id="menu-main-menu" class="menu">
+                                    <li id="menu-item-897"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-771 current_page_item menu-item-897">
+                                        <a href="https://drumie.com" aria-current="page" class="ct-menu-link">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-900"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                                        <a href="https://drumie.com/dich-vu" class="ct-menu-link">Dịch vụ</a>
+                                    </li>
+                                    <li id="menu-item-898"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-898">
+                                        <a href="https://drumie.com/ve-chung-toi" class="ct-menu-link">Về chúng tôi</a>
+                                    </li>
+                                    <li id="menu-item-563"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="https://drumie.com/blog/trang/1" class="ct-menu-link">Blog</a>
+                                    </li>
+                                    <li style="position: relative;"
+                                        class="pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-563">
+                                        <a href="" class="ct-menu-link">Bảng giá</a>
+                                        <ul class="pricing-sub-menu">
+                                            <li id="menu-item-pricing-web"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-web">
+                                                <a href="https://drumie.com/bang-gia/thiet-ke-web">Thiết kế website</a>
+                                            </li>
+                                            <li id="menu-item-pricing-seo"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-seo">
+                                                <a href="https://drumie.com/bang-gia/dich-vu-seo">Dịch vụ SEO</a>
+                                            </li>
+                                            <li id="menu-item-pricing-marketing"
+                                                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-pricing-marketing">
+                                                <a href="https://drumie.com/bang-gia/viet-bai-chuan-seo">Content Writing</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-899"
+                                        class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-899">
+                                        <a href="https://drumie.com/lien-he" class="ct-menu-link">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div data-column="end" data-placements="1">
+                        <div data-items="primary">
+                            <div class="ct-header-cta" data-id="button">
+                                <a href="tel:0915452237" class="ct-button" data-size="medium"
+                                    aria-label="Tư vấn: 0915452237">
+                                    Tư vấn: 0915452237</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div data-rocket-location-hash="e23057b5ce826268727143abf068948f" data-device="mobile">
+                <div class="ct-sticky-container">
+                    <div data-sticky="shrink">
+                        <div data-row="middle" data-column-set="2">
+                            <div class="ct-container">
+                                <div data-column="start" data-placements="1">
+                                    <div data-items="primary">
+                                        <div class="site-branding" data-id="logo">
+
+                                            <a href="https://drumie.com" class="site-logo-container" rel="home"
+                                                itemprop="url">Azwebsoft</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-column="end" data-placements="1">
+                                    <div data-items="primary">
+                                        <button class="ct-header-trigger ct-toggle " data-toggle-panel="#offcanvas"
+                                            aria-controls="offcanvas" data-design="simple" data-label="right"
+                                            aria-label="Menu" data-id="trigger">
+
+                                            <span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg"
+                                                aria-hidden="true">Menu</span>
+
+                                            <svg class="ct-icon" width="18" height="14" viewBox="0 0 18 14"
+                                                data-type="type-1" aria-hidden="true">
+                                                <rect y="0.00" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="6.15" width="18" height="1.7" rx="1"></rect>
+                                                <rect y="12.3" width="18" height="1.7" rx="1"></rect>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+            <main data-rocket-location-hash="4120c4747d19301afbb8805e60c95cd3" id="main" class="site-main hfeed">
+
+
+        <div data-rocket-location-hash="6e6a200e925b8ce0a3ee71e64be788b4" class="hero-section" data-type="type-2">
+
+            <div class="entry-header ct-container-narrow">
+
+                <nav class="ct-breadcrumbs" data-source="default">
+                    <span class="first-item">
+                        <a href="https://drumie.com"><span>Trang chủ</span></a>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                    </span>
+                                            <span class="item-0">
+                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1">Kinh nghiệm thiết kế website
+                            </a>
+                        </span>
+                        <svg class="ct-separator" fill="currentColor" width="8" height="8" viewBox="0 0 8 8"
+                            aria-hidden="true" focusable="false">
+                            <path d="M2,6.9L4.8,4L2,1.1L2.6,0l4,4l-4,4L2,6.9z"></path>
+                        </svg>
+                                        </span><span class="last-item" aria-current="page">
+                        <span>
+                            Google Pagespeed Insights, công cụ Tối Ưu Tốc Độ Website hữu ích
+                        </span>
+                    </span>
+                </nav>
+
+                <h1 class="page-title">Google Pagespeed Insights, công cụ Tối Ưu Tốc Độ Website hữu ích</h1>
+                <ul class="entry-meta" data-type="simple:slash">
+                    <li class="meta-author">
+                        <a href="" tabindex="-1" class="ct-media-container-static">
+                            
+                        </a><a class="ct-meta-element-author" href="" title="Admin"
+                            rel="author"><span>Admin</span></a>
+                    </li>
+                    <li class="meta-date"><time class="ct-meta-element-date"
+                            datetime="2021-07-05T15:41:41+00:00">27-05-2026</time>
+                    </li>
+                                            <li class="meta-categories" data-type="simple">
+                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1" rel="tag"
+                                    class="ct-term-3">
+                                    Kinh nghiệm thiết kế website
+                                </a>
+                                                    </li>
+                                    </ul>
+            </div>
+        </div>
+
+        <div class="ct-container-narrow" data-content="narrow">
+            <article id="post-441"
+                class="post-441 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+                <div style="text-align:justify;" class="entry-content is-layout-constrained">
+                    
+                    
+<details class="toc">
+    <summary class="toc-title">
+        <strong>Mục lục</strong>
+    </summary>
+
+    <div class="toc-content">
+            <ol>
+      <li class="first">
+        <a href="#tong-quan-ve-google-pagespeed-insights">Tổng quan về Google Pagespeed Insights</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#khai-niem-co-ban-ve-google-pagespeed-insights">Khái niệm cơ bản về Google Pagespeed Insights</a>
+          </li>
+          <li>
+            <a href="#tam-quan-trong-cua-viec-toi-uu-toc-do-website">Tầm quan trọng của việc tối ưu tốc độ website</a>
+          </li>
+          <li>
+            <a href="#cach-thuc-hoat-dong-cua-google-pagespeed-insights">Cách thức hoạt động của Google Pagespeed Insights</a>
+          </li>
+          <li class="last">
+            <a href="#loi-ich-khi-su-dung-cong-cu-toi-uu-toc-do-nay">Lợi ích khi sử dụng công cụ tối ưu tốc độ này</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#phan-tich-cac-chi-so-core-web-vitals">Phân tích các chỉ số Core Web Vitals</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#chi-so-largest-contentful-paint-lcp">Chỉ số Largest Contentful Paint (LCP)</a>
+          </li>
+          <li>
+            <a href="#chi-so-interaction-to-next-paint-inp">Chỉ số Interaction to Next Paint (INP)</a>
+          </li>
+          <li>
+            <a href="#chi-so-cumulative-layout-shift-cls">Chỉ số Cumulative Layout Shift (CLS)</a>
+          </li>
+          <li class="last">
+            <a href="#tam-quan-trong-cua-du-lieu-thuc-te-field-data">Tầm quan trọng của dữ liệu thực tế (Field Data)</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#cac-ky-thuat-toi-uu-hoa-toc-do-hieu-qua">Các kỹ thuật tối ưu hóa tốc độ hiệu quả</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#toi-uu-hoa-hinh-anh-va-tep-phuong-tien">Tối ưu hóa hình ảnh và tệp phương tiện</a>
+          </li>
+          <li>
+            <a href="#giam-thieu-va-nen-ma-nguon-minification">Giảm thiểu và nén mã nguồn (Minification)</a>
+          </li>
+          <li>
+            <a href="#su-dung-bo-nho-dem-caching-hieu-qua">Sử dụng bộ nhớ đệm (Caching) hiệu quả</a>
+          </li>
+          <li class="last">
+            <a href="#su-dung-mang-phan-phoi-noi-dung-cdn">Sử dụng mạng phân phối nội dung (CDN)</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="#quy-trinh-kiem-tra-va-khac-phuc-su-co">Quy trình kiểm tra và khắc phục sự cố</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#doc-hieu-bao-cao-tu-google-pagespeed-insights">Đọc hiểu báo cáo từ Google Pagespeed Insights</a>
+          </li>
+          <li>
+            <a href="#xu-ly-cac-loi-javascript-va-css-gay-nghen">Xử lý các lỗi JavaScript và CSS gây nghẽn</a>
+          </li>
+          <li>
+            <a href="#khac-phuc-cac-loi-ve-tai-nguyen-hinh-anh">Khắc phục các lỗi về tài nguyên hình ảnh</a>
+          </li>
+          <li class="last">
+            <a href="#theo-doi-va-duy-tri-hieu-suat-website-dai-han">Theo dõi và duy trì hiệu suất website dài hạn</a>
+          </li>
+        </ol>
+      </li>
+      <li class="last">
+        <a href="#xu-huong-toi-uu-hoa-website-tuong-lai">Xu hướng tối ưu hóa website tương lai</a>
+        <ol class="menu_level_2">
+          <li class="first">
+            <a href="#tam-quan-trong-cua-tri-tue-nhan-tao-trong-toi-uu-hoa">Tầm quan trọng của trí tuệ nhân tạo trong tối ưu hóa</a>
+          </li>
+          <li>
+            <a href="#webassembly-va-tiem-nang-tang-toc-ung-dung-web">WebAssembly và tiềm năng tăng tốc ứng dụng web</a>
+          </li>
+          <li>
+            <a href="#toi-uu-hoa-cho-thiet-bi-di-dong-chiem-uu-the">Tối ưu hóa cho thiết bị di động chiếm ưu thế</a>
+          </li>
+          <li class="last">
+            <a href="#tong-ket-ve-suc-manh-cua-cong-cu-google-pagespeed">Tổng kết về sức mạnh của công cụ Google Pagespeed</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    </div>
+</details><div class='content'><h2 id="tong-quan-ve-google-pagespeed-insights">Tổng quan về Google Pagespeed Insights</h2>
+<h3 id="khai-niem-co-ban-ve-google-pagespeed-insights">Khái niệm cơ bản về Google Pagespeed Insights</h3>
+<p>Google Pagespeed Insights là một công cụ phân tích hiệu suất website mạnh mẽ do Google phát triển. Công cụ này cung cấp cái nhìn chi tiết về tốc độ tải trang trên cả thiết bị di động và máy tính để bàn. Nó giúp chủ sở hữu website nắm bắt được những điểm mạnh và điểm yếu trong cấu trúc kỹ thuật.</p>
+<p>Khi sử dụng, người dùng chỉ cần nhập địa chỉ URL và nhấn nút phân tích để nhận kết quả. Hệ thống sẽ quét qua các tệp tin, mã nguồn và cách thức trình duyệt tải nội dung. Từ đó, nó đưa ra một điểm số tổng quát dựa trên các tiêu chuẩn tối ưu hóa hiện đại.</p>
+<p>Công cụ này không chỉ đơn thuần là kiểm tra thời gian tải trang nhanh hay chậm. Nó còn phân tích cách thức mà các tài nguyên như hình ảnh, CSS và JavaScript ảnh hưởng đến trải nghiệm người dùng. Nhờ đó, bạn có thể biết chính xác mình cần thay đổi điều gì để cải thiện tốc độ.</p>
+<p>Việc hiểu rõ cách thức hoạt động của công cụ này là bước đầu tiên để làm chủ hiệu suất web. Mọi quản trị viên website nên coi đây là người bạn đồng hành trong quá trình xây dựng nền tảng trực tuyến. Google liên tục cập nhật các thuật toán để phản ánh đúng trải nghiệm thực tế của người dùng.</p>
+<h3 id="tam-quan-trong-cua-viec-toi-uu-toc-do-website">Tầm quan trọng của việc tối ưu tốc độ website</h3>
+<p>Tốc độ website đóng vai trò quyết định trong việc giữ chân khách hàng trên trang. Nếu một trang web tải quá chậm, người dùng sẽ có xu hướng thoát ra ngay lập tức. Điều này làm tăng tỷ lệ thoát và ảnh hưởng xấu đến uy tín thương hiệu của bạn.</p>
+<p>Ngoài trải nghiệm người dùng, tốc độ còn là một yếu tố xếp hạng quan trọng trong thuật toán của Google. Những website tải nhanh thường được ưu tiên hiển thị ở các thứ hạng cao trên trang kết quả tìm kiếm. Do đó, tối ưu tốc độ là một phần không thể thiếu trong chiến lược SEO tổng thể.</p>
+<p>Bên cạnh đó, việc tối ưu hóa giúp giảm tải tài nguyên máy chủ và tiết kiệm băng thông. Điều này giúp website vận hành ổn định hơn ngay cả khi có lượng truy cập đột biến. Một website nhanh luôn tạo ra lợi thế cạnh tranh đáng kể so với các đối thủ chậm chạp.</p>
+<p>Cuối cùng, sự hài lòng của khách hàng là chìa khóa để gia tăng tỷ lệ chuyển đổi. Khách hàng cảm thấy tin tưởng hơn khi thao tác trên một nền tảng mượt mà và phản hồi nhanh. Đầu tư vào tốc độ chính là đầu tư trực tiếp vào doanh thu và sự phát triển bền vững.</p>
+<h3 id="cach-thuc-hoat-dong-cua-google-pagespeed-insights">Cách thức hoạt động của Google Pagespeed Insights</h3>
+<p>Google Pagespeed Insights kết hợp giữa dữ liệu thực tế và dữ liệu mô phỏng từ phòng thí nghiệm. Dữ liệu thực tế được lấy từ báo cáo trải nghiệm người dùng Chrome (CrUX) cho thấy cách người dùng thật trải nghiệm trang. Dữ liệu phòng thí nghiệm giúp chẩn đoán các vấn đề kỹ thuật trong môi trường được kiểm soát.</p>
+<p>Công cụ này sử dụng các chỉ số Core Web Vitals làm nền tảng đánh giá chính. Những chỉ số này đo lường các khía cạnh như tốc độ tải, tính tương tác và độ ổn định của bố cục trang. Sau khi quét xong, Google sẽ cung cấp điểm số từ 0 đến 100 cho mỗi khía cạnh.</p>
+<p>Dựa trên kết quả thu được, hệ thống sẽ đưa ra danh sách các gợi ý cụ thể để cải thiện. Những gợi ý này thường được phân loại theo mức độ ưu tiên từ cao đến thấp. Người quản trị chỉ cần thực hiện theo các hướng dẫn đó để thấy sự cải thiện rõ rệt.</p>
+<p>Ngoài ra, công cụ này cũng cung cấp thông tin về các lỗi mã nguồn cụ thể gây cản trở tốc độ. Nó chỉ rõ tệp tin nào đang quá lớn hoặc đoạn mã nào đang gây nghẽn quá trình tải trang. Nhờ vậy, đội ngũ lập trình có thể can thiệp trực tiếp để xử lý vấn đề tận gốc.</p>
+<h3 id="loi-ich-khi-su-dung-cong-cu-toi-uu-toc-do-nay">Lợi ích khi sử dụng công cụ tối ưu tốc độ này</h3>
+<p>Sử dụng Google Pagespeed Insights mang lại cái nhìn khách quan và chính xác về hiệu suất website. Bạn không còn phải đoán xem website của mình nhanh hay chậm dựa trên cảm tính cá nhân. Công cụ cung cấp số liệu thực tế giúp bạn có quyết định dựa trên dữ liệu.</p>
+<p>Điểm mạnh lớn nhất là công cụ này được cung cấp hoàn toàn miễn phí bởi Google. Bạn có quyền truy cập vào các dữ liệu phân tích cao cấp mà không cần tốn chi phí thuê ngoài. Điều này tạo cơ hội bình đẳng cho mọi quy mô doanh nghiệp trong việc cạnh tranh trực tuyến.</p>
+<p>Bên cạnh đó, việc tích hợp các tiêu chuẩn của Google vào quá trình tối ưu giúp website tuân thủ chính sách của công cụ tìm kiếm. Bạn sẽ giảm thiểu được rủi ro bị phạt do các vấn đề liên quan đến trải nghiệm người dùng kém. Đây là lộ trình an toàn và bền vững nhất để đạt được thành công trong SEO.</p>
+<p>Cuối cùng, báo cáo của Google Pagespeed Insights rất dễ hiểu đối với cả những người không chuyên kỹ thuật. Những gợi ý đi kèm thường có tài liệu hướng dẫn cụ thể để bạn dễ dàng áp dụng. Sự hỗ trợ từ cộng đồng cũng rất mạnh mẽ giúp bạn giải quyết các vấn đề khó khăn.</p>
+
+<h2 id="phan-tich-cac-chi-so-core-web-vitals">Phân tích các chỉ số Core Web Vitals</h2>
+<h3 id="chi-so-largest-contentful-paint-lcp">Chỉ số Largest Contentful Paint (LCP)</h3>
+<p>LCP là chỉ số đo lường thời gian cần thiết để nội dung chính lớn nhất được tải xong. Nội dung này thường là hình ảnh, video hoặc một đoạn văn bản nổi bật trên trang. Mục tiêu lý tưởng là đạt được thời gian LCP dưới 2.5 giây để đảm bảo trải nghiệm tốt nhất.</p>
+<p>Nếu LCP quá cao, người dùng sẽ cảm thấy trang web vẫn đang trống trải và chưa sẵn sàng sử dụng. Điều này khiến họ có cảm giác website không chuyên nghiệp hoặc đang gặp lỗi kỹ thuật. Cải thiện LCP đòi hỏi việc tối ưu hóa hình ảnh và tốc độ phản hồi của máy chủ.</p>
+<p>Các kỹ thuật để tối ưu LCP bao gồm nén ảnh, sử dụng định dạng webp và tận dụng bộ nhớ đệm. Ngoài ra, việc ưu tiên tải các tài nguyên quan trọng cũng giúp LCP được cải thiện nhanh chóng. Bạn nên kiểm tra kỹ các thành phần xuất hiện sớm nhất để tối ưu chúng trước tiên.</p>
+<p>Chỉ số này đóng vai trò quan trọng trong việc đánh giá mức độ hấp dẫn của nội dung ngay từ cái nhìn đầu tiên. Một trang web có LCP thấp thường tạo được ấn tượng tốt và giữ chân người dùng ở lại lâu hơn. Hãy chú trọng vào việc giảm thời gian tải của các thành phần đồ họa lớn trên trang.</p>
+<h3 id="chi-so-interaction-to-next-paint-inp">Chỉ số Interaction to Next Paint (INP)</h3>
+<p>INP là chỉ số mới được Google thay thế cho FID nhằm đo lường tính tương tác của website. Nó ghi nhận khoảng thời gian từ khi người dùng thực hiện một tương tác đến khi trang phản hồi lại. Một trải nghiệm tương tác tốt là khi phản hồi diễn ra gần như tức thì.</p>
+<p>Sự phản hồi chậm trễ khi nhấp chuột hoặc gõ phím gây ra cảm giác khó chịu cực độ cho người dùng. Website của bạn sẽ bị coi là không nhạy bén và làm gián đoạn trải nghiệm duyệt web. Do đó, việc tối ưu INP là vô cùng cần thiết để tăng tính chuyên nghiệp.</p>
+<p>Nguyên nhân chính dẫn đến INP cao thường là do các tệp JavaScript quá nặng chiếm dụng luồng chính. Khi trình duyệt bận xử lý mã nguồn, nó không thể phản hồi các yêu cầu từ người dùng kịp thời. Bạn cần chia nhỏ các đoạn mã JavaScript và tối ưu lại các tiến trình chạy ngầm.</p>
+<p>Tối ưu hóa INP đòi hỏi sự hiểu biết kỹ lưỡng về cơ chế hoạt động của trình duyệt. Việc dọn dẹp các mã nguồn không cần thiết sẽ giúp giải phóng tài nguyên hệ thống đáng kể. Kết quả là website sẽ mang lại cảm giác mượt mà và phản hồi nhanh nhạy hơn bao giờ hết.</p>
+<h3 id="chi-so-cumulative-layout-shift-cls">Chỉ số Cumulative Layout Shift (CLS)</h3>
+<p>CLS là chỉ số đo lường độ ổn định của bố cục trang trong quá trình tải. Nếu các thành phần như hình ảnh hoặc quảng cáo nhảy vị trí bất ngờ, điểm CLS sẽ tăng cao. Điều này gây khó khăn cho người dùng khi họ đang muốn đọc hoặc nhấp vào nội dung.</p>
+<p>Điểm CLS lý tưởng nên nằm ở mức dưới 0.1 để đảm bảo trải nghiệm mượt mà nhất. Khi bố cục bị thay đổi, người dùng rất dễ nhấp nhầm vào các liên kết không mong muốn. Đây là trải nghiệm cực kỳ tồi tệ khiến khách hàng muốn rời bỏ website ngay lập tức.</p>
+<p>Để cải thiện CLS, bạn cần xác định kích thước rõ ràng cho tất cả các phần tử như hình ảnh và video. Bằng cách thiết lập chiều rộng và chiều cao ngay từ trong mã HTML, bạn giúp trình duyệt phân bổ không gian hợp lý. Điều này giúp ngăn chặn hiện tượng bố cục bị xô lệch khi tài nguyên được tải xong.</p>
+<p>Ngoài ra, tránh việc chèn thêm các nội dung động vào đầu trang sau khi trang đã tải xong. Hãy luôn tạo không gian dự phòng cho các nội dung quảng cáo hoặc các phần tử động. Một bố cục ổn định giúp người dùng tập trung vào nội dung chính mà không bị phân tâm.</p>
+<h3 id="tam-quan-trong-cua-du-lieu-thuc-te-field-data">Tầm quan trọng của dữ liệu thực tế (Field Data)</h3>
+<p>Dữ liệu thực tế từ Google Pagespeed Insights là minh chứng sống động về trải nghiệm của người dùng. Không giống như dữ liệu giả lập, dữ liệu này phản ánh đúng tốc độ mạng và thiết bị đa dạng ngoài đời thực. Đây là nguồn thông tin vô giá để bạn tinh chỉnh website của mình.</p>
+<p>Việc theo dõi dữ liệu thực tế giúp bạn biết được website đang hoạt động ra sao ở những khu vực địa lý khác nhau. Ví dụ, người dùng ở vùng có mạng yếu có thể gặp khó khăn mà bạn không hề hay biết. Từ đó, bạn có thể đưa ra các giải pháp như tối ưu hóa dung lượng trang nhẹ hơn.</p>
+<p>Dữ liệu thực tế cũng cung cấp thông tin về cách các trình duyệt khác nhau xử lý mã nguồn website. Sự tương thích giữa các nền tảng giúp trang web của bạn trở nên chuyên nghiệp và ổn định hơn. Hãy định kỳ kiểm tra các báo cáo này để cập nhật xu hướng thay đổi của người dùng.</p>
+<p>Cuối cùng, đây là chỉ số được Google sử dụng trực tiếp để xếp hạng website trên công cụ tìm kiếm. Nếu dữ liệu thực tế của bạn tốt, cơ hội thăng hạng SEO sẽ tăng lên đáng kể. Đừng bỏ qua nguồn dữ liệu quan trọng này trong quá trình tối ưu hóa hàng tháng.</p>
+
+<h2 id="cac-ky-thuat-toi-uu-hoa-toc-do-hieu-qua">Các kỹ thuật tối ưu hóa tốc độ hiệu quả</h2>
+<h3 id="toi-uu-hoa-hinh-anh-va-tep-phuong-tien">Tối ưu hóa hình ảnh và tệp phương tiện</h3>
+<p>Hình ảnh thường là nguyên nhân chiếm nhiều dung lượng nhất trên một trang web. Để tăng tốc độ, hãy luôn nén ảnh trước khi tải lên mà không làm giảm đáng kể chất lượng. Sử dụng các định dạng hiện đại như WebP thay vì JPEG hoặc PNG truyền thống.</p>
+<p>Kỹ thuật tải lười (Lazy Loading) giúp trình duyệt chỉ tải hình ảnh khi người dùng cuộn đến vị trí đó. Điều này giúp giảm thiểu đáng kể thời gian tải trang ban đầu và tiết kiệm băng thông đáng kể. Đây là phương pháp hiệu quả nhất để cải thiện trải nghiệm cho các trang có nhiều ảnh.</p>
+<p>Bên cạnh đó, hãy sử dụng các kích thước ảnh phù hợp cho từng loại thiết bị khác nhau. Đừng để điện thoại di động phải tải các hình ảnh quá khổ vốn dành cho máy tính. Việc sử dụng thuộc tính srcset giúp trình duyệt tự động chọn kích thước ảnh tối ưu nhất.</p>
+<p>Tối ưu hóa video cũng cần được quan tâm bằng cách sử dụng các nền tảng lưu trữ chuyên dụng như YouTube hoặc Vimeo. Tránh việc tải trực tiếp các tệp video nặng lên máy chủ của chính bạn. Điều này giúp website vận hành nhẹ nhàng và nhanh chóng hơn bao giờ hết.</p>
+<h3 id="giam-thieu-va-nen-ma-nguon-minification">Giảm thiểu và nén mã nguồn (Minification)</h3>
+<p>Mã nguồn HTML, CSS và JavaScript thường chứa rất nhiều khoảng trắng và ký tự không cần thiết. Việc giảm thiểu (minification) sẽ loại bỏ những phần này để thu gọn tệp tin một cách tối đa. Điều này giúp trình duyệt tải về và xử lý mã nhanh hơn đáng kể.</p>
+<p>Sử dụng các công cụ tự động để thực hiện công việc này mỗi khi bạn cập nhật mã nguồn. Hiện nay có rất nhiều công cụ mạnh mẽ tích hợp sẵn trong các hệ quản trị nội dung phổ biến. Đừng quên nén các tệp tin này bằng Gzip hoặc Brotli ở phía máy chủ.</p>
+<p>Việc nén tệp tin có thể giúp giảm dung lượng xuống tới hơn 70% so với bản gốc. Đây là một bước đơn giản nhưng mang lại hiệu quả cực kỳ ấn tượng trong bảng xếp hạng Pagespeed. Bạn sẽ thấy điểm số cải thiện ngay sau khi triển khai các biện pháp này.</p>
+<p>Cuối cùng, hãy kiểm tra lại toàn bộ trang web sau khi thực hiện việc giảm thiểu mã nguồn. Đảm bảo rằng việc thu gọn không làm lỗi giao diện hoặc chức năng của website. Một quy trình kiểm thử cẩn thận sẽ đảm bảo tính ổn định tối đa cho nền tảng.</p>
+<h3 id="su-dung-bo-nho-dem-caching-hieu-qua">Sử dụng bộ nhớ đệm (Caching) hiệu quả</h3>
+<p>Bộ nhớ đệm (caching) giúp trình duyệt lưu lại các tài nguyên đã tải để không cần tải lại trong những lần truy cập sau. Điều này giúp tốc độ tải trang cực nhanh cho những người dùng đã từng ghé thăm website. Việc cấu hình cache là yêu cầu bắt buộc đối với mọi quản trị viên.</p>
+<p>Bạn có thể thiết lập thời gian lưu trữ dài cho các tệp tĩnh như hình ảnh, file CSS và JS. Đối với những nội dung thường xuyên thay đổi, hãy đặt thời gian lưu trữ ngắn hơn. Sự cân bằng này sẽ giúp tối ưu hóa hiệu suất mà vẫn đảm bảo tính mới của nội dung.</p>
+<p>Bên cạnh cache trình duyệt, sử dụng cache phía máy chủ cũng mang lại lợi ích rất lớn. Nó giúp giảm thiểu yêu cầu truy vấn đến cơ sở dữ liệu mỗi khi có người vào trang. Việc này giúp máy chủ phản hồi nhanh hơn và chịu tải được nhiều truy cập hơn.</p>
+<p>Hãy sử dụng các plugin hoặc cài đặt module chuyên dụng để quản lý hệ thống cache một cách khoa học. Theo dõi hiệu suất sau khi bật cache để thấy sự cải thiện rõ rệt trong thời gian phản hồi. Đây là chìa khóa để giữ cho website luôn vận hành ở tốc độ tối ưu.</p>
+<h3 id="su-dung-mang-phan-phoi-noi-dung-cdn">Sử dụng mạng phân phối nội dung (CDN)</h3>
+<p>Mạng phân phối nội dung (CDN) giúp phân phối tài nguyên website đến các máy chủ đặt gần người dùng nhất. Điều này giảm khoảng cách vật lý mà dữ liệu phải di chuyển trên mạng internet. Kết quả là website tải nhanh hơn đáng kể trên phạm vi toàn cầu.</p>
+<p>CDN không chỉ giúp tăng tốc mà còn tăng tính bảo mật cho website của bạn. Các nhà cung cấp CDN hàng đầu thường đi kèm với khả năng bảo vệ chống tấn công DDoS. Điều này đảm bảo website của bạn luôn sẵn sàng phục vụ người dùng mọi lúc mọi nơi.</p>
+<p>Việc triển khai CDN hiện nay rất đơn giản và không đòi hỏi nhiều kiến thức chuyên sâu. Chỉ cần trỏ tên miền về hệ thống CDN và để nó tự động hóa quy trình phân phối nội dung. Bạn sẽ thấy sự thay đổi tích cực trong kết quả phân tích của Google Pagespeed Insights.</p>
+<p>Đây là giải pháp đầu tư xứng đáng cho những website có lượng truy cập từ nhiều quốc gia khác nhau. Tốc độ tải trang nhanh sẽ tạo ra lợi thế tuyệt đối trong việc tiếp cận thị trường quốc tế. CDN thực sự là một vũ khí lợi hại để tối ưu hóa hiệu suất web.</p>
+
+<h2 id="quy-trinh-kiem-tra-va-khac-phuc-su-co">Quy trình kiểm tra và khắc phục sự cố</h2>
+<h3 id="doc-hieu-bao-cao-tu-google-pagespeed-insights">Đọc hiểu báo cáo từ Google Pagespeed Insights</h3>
+<p>Báo cáo của Google Pagespeed Insights cung cấp rất nhiều thông tin kỹ thuật hữu ích cho quản trị viên. Hãy bắt đầu bằng cách nhìn vào tổng điểm số và phân loại theo thiết bị. Điều này giúp bạn xác định rõ khu vực nào cần ưu tiên khắc phục trước tiên.</p>
+<p>Dưới bảng điểm số, công cụ liệt kê các lỗi chi tiết theo danh mục cụ thể. Mỗi lỗi thường đi kèm với mô tả rõ ràng về nguyên nhân và giải pháp gợi ý. Hãy dành thời gian đọc kỹ để hiểu tại sao những yếu tố này lại làm chậm website.</p>
+<p>Phần cơ hội (Opportunities) là nơi chứa các đề xuất cải thiện cụ thể để tăng điểm số. Các mục này thường liệt kê các tệp tin hoặc tiến trình đang gây ngốn nhiều tài nguyên nhất. Việc tập trung xử lý các mục này sẽ giúp website đạt được sự cải thiện nhanh chóng.</p>
+<p>Đừng cố gắng sửa tất cả mọi thứ cùng một lúc mà hãy tập trung vào các vấn đề lớn nhất. Sự kiên trì và kiểm tra từng phần sẽ mang lại kết quả bền vững hơn. Luôn lưu lại các phiên bản báo cáo cũ để đối chiếu với sự thay đổi sau khi tối ưu.</p>
+<h3 id="xu-ly-cac-loi-javascript-va-css-gay-nghen">Xử lý các lỗi JavaScript và CSS gây nghẽn</h3>
+<p>JavaScript là nguyên nhân phổ biến nhất gây chậm trễ cho các trang web hiện đại ngày nay. Những đoạn mã chạy ngầm không cần thiết cần được loại bỏ hoặc trì hoãn việc tải. Sử dụng thuộc tính 'defer' hoặc 'async' để giúp trình duyệt tải trang ưu tiên nội dung hiển thị trước.</p>
+<p>CSS cũng có thể gây chặn hiển thị nếu nó quá lớn hoặc được đặt sai vị trí. Hãy chỉ tải những đoạn mã CSS cần thiết cho phần hiển thị đầu tiên của trang web. Những đoạn CSS còn lại nên được tải sau để không làm gián đoạn trải nghiệm người dùng.</p>
+<p>Kiểm tra kỹ các tệp tin thư viện của bên thứ ba đang được tải vào trang web. Nhiều lúc chúng chứa những đoạn mã thừa thãi và không cần thiết cho dự án của bạn. Việc loại bỏ các thư viện này sẽ giúp giảm bớt gánh nặng đáng kể cho trình duyệt.</p>
+<p>Luôn thực hiện việc kiểm tra lại trang sau mỗi lần điều chỉnh mã nguồn. Việc thay đổi cấu trúc tải tệp có thể làm ảnh hưởng đến giao diện nếu không cẩn thận. Một sự tinh chỉnh nhỏ cũng có thể tạo ra khác biệt lớn trong kết quả đo lường.</p>
+<h3 id="khac-phuc-cac-loi-ve-tai-nguyen-hinh-anh">Khắc phục các lỗi về tài nguyên hình ảnh</h3>
+<p>Hình ảnh bị thiếu kích thước hiển thị rõ ràng là lỗi rất thường gặp trên nhiều website. Hãy luôn đảm bảo rằng mọi thẻ hình ảnh đều có thuộc tính width và height đầy đủ. Điều này giúp trình duyệt dự phòng được không gian trước khi hình ảnh tải về xong.</p>
+<p>Sử dụng các định dạng hình ảnh hiện đại sẽ giúp giảm dung lượng tệp đáng kể mà không mất nét. Nếu website của bạn có quá nhiều ảnh, hãy cân nhắc sử dụng dịch vụ nén tự động. Những công cụ này sẽ giúp bạn xử lý hàng loạt ảnh một cách nhanh chóng và hiệu quả.</p>
+<p>Loại bỏ những tấm ảnh không thực sự cần thiết hoặc không đóng góp vào giá trị nội dung. Mỗi tệp tin tải về đều tốn tài nguyên và thời gian xử lý của trình duyệt. Việc tinh gọn nội dung hình ảnh giúp website trở nên thông thoáng và dễ nhìn hơn.</p>
+<p>Cuối cùng, hãy sử dụng kỹ thuật lazy loading cho toàn bộ hình ảnh ngoài màn hình hiển thị đầu tiên. Điều này giúp trang web tải cực kỳ nhanh và người dùng chỉ cần đợi khi họ cuộn trang. Đây là tiêu chuẩn vàng trong việc tối ưu hóa hiệu suất hình ảnh hiện nay.</p>
+<h3 id="theo-doi-va-duy-tri-hieu-suat-website-dai-han">Theo dõi và duy trì hiệu suất website dài hạn</h3>
+<p>Tối ưu tốc độ không phải là công việc chỉ làm một lần duy nhất mà cần được duy trì thường xuyên. Mỗi lần bạn cập nhật nội dung hay tính năng mới, tốc độ có thể thay đổi. Vì vậy, hãy đặt lịch kiểm tra định kỳ với Google Pagespeed Insights hàng tháng.</p>
+<p>Thiết lập hệ thống giám sát tự động để cảnh báo ngay khi tốc độ website giảm sút dưới ngưỡng an toàn. Điều này giúp bạn phản ứng kịp thời trước khi nó ảnh hưởng đến thứ hạng tìm kiếm. Một website duy trì được tốc độ ổn định luôn là ưu tiên hàng đầu.</p>
+<p>Đừng ngại thử nghiệm các công nghệ mới giúp cải thiện tốc độ tải trang nhanh hơn. Công nghệ web luôn tiến hóa không ngừng với những giải pháp tối ưu hóa mới xuất hiện. Việc học hỏi và áp dụng kiến thức mới sẽ giúp bạn luôn đi trước đối thủ.</p>
+<p>Cuối cùng, hãy luôn lắng nghe phản hồi của người dùng về tốc độ trải nghiệm thực tế trên trang. Sự hài lòng của họ chính là thước đo chính xác nhất cho hiệu quả công việc tối ưu của bạn. Tốc độ website tốt chính là nền tảng vững chắc cho sự thành công của doanh nghiệp.</p>
+
+<h2 id="xu-huong-toi-uu-hoa-website-tuong-lai">Xu hướng tối ưu hóa website tương lai</h2>
+<h3 id="tam-quan-trong-cua-tri-tue-nhan-tao-trong-toi-uu-hoa">Tầm quan trọng của trí tuệ nhân tạo trong tối ưu hóa</h3>
+<p>Trí tuệ nhân tạo đang dần thay đổi cách chúng ta tối ưu hóa tốc độ website hiện nay. Các công cụ tích hợp AI có thể tự động phân tích và đưa ra giải pháp khắc phục. Nó giúp giảm bớt thời gian cho lập trình viên trong việc tìm ra các vấn đề tiềm ẩn.</p>
+<p>Trong tương lai, các website có thể tự động điều chỉnh hiệu suất tùy theo tốc độ mạng người dùng. Những tính năng này giúp đảm bảo mọi người đều có trải nghiệm mượt mà dù ở bất cứ đâu. AI sẽ là trợ thủ đắc lực giúp quản trị viên quản lý hiệu suất một cách thông minh.</p>
+<p>Ngoài ra, AI còn hỗ trợ trong việc dự đoán hành vi người dùng để tải trước các tài nguyên quan trọng. Điều này tạo ra cảm giác trang web phản hồi gần như tức thì ngay khi được yêu cầu. Đây là bước tiến lớn hướng tới một trải nghiệm người dùng hoàn hảo trên nền tảng số.</p>
+<p>Hãy bắt đầu tìm hiểu và áp dụng các công cụ tối ưu dựa trên trí tuệ nhân tạo sớm nhất có thể. Điều này mang lại lợi thế cạnh tranh lớn và giúp bạn tiết kiệm được nhiều nguồn lực. Công nghệ AI thực sự là tương lai của việc phát triển web hiệu suất cao.</p>
+<h3 id="webassembly-va-tiem-nang-tang-toc-ung-dung-web">WebAssembly và tiềm năng tăng tốc ứng dụng web</h3>
+<p>WebAssembly là một công nghệ mới cho phép chạy mã nguồn với tốc độ gần như bản địa trên trình duyệt. Nó giúp các ứng dụng web phức tạp trở nên nhẹ nhàng và nhanh chóng hơn rất nhiều. Đây là chìa khóa để triển khai các chức năng mạnh mẽ mà không làm chậm trang.</p>
+<p>Việc áp dụng WebAssembly giúp giảm bớt gánh nặng xử lý của JavaScript lên trình duyệt. Các phép toán phức tạp hoặc xử lý đồ họa sẽ được thực hiện mượt mà hơn đáng kể. Người dùng sẽ có những trải nghiệm giống như ứng dụng phần mềm trên desktop.</p>
+<p>Mặc dù vẫn còn là công nghệ mới, nhưng tiềm năng của nó trong việc tối ưu tốc độ là rất lớn. Các website thương mại điện tử hoặc trang web công cụ sẽ được hưởng lợi đầu tiên. Hãy chú ý đến sự phát triển của công nghệ này để không bị tụt hậu trong tương lai.</p>
+<p>Việc chuẩn bị nền tảng kỹ thuật sẵn sàng đón nhận WebAssembly là quyết định sáng suốt cho dài hạn. Hãy thảo luận với đội ngũ kỹ thuật về khả năng tích hợp công nghệ này vào dự án của bạn. Nó hứa hẹn sẽ mang đến những bước đột phá về hiệu suất website cực lớn.</p>
+<h3 id="toi-uu-hoa-cho-thiet-bi-di-dong-chiem-uu-the">Tối ưu hóa cho thiết bị di động chiếm ưu thế</h3>
+<p>Trong thời đại hiện nay, phần lớn lưu lượng truy cập web đến từ các thiết bị di động. Do đó, việc tối ưu hóa Pagespeed Insights trên mobile trở nên quan trọng hơn bao giờ hết. Google cũng ưu tiên chỉ số di động để đánh giá thứ hạng của mọi website.</p>
+<p>Trang web di động cần phải cực kỳ gọn nhẹ để hoạt động tốt trên các mạng 3G, 4G. Những thiết kế quá phức tạp với nhiều hiệu ứng động thường gây ra trải nghiệm tồi tệ. Hãy ưu tiên phong cách thiết kế tối giản để đảm bảo tốc độ tải trang nhanh nhất.</p>
+<p>Việc kiểm tra kỹ lưỡng các nút bấm và vùng chạm trên thiết bị di động cũng là một yếu tố quan trọng. Đảm bảo mọi thứ hoạt động trơn tru mà không làm gián đoạn luồng công việc của người dùng. Sự hài lòng của người dùng di động là chìa khóa để gia tăng tỷ lệ chuyển đổi.</p>
+<p>Tiếp tục theo dõi các thay đổi từ Google về thuật toán xếp hạng cho thiết bị di động. Luôn cập nhật những tiêu chuẩn mới nhất để giữ vững thứ hạng trên công cụ tìm kiếm. Một website di động mạnh mẽ là tài sản giá trị nhất trong kỷ nguyên số hiện nay.</p>
+<h3 id="tong-ket-ve-suc-manh-cua-cong-cu-google-pagespeed">Tổng kết về sức mạnh của công cụ Google Pagespeed</h3>
+<p>Google Pagespeed Insights không chỉ là công cụ kiểm tra mà còn là kim chỉ nam cho mọi website. Qua việc phân tích sâu sắc các chỉ số, bạn nắm trong tay quyền kiểm soát hiệu suất. Đây là công cụ không thể thiếu đối với bất kỳ ai đang quản trị website chuyên nghiệp.</p>
+<p>Sự kết hợp giữa các kỹ thuật tối ưu hóa truyền thống và công nghệ tương lai sẽ giúp website luôn dẫn đầu. Hãy xem mỗi bản báo cáo là một cơ hội để hoàn thiện và phát triển website tốt hơn. Sự kiên trì và nghiêm túc trong việc tối ưu sẽ mang lại thành quả xứng đáng.</p>
+<p>Hy vọng qua bài viết này, bạn đã nắm vững cách sử dụng Google Pagespeed Insights hiệu quả nhất. Hãy bắt đầu hành trình cải thiện tốc độ website của bạn ngay từ hôm nay. Kết quả thu được chắc chắn sẽ khiến bạn ngạc nhiên về sự tăng trưởng doanh thu và người dùng.</p>
+<p>Website nhanh, trải nghiệm tốt và thứ hạng cao là đích đến của mọi nỗ lực tối ưu hóa hiện tại. Chúc bạn thành công trong việc xây dựng một nền tảng trực tuyến mạnh mẽ và bền vững. Google Pagespeed Insights sẽ luôn là đối tác tin cậy cùng bạn chinh phục những đỉnh cao mới.</p></div>
+                </div>
+                            </article>
+        </div>
+                    <div class="ct-container">
+                <div class="wp-block-stackable-heading stk-block-heading stk-block stk-02dc96b" id="latest-from-blog"
+                    data-block-id="02dc96b">
+                    <h2 style="padding:2rem 0" class="stk-block-heading__text has-text-align-center">BÀI VIẾT LIÊN QUAN
+                    </h2>
+                </div>
+                <div class="ct-posts-shortcode" data-prefix="blog">
+                    <div class="entries" data-archive="default" data-layout="grid" data-cards="boxed"
+                        data-hover="zoom-in">
+                        
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/website-responsive-la-gi" aria-label="Website responsive là gì mà cực kỳ quan trọng với mọi website"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/website-responsive-la-gi"
+                                    rel="bookmark" alt="Website responsive là gì mà cực kỳ quan trọng với mọi website">
+                                    Website responsive là gì mà cực kỳ quan trọng với mọi website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Tìm hiểu website responsive.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/so-sanh-wordpress-va-laravel" aria-label="So sánh Wordpress và Laravel nên chọn gì để thiết kế website"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/so-sanh-wordpress-va-laravel"
+                                    rel="bookmark" alt="So sánh Wordpress và Laravel nên chọn gì để thiết kế website">
+                                    So sánh Wordpress và Laravel nên chọn gì để thiết kế website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Nên chọn Wordpress hay Laravel?</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/cach-tang-trai-nghiem-mua-hang-tren-website-ban-hang" aria-label="Cách tăng trải nghiệm mua hàng trên website bán hàng hiệu quả"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/cach-tang-trai-nghiem-mua-hang-tren-website-ban-hang"
+                                    rel="bookmark" alt="Cách tăng trải nghiệm mua hàng trên website bán hàng hiệu quả">
+                                    Cách tăng trải nghiệm mua hàng trên website bán hàng hiệu quả
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Tăng trải nghiệm mua hàng giúp tăng doanh thu.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/cac-plugin-huu-dung-trong-thiet-ke-website-wordpress" aria-label="Các plugin hữu dụng trong thiết kế website với Wordpress"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/cac-plugin-huu-dung-trong-thiet-ke-website-wordpress"
+                                    rel="bookmark" alt="Các plugin hữu dụng trong thiết kế website với Wordpress">
+                                    Các plugin hữu dụng trong thiết kế website với Wordpress
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Plugin Wordpress hữu ích cho website.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/nhung-dieu-can-biet-truoc-khi-thiet-ke-website" aria-label="Những điều cần biết trước khi thiết kế website"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/nhung-dieu-can-biet-truoc-khi-thiet-ke-website"
+                                    rel="bookmark" alt="Những điều cần biết trước khi thiết kế website">
+                                    Những điều cần biết trước khi thiết kế website
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>Điều cần biết trước khi làm website.</p>
+                            </div>
+                        </article>
+                                                    <article
+                            class="entry-card card-content post-444 post type-post status-publish format-standard has-post-thumbnail hentry category-agency category-news">
+                            <a class="ct-media-container boundless-image has-hover-effect"
+                                href="https://drumie.com/chon-thiet-ke-trang-web-theo-mau-hay-theo-yeu-cau" aria-label="Chọn Thiết kế trang web theo mẫu hay theo yêu cầu như nào"><img
+                                    width="768" height="576"
+                                    src="/storage/thumbnails/images/400x300.png"
+                                    class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                    loading="lazy" decoding="async"
+                                    srcset=""
+                                    sizes="auto, (max-width: 768px) 100vw, 768px" style="aspect-ratio: 4/3;"></a>
+                            <ul class="entry-meta" data-type="simple:slash" data-id="dkffUY">
+                                <li class="meta-categories" data-type="pill">
+                                                                            <a href="https://drumie.com/danh-muc/kinh-nghiem-thiet-ke-website/trang/1"
+                                            rel="tag" class="ct-term-2">
+                                            Kinh nghiệm thiết kế website
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                            <h3 class="entry-title">
+                                <a class="line-clamp-1" href="https://drumie.com/chon-thiet-ke-trang-web-theo-mau-hay-theo-yeu-cau"
+                                    rel="bookmark" alt="Chọn Thiết kế trang web theo mẫu hay theo yêu cầu như nào">
+                                    Chọn Thiết kế trang web theo mẫu hay theo yêu cầu như nào
+                                </a>
+                            </h3>
+                            <div class="entry-excerpt line-clamp-2">
+                                <p>So sánh website mẫu và website theo yêu cầu.</p>
+                            </div>
+                        </article>
+                                                
+                    </div>
+                </div>
+                <div class="wp-block-stackable-spacer stk-block-spacer stk--no-padding stk-block stk-81fea2c"
+                    data-block-id="81fea2c"></div>
+            </div>
+                
+    </main>
+
+
+
+        <footer data-rocket-location-hash="d38d20286372344a09d3e0d897293bbe" id="footer" class="ct-footer"
+            data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter">
+            <div data-rocket-location-hash="c84742f06f81ae4bd02dfacf04ac6326" data-row="middle">
+                <div class="ct-container" data-columns-divider="md">
+                    <div data-column="widget-area-1">
+                        <div class="ct-widget is-layout-flow widget_block" id="block-10">
+                            <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+                                <figure class="wp-block-image is-resized" style="margin-bottom: 14.5px;">
+                                    
+                                    <a href="https://drumie.com"><b>Azwebsoft</b></a>
+                                </figure>
+
+
+
+                                <h2 style="font-size: 1rem;font-weight: 100;">Thiết kế website chuẩn SEO.<br />Đồng hành cùng doanh
+                                    nghiệp trong quá trình chuyển đổi số.</h2>
+                            </div>
+                        </div>
+                        <div class="ct-widget is-layout-flow widget_block" id="block-11">
+                            <div class="ct-block-wrapper">
+                                <div class="ct-socials-block"
+                                    style="--background-color:rgba(218, 222, 228, 0.5);--background-hover-color:rgba(218, 222, 228, 0.7);--theme-icon-size:15px;">
+                                    <div class="ct-social-box" data-color="default" data-icons-type="rounded:outline">
+                                        <a href="#" data-network="facebook" aria-label="Facebook">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="twitter" aria-label="X (Twitter)">
+                                            <span class="ct-icon-container">
+                                                <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="instagram" aria-label="Instagram">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <circle cx="10" cy="10" r="3.3"></circle>
+                                                    <path
+                                                        d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+                                        <a href="#" data-network="youtube" aria-label="YouTube">
+                                            <span class="ct-icon-container">
+                                                <svg width="20" height="20" viewBox="0 0 20 20"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z">
+                                                    </path>
+                                                </svg>
+                                            </span> </a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-2">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-2">
+                            <h3 class="widget-title">Về chúng tôi</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Lịch sử phát triển</a></li>
+                                    <li><a href="#">Sứ mệnh – Tầm nhìn</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-3">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-3">
+                            <h3 class="widget-title">Chính sách</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="#">Chính sách riêng tư</a></li>
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-column="widget-area-4">
+                        <div class="ct-widget is-layout-flow widget_text" id="text-4">
+                            <h3 class="widget-title">Liên hệ</h3>
+                            <div class="textwidget">
+                                <ul>
+                                    <li><a href="tel:0915452237">Điện thoại:
+                                            0915452237</a></li>
+                                    <li><a href="mailto:azwebsoft@gmail.com">Email:
+                                            azwebsoft@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-rocket-location-hash="0adbe0e2f82f32229c3117fb330757fe" data-row="bottom">
+                <div class="ct-container">
+                    <div data-column="copyright">
+                        <div class="ct-footer-copyright" data-id="copyright">
+
+                            Copyright © 2026 - Powered by <a
+                                href="https://drumie.com">Azwebsoft</a></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">var Tawk_API=Tawk_API || {}, Tawk_LoadStart=new Date(); (function(){ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true; s1.src="https://embed.tawk.to/6a15204cda221a1c3a6a4b37/1jph8cb7n"; s1.charset="UTF-8"; s1.setAttribute("crossorigin","*"); s0.parentNode.insertBefore(s1,s0); })();</script>
+        </footer>
+    </div>
+
+
+    <script id="ct-scripts-js-extra">
+        var ct_localizations = {
+            "ajax_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-admin\/admin-ajax.php",
+            "public_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/",
+            "rest_url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-json\/",
+            "search_url": "https:\/\/startersites.io\/blocksy\/web-agency\/search\/QUERY_STRING\/",
+            "show_more_text": "Show more",
+            "more_text": "More",
+            "search_live_results": "Search results",
+            "search_live_no_results": "No results",
+            "search_live_no_result": "No results",
+            "search_live_one_result": "You got %s result. Please press Tab to select it.",
+            "search_live_many_results": "You got %s results. Please press Tab to select one.",
+            "clipboard_copied": "Copied!",
+            "clipboard_failed": "Failed to Copy",
+            "expand_submenu": "Expand dropdown menu",
+            "collapse_submenu": "Collapse dropdown menu",
+            "dynamic_js_chunks": [{
+                "id": "blocksy_account",
+                "selector": ".ct-account-item[href*=\"account-modal\"], .must-log-in a",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/account.js?ver=2.1.20",
+                "deps": [],
+                "global_data": [],
+                "trigger": "click",
+                "deps_data": []
+            }, {
+                "id": "blocksy_sticky_header",
+                "selector": "header [data-sticky]",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.1.20"
+            }],
+            "dynamic_styles": {
+                "lazy_load": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.1.20",
+                "search_lazy": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.1.20",
+                "back_to_top": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.1.20"
+            },
+            "dynamic_styles_selectors": [{
+                "selector": ".ct-header-cart, #woo-cart-panel",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".flexy",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.1.20"
+            }, {
+                "selector": "#account-modal",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.1.20"
+            }, {
+                "selector": ".ct-header-account",
+                "url": "https:\/\/startersites.io\/blocksy\/web-agency\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.1.20"
+            }]
+        };
+    </script>
+    <script src="https://drumie.com/assets/main.js.download" id="ct-scripts-js"></script>
+    <script src="https://drumie.com/assets/frontend_block_count_up.js.download" id="stk-frontend-count-up-js"></script>
+
+    <script data-name="wpr-wpr-beacon" src="https://drumie.com/assets/wpr-beacon.min.js.download" async=""
+        beacon-completed="true"></script>
+    <script>
+        const pricing = document.querySelector('.pricing');
+        const pricingLink = pricing.querySelector('.ct-menu-link');
+        const pricingMenu = document.querySelector('.pricing-sub-menu');
+
+        pricingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            pricingMenu.classList.toggle('active');
+        });
+    </script>
+    </body>
+
+</html>
