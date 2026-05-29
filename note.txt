@@ -1,0 +1,1 @@
+giữ .git, 404.html, CNAME
