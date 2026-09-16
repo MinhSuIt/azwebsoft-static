@@ -655,3 +655,14 @@ form textarea {
         --theme-container-edge-spacing: 88vw;
     }
 }
+
+.ct-breadcrumbs,
+.ct-breadcrumbs span {
+    color: #fff !important;
+}
+
+.ct-breadcrumbs a {
+    --theme-link-initial-color: #fff !important;
+    --theme-link-hover-color: #fff !important;
+    color: #fff !important;
+}
